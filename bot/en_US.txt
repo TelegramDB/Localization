@@ -168,11 +168,13 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "search header2"           => "{0}No result.|{1}%count%%plus% result:|]1,Inf[%count%%plus% results:",
     "send username for search" => "Write me what you want to search.",
 
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua",
+    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1E8}\u{1F1F3} 选择你的语言",
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
+    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set en" => "Language changed to English.",
-    "lang set it" => "Lingua cambiata in italiano.",
+    "lang set it" => "Lingua cambiata in Italiano.",
+    "lang set cn" => "语言改为中文。",
 
     "cancel empty" => "There is no active command to cancel.",
     "cancel type"  => "The %type% command has been cancelled.",
