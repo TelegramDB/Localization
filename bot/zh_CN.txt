@@ -1,5 +1,5 @@
 [
-    "start"                                         => "\u{1F44B} <i>欢迎来到TelegramDB搜索机器人。</i>
+    "start" => "\u{1F44B} <i>欢迎来到TelegramDB搜索机器人。</i>
     
 这个机器人可以让你找到公共频道和群组，并通过不断更新的数据库查看用户正在或已经参加的公共聊天记录 <b>拥有2亿多聊天记录和6亿多用户！</b>。
 
@@ -7,211 +7,213 @@
 
 \u{1F193} <b>自由的命令。</b>
 /resolve [id或username] - <code>解决一个用户名或ID</code>
-/search [name] - <code>Search for groups and channel</code>
-/group [name] - <code>Search for groups</code>  
-/channel [name] - <code>Search for channels</code>
+/search [name] - <code>搜索群组和频道</code>
+/group [name] - <code>搜索群组</code>  
+/channel [name] - <code>搜索频道</code>
 
-\u{1F4B2} <b>Premium commands:</b>
-/where [id or username] - <code>Find groups in which a user is present</code>
-/credits - <code>Buy credits</code>
+\u{1F4B2} <b>高级命令:</b>
+/where [id或username] - <code>查找用户所在的群组</code>
+/credits - <code>购买积分</code>
 
-\u{2139} <b>Other commands:</b>
-/faq - <code>Frequently Asked Questions</code>
-/language - <code>Choose the language</code>
-/support - <code>Support chat</code>
-/stats - <code>Show statistics</code>
-/terms - <code>Terms and conditions</code>
-/cancel - <code>Cancel current operation</code>
+\u{2139} <b>其他命令:</b>
+/faq - <code>常见问答</code>
+/language - <code>选择语言</code>
+/support - <code>联系支持</code>
+/stats - <code>显示统计信息</code>
+/terms - <code>条件和协议</code>
+/cancel - <code>取消当前操作</code>
 
-For any info or doubts join @tgdbchat",
-"faq" => "<b>How does it work?</b>
-The bot queries a database containing <u>public</u> groups and users, crawled by TelegramDB.
+更多信息或疑问加入 @tgdbchat",
+    "faq"   => "<b>它是如何工作的?</b>
+机器人查询包含 <u>公开的</u> 群组和用户, 由TelegramDB爬取.
 
-<b>Do you really track all groups?</b>
-No, tracking all groups would be impossible: we have only a part of the <u>public</u> groups on Telegram.
+<b>你真的追踪得到所有群组吗？</b>
+不，追踪得到所有群组是不可能的: 我们在Telegram上只有一部分 <u>公开的</u> 群组.
 
-<b>How much data do you have?</b>
-Check https://telegramdb.org/stats to see the latest data.
+<b>你有多少数据?</b>
+点击 https://telegramdb.org/stats 去查看最新的数据.
 
-<b>How much does it cost?</b>
-Before paying to see the results, the bot will show you how many results are there, and how much does it cost.
+<b>多少钱？</b>
+在付费查看结果之前，机器人会告诉你有多少结果，以及它需要多少钱。
 
-The base price for the /where command is <b>3 credits</b>.
-In addition, every 40 results the cost increases by 1 credit.
+/where 命令的基础价格为 <b>3 积分</b>.
+此外，每40个结果成本增加1个积分。
 
-Example:
-100 results cost 5 credits
-3 base price + 2 (100/40 = 2.5)
+示例:
+100 结果需要 5 个积分
+3 基础价格 + 2 (100/40 = 2.5)
 
-<b>How can I delete a chat from the bot results?</b>
-Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</code>\" as the subject, provide the chat id/username, and a short explanation of why the chat must be removed.
+<b>我如何从机器人结果中删除一个会话?</b>
+发送电子邮件给网站管理员@telegramdb.org, 用 \"<code>删除会话请求</code>\" 作为主题, 提供会话 id/用户名, 和一个简短的解释为什么聊天必须删除。
 
-<b>Please note that</b> the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.",
+<b>请注意</b> 结果还可能包括用户过去曾参加过的群组，因此必须注意，用户可能已在未经其批准的情况下被另一个人添加到该群组中。",
 
-    "terms"                          => "Terms and Conditions",
-    "support"                        => "Join @tgdbchat or write to @tgdb_support for support.",
-    "block"                          => "Your account is temporarily blocked. To get unblocked, contact support with /support.",
-    "flood warn"                     => "You are sending too many messages. Please wait a bit before sending more.",
-    "where header"                   => "Results for ",
-    "btn credits"                    => "%credits% %bonus% credits - %price%€",
-    "btn pay crypto"                 => "Pay with cryptocurrencies",
-    "you have x credits"             => "{0}You have no credits.|{1}You have %count% credit.|]1,Inf[You have %count% credits.",
-    "pay crypto"                     => "If you need to pay with crypto, contact @tgdb_support (min 15€)",
-    "send username for where"        => "Send username or id of whoever you want to search for:",
-    "0 credits"                      => "You don't have enough credits to search.\nYou have 0 credits.\nBuy them with /credits",
-    "not enough credits"             => "{0}You don't have enough credits to search.\nYou need %price% credits, but you have no credits.\nBuy them with /credits
-|{1}You don't have enough credits to search.\nYou need %price% credits, but you only have %count% credit.\nBuy them with /credits
-|]1,Inf[You don't have enough credits to search.\nYou need %price% credits, but you only have %count% credits.\nBuy them with /credits",
-    "click to continue"              => "Click here to continue",
-    "where results"                  => "{1}This search will return you one group where the user is/was.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%|]1,Inf[This search will return you %count% groups where the user is/was.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
+    "terms"                          => "条件和协议",
+    "support"                        => "加入 @tgdbchat 或者写给 @tgdb_support 以寻求支持。",
+    "block"                          => "您的帐户被暂时冻结。若要解冻，使用 /support 联系技术支持。",
+    "flood warn"                     => "你发送的信息太多了，请稍后再发。",
+    "where header"                   => "结果为 ",
+    "btn credits"                    => "%credits% %bonus% 积分 - %price%€ （欧元）",
+    "btn pay crypto"                 => "使用加密货币支付",
+    "you have x credits"             => "{0}你没有积分.|{1}你有 %count% 个积分.|]1,Inf[你有 %count% 个积分.",
+    "pay crypto"                     => "如果你需要用加密货币支付, 联系 @tgdb_support (最少 15€ 欧元)",
+    "send username for where"        => "发送你想搜索的用户名或id:",
+    "0 credits"                      => "你没有足够的积分去搜索。\n你有 0 个积分.\n用 /credits 买它",
+    "not enough credits"             => "{0}你没有足够的积分去搜索。\n你需要 %price% 积分, 但是你没有。\n用 /credits 买它
+|{1}你没有足够的积分去搜索。\n你需要 %price% 积分，但是你只有 %count% 积分。\n用 /credits 买它
+|]1,Inf[你没有足够的积分去搜索。\n你需要 %price% 积分, 但是你只有 %count% 积分。\n用 /credits 买它",
+    "click to continue"              => "点击这里继续",
+    "where results"                  => "{1}此搜索将会返回一个此用户 在/在过 的群组.\n\n用户: %user_title% %user_id%\n搜索花费: %price%\n你的积分: %credits%|]1,Inf[此搜索将会返回你 %count% 个此用户 在/在过 的群组.\n\n用户: %user_title% %user_id%\n搜索花费: %price%\n你的积分: %credits%",
 
-    // commands
-    "command help"                   => "Help message",
-    "command credits"                => "Buy credits",
-    "command where"                  => "Find groups in which a user is present",
-    "command resolve"                => "Resolves a username or id",
-    "command search"                 => "Search for groups and channel by name",
-    "command group"                  => "Search for groups",
-    "command channel"                => "Search for channels",
-    "command bot"                    => "Search for bots",
-    "command faq"                    => "Frequently asked questions",
-    "command terms"                  => "Terms and conditions",
-    "command support"                => "Support chat",
-    "command stats"                  => "Show statistics",
-    "command cancel"                 => "Cancel current operation",
-    "command language"               => "Choose the language",
-    "command referral"               => "Referral link",
+    // 命令
+    "command help"                   => "帮助信息",
+    "command credits"                => "购买积分",
+    "command where"                  => "查找用户所在的群组",
+    "command resolve"                => "解析用户名或id",
+    "command search"                 => "按名称搜索群组和频道",
+    "command group"                  => "搜索群组",
+    "command channel"                => "搜索频道",
+    "command bot"                    => "搜索机器人",
+    "command faq"                    => "常见问答",
+    "command terms"                  => "条件和协议",
+    "command support"                => "联系支持",
+    "command stats"                  => "显示统计信息",
+    "command cancel"                 => "取消当前操作",
+    "command language"               => "选择语言",
+    "command referral"               => "推荐链接",
 
-    // credit transaction
-    "transaction title"              => "%credits% TGDB credits",
-    "transaction description"        => "Use these credits to search the database",
-    "transaction success"            => "You have spent %credits_spend% credits on this search.\nYou have %credits_left% credits left.",
-    // payments (eur)
-    "payment in progress"            => "Payment in progress... Waiting for payment.",
-    "payment cannot continue"        => "Payment cannot continue.",
-    "payment success"                => "Payment successful.\nYou have received %credits% credits.",
+    // 信用交易
+    "transaction title"              => "%credits% TGDB 积分",
+    "transaction description"        => "使用这些积分搜索数据库",
+    "transaction success"            => "你在这个搜索上花费了 %credits_spend% 积分。\n你已有%credits_left% 积分减少。",
+    // 付款 (eur)
+    "payment in progress"            => "付款进行中…等待付款。",
+    "payment cannot continue"        => "无法继续支付。",
+    "payment success"                => "成功支付。\n你已经收到 %credits% 积分.",
 
-    // errors
-    "error no results"               => "There are no results for this search.",
-    "error where resolve no results" => "The user you were looking for could not be found.",
-    "error where no results"         => "Sorry, the search found no groups for this user.",
-    "error search no results"        => "Sorry, your search returned no results.",
+    // 错误
+    "error no results"               => "此搜索没有结果。",
+    "error where resolve no results" => "找不到您要找的用户。",
+    "error where no results"         => "对不起，搜索没有找到该用户的群组。",
+    "error search no results"        => "对不起，您的搜索没有结果。",
 
-    "error where params"            => "Error in parameters",
-    "error where input"             => "Error in input",
-    "error where search yourself"   => "You cannot search for yourself.",
-    "error where search only users" => "You can only search for users.",
-    "error where invalid input"     => "Error, username or id invalid.\nRemember that you can only search for users.",
+    "error where params"            => "参数错误",
+    "error where input"             => "输入错误",
+    "error where search yourself"   => "你不能搜索你自己。",
+    "error where search only users" => "你只能搜索用户。",
+    "error where invalid input"     => "错误，用户名或id无效。\n记住，你只能搜索用户。",
 
-    "error invalid input"                   => "Error, username or id invalid",
-    "error backend offline"                 => "Error, backend offline",
-    "error user not found"                  => "Error, user not found",
-    "error button invalid"                  => "Error, invalid button",
-    "error button already press"            => "Error, button already pressed",
-    "error button expired"                  => "Error, button expired",
-    "error button user invalid"             => "Error, the button you pressed was not generated by you",
-    "error transaction still in progress"   => "Error, operation still in progress, please wait for it to finish before doing other queries.\nIf the problem persists, please contact support via /support",
-    "error cant use credits"                => "Error, unable to use credits, please try again later.\nIf the problem persists, please contact support via /support",
-    "error showing results"                 => "There was an error showing the results, your credits were refunded.\nPlease, contact support via /support",
-    "error showing results account blocked" => "There was an error showing the results, your credits were refunded.\nUnfortunately, this error has occurred too often and your account has been temporarily suspended.\nTo get unblocked, please contact support via /support",
-    "error payment success no credits"      => "Payment successful.\nBut credits could not be added (%credits% credits).\nPlease, contact support with /support.",
-    "error contact support"                 => "An error occurred.\nPlease, contact support with /support",
-    "error try later"                       => "An error occurred.\nPlease, try again later",
-    "error backend floodwait"               => "Error, backend is busy.\nPlease, try again later.",
-    "error timeout"                         => "Error, the search took too long, the backend may be offline.\nPlease try again later.",
-
-
-    "query already done"                        => "<b>You already did the same search a while ago.</b>\nAre you sure you want to continue?",
+    "error invalid input"                   => "错误，用户名或id无效。",
+    "error backend offline"                 => "错误，后端离线",
+    "error user not found"                  => "错误，用户未找到",
+    "error button invalid"                  => "错误，无效按钮",
+    "error button already press"            => "错误，按钮已按下",
+    "error button expired"                  => "错误，按钮已过时",
+    "error button user invalid"             => "错误，您按下的按钮不是由您生成的",
+    "error transaction still in progress"   => "错误，操作仍在进行中，请等待它完成后再进行其他查询。\n如果问题仍然存在，请通过 /support 联系技术支持",
+    "error cant use credits"                => "错误，无法使用积分，请稍后再试。\n如果问题仍然存在，请通过 /support 联系技术支持",
+    "error showing results"                 => "结果显示错误，你的积分被退还了。\n请通过 /support 联系技术支持",
+    "error showing results account blocked" => "结果显示错误，你的积分被退还了。\n不幸的是，这个错误经常发生，您的帐户已被暂时暂停。\n去解封, 请通过 /support 联系技术支持",
+    "error payment success no credits"      => "成功支付\n但是积分不能被增加 (%credits% 积分)。\n请通过 /support 联系技术支持",
+    "error contact support"                 => "出现了一个错误\n请通过 /support 联系技术支持",
+    "error try later"                       => "出现了一个错误\n请稍后再试",
+    "error backend floodwait"               => "错误，后端繁忙\n请稍后再试",
+    "error timeout"                         => "错误，搜索时间过长，后端可能离线。\n请稍后再试",
 
 
-    // stats
-    "hour ago"                                  => "hour ago",
-    "hours ago"                                 => "hours ago",
-    "minutes ago"                               => "minutes ago",
-    "less than 1 minute"                        => "less than 1 minute ago",
-    "stats"                                     => "<b>Last update:</b> <code>%time_str%</code>\n<b>Chats:</b> <code>%chat%</code>\n<b>Groups:</b> <code>%groups%</code>\n<b>Users:</b> <code>%user%</code>\n<b>Bots:</b> <code>%bot%</code>\n<b>User-Group associations:</b> <code>%members%</code>\n\nMore stats: https://www.telegramdb.org/stats",
+    "query already done"                        => "<b>你之前已经做过同样的搜索了。</b>\n你确定要继续吗?",
 
 
-    // inline
-    "inline no input"                           => "No results!",
-    "inline no input desc"                      => "Please, write me a username or id to get results.",
-    "inline resolve no title"                   => "No title",
+    // 状态
+    "hour ago"                                  => "一小时前",
+    "hours ago"                                 => "几小时前",
+    "minutes ago"                               => "几分钟前",
+    "less than 1 minute"                        => "少于1分钟前",
+    "stats"                                     => "<b>最新更新:</b> <code>%time_str%</code>\n<b>会话:</b> <code>%chat%</code>\n<b>群组:</b> <code>%groups%</code>\n<b>用户:</b> <code>%user%</code>\n<b>机器人:</b> <code>%bot%</code>\n<b>用户-群组 联系:</b> <code>%members%</code>\n\n更多状态信息: https://www.telegramdb.org/stats",
+
+
+    // 内联
+    "inline no input"                           => "无结果!",
+    "inline no input desc"                      => "请给我写一个用户名或id来获得结果。",
+    "inline resolve no title"                   => "无标题",
     "inline resolve title"                      => "%title%",
     "inline resolve desc"                       => "%id%",
-    "inline resolve error title"                => "Error",
-    "inline resolve error desc"                 => "Error, username or id invalid/not found.",
-    "inline resolve error text"                 => "Error, username or id invalid/not found.",
-    "try inline"                                => "Try me inline",
+    "inline resolve error title"                => "错误",
+    "inline resolve error desc"                 => "错误，用户名或id无效/未找到。",
+    "inline resolve error text"                 => "错误，用户名或id无效/未找到。",
+    "try inline"                                => "试试内联",
 
 
-    // pay api
-    "error pay_api offline"                     => "Error, unable to connect to the credit server, please try again later.",
-    "error pay_api offline revert transactions" => "Error, results could not be shown, and credit refund failed, please contact support with /support",
+    // 支付 api
+    "error pay_api offline"                     => "错误，无法连接到信用服务器，请稍后再试。",
+    "error pay_api offline revert transactions" => "错误，无法显示结果，信用退款失败，请用 /support 联系技术支持",
 
-    // format output
-    "user"                                      => "User",
-    "supergroup"                                => "SuperGroup",
-    "basicgroup"                                => "BasicGroup",
-    "channel"                                   => "Channel",
-    "supergrouporchannel"                       => "SuperGroup or Channel",
-    "group"                                     => "Group",
-    "bot"                                       => "Bot",
-    "type"                                      => "Type",
-    "title"                                     => "Title",
-    "username"                                  => "Username",
-    "description"                               => "Description",
+    // 输出格式
+    "user"                                      => "用户",
+    "supergroup"                                => "超群",
+    "basicgroup"                                => "基础群",
+    "channel"                                   => "频道",
+    "supergrouporchannel"                       => "超群 或者 频道",
+    "group"                                     => "群组",
+    "bot"                                       => "机器人",
+    "type"                                      => "类型",
+    "title"                                     => "标题",
+    "username"                                  => "用户名",
+    "description"                               => "描述",
     "dc"                                        => "DC",
 
-    "hidden forward" => "Unable to show info of the forwarded message, the user's privacy settings may prevent it.",
+    "hidden forward" => "无法显示所转发邮件的信息，用户的隐私设置可能会阻止它。",
 
-    "search header1"           => "<b>Search:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}No result.|{1}%count%%plus% result:|]1,Inf[%count%%plus% results:",
-    "send username for search" => "Write me what you want to search.",
+    "search header1"           => "<b>搜索:</b> <code>%query%</code>\n",
+    "search header2"           => "{0}无结果.|{1}%count%%plus% 结果:|]1,Inf[%count%%plus% 结果:",
+    "send username for search" => "写给我你要找的东西",
 
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua",
+    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1E8}\u{1F1F3} 选择你的语言",
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
+    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set en" => "Language changed to English.",
-    "lang set it" => "Lingua cambiata in italiano.",
+    "lang set it" => "Lingua cambiata in Italiano.",
+    "lang set cn" => "语言改为中文。",
 
-    "cancel empty" => "There is no active command to cancel.",
-    "cancel type"  => "The %type% command has been cancelled.",
+    "cancel empty" => "没有要取消的活动命令。",
+    "cancel type"  => " %type% 命令已被取消。",
 
-    "maintenance"                 => "This bot is currently in maintenance mode, this command is not available.\nPlease, try again later.",
-    "payment blocked maintenance" => "This bot is currently in maintenance mode, payments are not available.\nPlease, try again later.",
-    "answercb pay"                => "Sending invoice",
-    "answercb pay maintenance"    => "Maintenance",
-    "credits"                     => "credits",
+    "maintenance"                 => "此机器人当前处于维护模式，此命令不可用。\n请稍后再试。",
+    "payment blocked maintenance" => "这个机器人目前处于维护模式，无法支付。\n请稍后再试。",
+    "answercb pay"                => "发送发票",
+    "answercb pay maintenance"    => "维护",
+    "credits"                     => "积分",
 
-    "inline maintenance"      => "Maintenance",
-    "inline maintenance desc" => "Maintenance, command is not available.\nPlease, try again later.",
+    "inline maintenance"      => "维护",
+    "inline maintenance desc" => "维护，命令不可用。\n请稍后再试。",
 
-    "command pvt"     => "To use this command, use private chat.",
-    "command btn pvt" => "Start chat",
+    "command pvt"     => "要使用该命令，请使用私密聊天。",
+    "command btn pvt" => "开始聊天",
 
-    "command not available for chat" => "Command not available for those who write as a channel or as an anonymous admin.",
+    "command not available for chat" => "命令对于以频道或匿名管理员身份写入的用户不可用。",
 
-    "search more"            => "Show more results",
-    "search pre"             => "This search will give you %n_results% results\n\nQuery: %query%\nSearch cost: %price%\nYour credits: %credits%",
-    "search more no credits" => "To get more results you need credits.\nBuy them with /credits",
+    "search more"            => "展示更多结果",
+    "search pre"             => "此搜索会给你 %n_results% 个结果\n\n查询: %query%\n搜索花费: %price%\n你的积分: %credits%",
+    "search more no credits" => "为了获得更多的结果，你需要积分。\n用 /credits 买它",
 
-    "start invalid" => "Incorrect parameter",
+    "start invalid" => "不正确的参数",
 
 
-    "ref_invalid"         => "The referral you are trying to use is invalid.",
-    "ref_self"            => "You can't use your own referral link.",
-    "ref_already_used"    => "You have already used a referral link.",
-    "ref_promo_max_usage" => "This referral has already been used by too many people, however, you can get %credits% free credits, on your first purchase through this referral.",
-    "ref_already_created" => "You have already created a referral link.",
-    "ref_had_credits"     => "Having already used the bot, you cannot redeem this referral, but you can invite a friend with your referral, just do /referral and send them the link.",
-    "ref_promo_finished"  => "Sorry, but the promo has ended, however, you can get %credits% free credits, on your first purchase through this referral.",
-    "ref_promo_pay_ok"    => "You have successfully redeemed the referral, %credits% credits will be added to your first purchase.",
-    "ref_lock"            => "You are using too many referrals, try again later.",
+    "ref_invalid"         => "您尝试使用推荐无效。",
+    "ref_self"            => "您不能使用自己的推荐链接。",
+    "ref_already_used"    => "您已经使用了推荐链接。",
+    "ref_promo_max_usage" => "此推荐已被太多人使用，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
+    "ref_already_created" => "您已经创建了推荐链接。",
+    "ref_had_credits"     => "已经使用机器人后，您无法兑换此推荐，但您可以用您的推荐邀请朋友，只要点击 /referral 然后发给他们链接。",
+    "ref_promo_finished"  => "对不起，促销活动已经结束，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
+    "ref_promo_pay_ok"    => "您已经成功兑换了推荐， %credits% 积分将添加到您的首次购买中。",
+    "ref_lock"            => "您已经使用了太多推荐链接，请稍后再试。",
 
-    "ref_ok_redeemed"     => "You redeemed the referral correctly, %credits% credits were added.",
-    "ref_ok_used"         => "A user used your referral, %credits% credits were added to you.",
-    "ref_ok_error_api"    => "The referral is valid, but the credits could not be added, try again later, if the error persists, contact support with /support",
-    "ref_ok_generated"    => "Your referral has been generated, send it to your friends, and you will both receive %credits% credits when the invitee makes the first purchase.\n\nReferral link: https://t.me/%username%?start=%ref%",
-    "ref_error_generated" => "Sorry, but you cannot generate invitation links if you have never made a purchase.",
+    "ref_ok_redeemed"     => "您已经正确的兑换了推荐，%credits% 积分将被添加您",
+    "ref_ok_used"         => "一个用户使用了您的推荐, %credits% 积分将被添加给您",
+    "ref_ok_error_api"    => "推荐有效，但无法添加积分，请稍后重试，如果错误仍然存在，请通过 /support 联系技术支持。",
+    "ref_ok_generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
+    "ref_error_generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
 ]
