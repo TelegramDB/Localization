@@ -85,7 +85,7 @@
     // 信用交易
     "transaction title"              => "%credits% TGDB 积分",
     "transaction description"        => "使用这些积分搜索数据库",
-    "transaction success"            => "你在这个搜索上花费了 %credits_spend% 积分。\n你已有%credits_left% 积分减少。",
+    "transaction success"            => "你在这个搜索上花费了 %credits_spend% 积分。\n你还有%credits_left% 积分。",
     // 付款 (eur)
     "payment in progress"            => "付款进行中…等待付款。",
     "payment cannot continue"        => "无法继续支付。",
