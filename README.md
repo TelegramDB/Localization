@@ -10,7 +10,7 @@ You can help us translate these guidelines, or localize the bot and the site in 
  - 🇮🇹 Italian, by TelegramDB staff
 
 ### Without an active maintainer
-- 🇺🇦 Ukrainian, thanks to an anonymous user
+- 🇺🇦 Ukrainian, thanks to [@giulianbiolo_01](https://t.me/giulianbiolo_01)
 - 🇨🇳 Chinese, thanks to [@happyforyou0](https://t.me/happyforyou0)
 
 ### Unmaintained
