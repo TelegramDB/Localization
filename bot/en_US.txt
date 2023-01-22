@@ -1,5 +1,6 @@
-[
-    "start"                                         => "\u{1F44B} <i>Welcome to TelegramDB Search Bot.</i>
+<?php
+return [
+    "start" => "\u{1F44B} <i>Welcome to TelegramDB Search Bot.</i>
     
 This bot allows you to find public channels and groups, and see what public chats a user is in, or has been in, using a constantly updated database <b>with 200+ million chats and 600+ million users!</b>
 
@@ -24,7 +25,21 @@ Use our inline queries to get user details from usernames and IDs.
 /cancel - <code>Cancel current operation</code>
 
 For any info or doubts join @tgdbchat",
-"faq" => "<b>How does it work?</b>
+    /*"help"  => "Use this bot to check which groups users are in.
+
+Commands:
+/credits - Buy credits
+/where [id or username] - Find groups in which a user is present
+/search [name] - Search for groups and channel
+/group [name] - Search for groups
+/channel [name] - Search for channels
+/faq - Frequently Asked Questions
+/terms - Terms and conditions
+/support - Support chat
+/cancel - Cancel current operation
+
+For any info or doubts join @tgdbchat",*/
+    "faq"   => "<b>How does it work?</b>
 The bot queries a database containing <u>public</u> groups and users, crawled by TelegramDB.
 
 <b>Do you really track all groups?</b>
@@ -168,13 +183,23 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "search header2"           => "{0}No result.|{1}%count%%plus% result:|]1,Inf[%count%%plus% results:",
     "send username for search" => "Write me what you want to search.",
 
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    // language
+    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
-    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set en" => "Language changed to English.",
+
+    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
+
+    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set ua" => "Мову змінено на українську.",
+
+    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
+    // Add below the language you are translating as above
+
+
 
     "cancel empty" => "There is no active command to cancel.",
     "cancel type"  => "The %type% command has been cancelled.",
@@ -216,4 +241,4 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "ref_ok_generated"    => "Your referral has been generated, send it to your friends, and you will both receive %credits% credits when the invitee makes the first purchase.\n\nReferral link: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "Sorry, but you cannot generate invitation links if you have never made a purchase.",
 
-]
+];

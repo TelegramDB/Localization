@@ -1,4 +1,5 @@
-[
+<?php
+return [
     "start" => "\u{1F44B} <i>欢迎来到TelegramDB搜索机器人。</i>
     
 这个机器人可以让你找到公共频道和群组，并通过不断更新的数据库查看用户正在或已经参加的公共聊天记录 <b>拥有2亿多聊天记录和6亿多用户！</b>。
@@ -168,13 +169,23 @@
     "search header2"           => "{0}无结果.|{1}%count%%plus% 结果:|]1,Inf[%count%%plus% 结果:",
     "send username for search" => "写给我你要找的东西",
 
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    // language
+    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
-    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set en" => "Language changed to English.",
+
+    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
+
+    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set ua" => "Мову змінено на українську.",
+
+    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
+    // Add below the language you are translating as above
+
+
 
     "cancel empty" => "没有要取消的活动命令。",
     "cancel type"  => " %type% 命令已被取消。",
@@ -216,4 +227,4 @@
     "ref_ok_generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
-]
+];

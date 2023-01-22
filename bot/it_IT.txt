@@ -1,6 +1,6 @@
-[
-
-    "start"                                                      => "\u{1F44B} Benvenuto su TelegramDB Search Bot.
+<?php
+return [
+    "start" => "\u{1F44B} Benvenuto su TelegramDB Search Bot.
     
 Questo bot ti consente di cercare canali e gruppi pubblici, e di vedere in quali chat pubbliche si trova o è stato un utente, utilizzando un database costantemente aggiornato con <b>oltre 200 milioni di chat e oltre 600 milioni di utenti!</b>
 
@@ -25,7 +25,21 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 /cancel - <code>Annulla il comando</code>
 
 Per qualsiasi dubbio o domanda, entra in @tgdbchat",
-    "faq" => "<b>Come funziona?</b>
+    /*"help" => "Questo bot ti consente di cercare canali e gruppi pubblici, e di vedere in quali chat pubbliche si trova o e' stato un utente, utilizzando un database costantemente aggiornato con oltre 150 milioni di chat e oltre 500 milioni di utenti!
+
+Comandi:
+/credits - Compra crediti
+/where [id o username] - Cerca i gruppi di un utente
+/search [nome] - Cerca gruppi e canali
+/group [nome] - Cerca gruppi
+/channel [nome] - Cerca canali
+/faq - Domande frequenti
+/terms - Termini e condizioni
+/support - Link alla nostra chat
+/cancel - Annulla il comando
+
+Per qualsiasi dubbio o domanda, entra in @tgdbchat",*/
+    "faq"   => "<b>Come funziona?</b>
 Questo bot si appoggia a un database che contiene gruppi <u>pubblici</u> e utenti, crawlati da TelegramDB.
 
 <b>Avete davvero tutti i gruppi?</b>
@@ -170,13 +184,23 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "search header2"           => "{0}Nessun risultato.|{1}%count%%plus% risultato:|]1,Inf[%count%%plus% risultati:",
     "send username for search" => "Scrivimi quello che vuoi cercare.",
 
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    // language
+    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
-    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set en" => "Language changed to English.",
+
+    "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
+
+    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set ua" => "Мову змінено на українську.",
+
+    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
+    // Add below the language you are translating as above
+
+
 
     "cancel empty" => "Non c'è alcun comando attivo da annullare.",
     "cancel type"  => "Il comando %type% è stato annullato.",
@@ -217,4 +241,4 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "ref_ok_error_api"    => "Il referral è valido, ma non è stato possibile aggiungere i crediti, riprova più tardi, se l'errore persiste, contatta il supporto con /support",
     "ref_ok_generated"    => "Il tuo referral è stato generato, invialo ai tuoi amici, e riceverete entrambi %credits% crediti quando l'invitato effettuerà il primo acquisto.\n\nLink di invito: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
-]
+];
