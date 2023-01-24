@@ -19,6 +19,7 @@ Use our inline queries to get user details from usernames and IDs.
 \u{2139} <b>Other commands:</b>
 /faq - <code>Frequently Asked Questions</code>
 /language - <code>Choose the language</code>
+/referral - <code>Referral link</code>
 /support - <code>Support chat</code>
 /stats - <code>Show statistics</code>
 /terms - <code>Terms and conditions</code>

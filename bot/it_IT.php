@@ -19,6 +19,7 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 \u{2139} <b>Altri comandi:</b>
 /faq - <code>Domande frequenti</code>
 /language - <code>Scegli la lingua</code>
+/referral - <code>Link di invito</code>
 /support - <code>Chat di supporto</code>
 /stats - <code>Mostra le statistiche</code>
 /terms - <code>Termini e condizioni</code>

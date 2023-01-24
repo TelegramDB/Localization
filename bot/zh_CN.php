@@ -19,6 +19,7 @@ return [
 \u{2139} <b>其他命令:</b>
 /faq - <code>常见问答</code>
 /language - <code>选择语言</code>
+/referral - <code>推荐链接</code>
 /support - <code>联系支持</code>
 /stats - <code>显示统计信息</code>
 /terms - <code>条件和协议</code>

@@ -19,6 +19,7 @@
 \u{2139} <b>Інші команди:</b>
 /faq - <code>Часті запитання</code>
 /language - <code>Виберіть мову</code>
+/referral - <code>Посилання запрошення</code>
 /support - <code>Чат підтримки</code>
 /stats - <code>Показати статистику</code>
 /terms - <code>Умови та положення</code>
