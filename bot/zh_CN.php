@@ -228,4 +228,5 @@ return [
     "ref_ok_generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
+    "search no free uses" => "你已经用完了你的每日免费搜索。你可以购买点数来解锁更多的搜索。",
 ];
