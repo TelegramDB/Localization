@@ -242,6 +242,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "ref_ok_generated"    => "Your referral has been generated, send it to your friends, and you will both receive %credits% credits when the invitee makes the first purchase.\n\nReferral link: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "Sorry, but you cannot generate invitation links if you have never made a purchase.",
 
-    // sul canale è possibile avere novità su quando tornerà dispobnibile il comando https://t.me/tgdatabase
     "temp_not_available" => "This command is not available at the moment.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
+
+    "search no free uses" => "You have exhausted your daily free searches. You can purchase credits to unlock more searches.",
 ];
