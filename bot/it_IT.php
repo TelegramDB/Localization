@@ -242,4 +242,6 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "ref_ok_error_api"    => "Il referral è valido, ma non è stato possibile aggiungere i crediti, riprova più tardi, se l'errore persiste, contatta il supporto con /support",
     "ref_ok_generated"    => "Il tuo referral è stato generato, invialo ai tuoi amici, e riceverete entrambi %credits% crediti quando l'invitato effettuerà il primo acquisto.\n\nLink di invito: https://t.me/%username%?start=%ref%",
     "ref_error_generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
+
+    "search no free uses" => "Hai esaurito le tue ricerche gratuite giornaliere. Puoi acquistare dei crediti per sbloccare più ricerche.",
 ];
