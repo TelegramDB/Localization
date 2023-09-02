@@ -1,11 +1,11 @@
 # TelegramDB
 **TelegramDB** è un servizio che ti consente di cercare canali, gruppi e i loro membri.
 
-[![Membri](/stats/members.svg)](/stats)
-[![Chat](/stats/chats.svg)](/stats)
-[![Gruppi](/stats/groups.svg)](/stats)
-[![Utenti](/stats/users.svg)](/stats)
-[![Bot](/stats/bots.svg)](/stats)
+[![Membri](/stats/members.svg?hl=it)](/stats)
+[![Chat](/stats/chats.svg?hl=it)](/stats)
+[![Gruppi](/stats/groups.svg?hl=it)](/stats)
+[![Utenti](/stats/users.svg?hl=it)](/stats)
+[![Bot](/stats/bots.svg?hl=it)](/stats)
 
 Tramite il nostro [bot](https://t.me/tgdb_bot) su Telegram è possibile cercare, sfruttando il nostro database, tutti i gruppi pubblici in cui è stato un utente.
 
