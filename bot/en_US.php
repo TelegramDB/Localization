@@ -205,8 +205,8 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "cancel empty" => "There is no active command to cancel.",
     "cancel type"  => "The %type% command has been cancelled.",
 
-    "maintenance"                 => "This bot is currently in maintenance mode, this command is not available.\nPlease, try again later.",
-    "payment blocked maintenance" => "This bot is currently in maintenance mode, payments are not available.\nPlease, try again later.",
+    "maintenance"                 => "This bot is currently in maintenance mode, this command is not available.\nPlease, try again later.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
+    "payment blocked maintenance" => "This bot is currently in maintenance mode, payments are not available.\nPlease, try again later.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
     "answercb pay"                => "Sending invoice",
     "answercb pay maintenance"    => "Maintenance",
     "credits"                     => "credits",
