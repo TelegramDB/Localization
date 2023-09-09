@@ -171,7 +171,7 @@ return [
     "send username for search" => "写给我你要找的东西",
 
     // language
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -185,7 +185,6 @@ return [
     "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
     // Add below the language you are translating as above
-
 
 
     "cancel empty" => "没有要取消的活动命令。",
@@ -221,6 +220,7 @@ return [
     "ref_promo_finished"  => "对不起，促销活动已经结束，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
     "ref_promo_pay_ok"    => "您已经成功兑换了推荐， %credits% 积分将添加到您的首次购买中。",
     "ref_lock"            => "您已经使用了太多推荐链接，请稍后再试。",
+    "ref_voip"            => "我们发现您在使用二级账户兑换推荐。",
 
     "ref_ok_redeemed"     => "您已经正确的兑换了推荐，%credits% 积分将被添加您",
     "ref_ok_used"         => "一个用户使用了您的推荐, %credits% 积分将被添加给您",

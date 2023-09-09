@@ -185,7 +185,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "send username for search" => "Write me what you want to search.",
 
     // language
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -199,7 +199,6 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
     // Add below the language you are translating as above
-
 
 
     "cancel empty" => "There is no active command to cancel.",
@@ -235,6 +234,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "ref_promo_finished"  => "Sorry, but the promo has ended, however, you can get %credits% free credits, on your first purchase through this referral.",
     "ref_promo_pay_ok"    => "You have successfully redeemed the referral, %credits% credits will be added to your first purchase.",
     "ref_lock"            => "You are using too many referrals, try again later.",
+    "ref_voip"            => "We detected that you are using a secondary account to redeem the referral.",
 
     "ref_ok_redeemed"     => "You redeemed the referral correctly, %credits% credits were added.",
     "ref_ok_used"         => "A user used your referral, %credits% credits were added to you.",

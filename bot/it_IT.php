@@ -186,7 +186,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "send username for search" => "Scrivimi quello che vuoi cercare.",
 
     // language
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -200,7 +200,6 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
     // Add below the language you are translating as above
-
 
 
     "cancel empty" => "Non c'è alcun comando attivo da annullare.",
@@ -236,6 +235,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "ref_promo_finished"  => "Siamo spiacenti, ma la promo è terminata, tuttavia, potrai ottenere %credits% crediti gratuiti, sul tuo primo acquisto grazie a questo referral.",
     "ref_promo_pay_ok"    => "Hai riscattato correttamente il referral, al tuo primo acquisto ti verranno aggiunti %credits% crediti.",
     "ref_lock"            => "Stai usando troppi referral, riprova più tardi.",
+    "ref_voip"            => "Abbiamo rilevato che stai usando un account secondario per riscattare il referral.",
 
     "ref_ok_redeemed"     => "Hai riscattato correttamente il referral, ti sono stati aggiunti %credits% crediti.",
     "ref_ok_used"         => "Un utente ha usato il tuo referral, ti sono stati aggiunti %credits% crediti.",

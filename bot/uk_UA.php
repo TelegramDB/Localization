@@ -168,7 +168,7 @@
     "send username for search" => "Напишіть мені, що ви хочете шукати.",
 
     // language
-    "lang"        => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -182,7 +182,6 @@
     "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
     // Add below the language you are translating as above
-
 
 
     "cancel empty" => "Немає активної команди, яку можна було б відмінити.",
@@ -218,6 +217,7 @@
     "ref_promo_finished"  => "На жаль, акція завершена, однак, ви зможете отримати %credits% безкоштовних кредитів при вашому першому покупці завдяки цьому рефералу.",
     "ref_promo_pay_ok"    => "Ви успішно використали реферал, при вашому першому покупці будуть додані %credits% кредитів.",
     "ref_lock"            => "Ви використовуєте занадто багато рефералів, спробуйте пізніше.",
+    "ref_voip"            => "Ми виявили, що ви використовуєте вторинний обліковий запис для викупу реферала.",
 
     "ref_ok_redeemed"     => "Ви успішно використали реферал, вам було додано %credits% кредитів.",
     "ref_ok_used"         => "Користувач використав ваш реферал, вам було додано %credits% кредитів.",
