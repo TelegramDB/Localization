@@ -206,8 +206,8 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "cancel empty" => "Non c'è alcun comando attivo da annullare.",
     "cancel type"  => "Il comando %type% è stato annullato.",
 
-    "maintenance"                 => "Il bot è in manutenzione, questo comando non è disponibile.\nRiprova più tardi.",
-    "payment blocked maintenance" => "Il bot è in manutenzione, i pagamenti non sono disponibili.\nRiprova più tardi.",
+    "maintenance"                 => "Il bot è in manutenzione, questo comando non è disponibile.\nRiprova più tardi.\n\nSe vuoi essere avvisato quando il bot sarà di nuovo disponibile, entra nel nostro canale:\nhttps://t.me/tgdatabase",
+    "payment blocked maintenance" => "Il bot è in manutenzione, i pagamenti non sono disponibili.\nRiprova più tardi.\n\nSe vuoi essere avvisato quando il bot sarà di nuovo disponibile, entra nel nostro canale:\nhttps://t.me/tgdatabase",
     "answercb pay"                => "Invio fattura",
     "answercb pay maintenance"    => "Manutenzione",
     "credits"                     => "crediti",
