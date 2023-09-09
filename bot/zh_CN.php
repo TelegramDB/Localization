@@ -191,8 +191,8 @@ return [
     "cancel empty" => "没有要取消的活动命令。",
     "cancel type"  => " %type% 命令已被取消。",
 
-    "maintenance"                 => "此机器人当前处于维护模式，此命令不可用。\n请稍后再试。",
-    "payment blocked maintenance" => "这个机器人目前处于维护模式，无法支付。\n请稍后再试。",
+    "maintenance"                 => "此机器人当前处于维护模式，此命令不可用。\n请稍后再试。\n\n如果您想知道何时再次推出，请加入我们的频道：\nhttps://t.me/tgdatabase。",
+    "payment blocked maintenance" => "这个机器人目前处于维护模式，无法支付。\n请稍后再试。\n\n如果您想知道何时再次推出，请加入我们的频道：\nhttps://t.me/tgdatabase。",
     "answercb pay"                => "发送发票",
     "answercb pay maintenance"    => "维护",
     "credits"                     => "积分",
