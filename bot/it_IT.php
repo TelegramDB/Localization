@@ -65,14 +65,14 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 <b>Tieni presente che</b> i risultati possono includere anche gruppi in cui l'utente era presente in passato, quindi ricorda che un utente potrebbe essere stato aggiunto a quel gruppo da un'altra persona senza la sua approvazione.",
 
     "terms"                          => "Termini e condizioni",
-    "support"                        => "Unisciti a @tgdbchat o scrivi a @tgdb_support per il supporto.",
+    "support"                        => "Unisciti a @tgdbchat o scrivi a @TgDBSupport per il supporto.",
     "block"                          => "Il tuo account è stato temporaneamente bloccato. Per essere sbloccato, contatta il supporto con /support.",
     "flood warn"                     => "Stai mandando troppi messaggi. Si prega di attendere un po' prima di inviarne altri.",
     "where header"                   => "Risultati di ",
     "btn credits"                    => "%credits% %bonus% crediti - %price%€",
     "btn pay crypto"                 => "Paga con criptovalute",
     "you have x credits"             => "{0}Non hai crediti.|{1}Hai %count% credito.|]1,Inf[Hai %count% crediti.",
-    "pay crypto"                     => "Se hai bisogno di pagare con le crypto, contatta @tgdb_support (min 15€)",
+    "pay crypto"                     => "Se hai bisogno di pagare con le crypto, contatta @TgDBSupport (min 15€)",
     "send username for where"        => "Manda l'username o l'id della persona che vuoi cercare:",
     "0 credits"                      => "Non hai abbastanza crediti per fare la ricerca.\nHai 0 crediti.\nPuoi comprarli con /credits",
     "not enough credits"             => "{0}Non hai abbastanza crediti per fare la ricerca.\nHai bisogno di %price% crediti, ma non hai crediti.\nPuoi comprarli con /credits
