@@ -51,14 +51,14 @@ return [
 <b>请注意</b> 结果还可能包括用户过去曾参加过的群组，因此必须注意，用户可能已在未经其批准的情况下被另一个人添加到该群组中。",
 
     "terms"                          => "条件和协议",
-    "support"                        => "加入 @tgdbchat 或者写给 @tgdb_support 以寻求支持。",
+    "support"                        => "加入 @tgdbchat 或者写给 @TgDBSupport 以寻求支持。",
     "block"                          => "您的帐户被暂时冻结。若要解冻，使用 /support 联系技术支持。",
     "flood warn"                     => "你发送的信息太多了，请稍后再发。",
     "where header"                   => "结果为 ",
     "btn credits"                    => "%credits% %bonus% 积分 - %price%€ （欧元）",
     "btn pay crypto"                 => "使用加密货币支付",
     "you have x credits"             => "{0}你没有积分.|{1}你有 %count% 个积分.|]1,Inf[你有 %count% 个积分.",
-    "pay crypto"                     => "如果你需要用加密货币支付, 联系 @tgdb_support (最少 15€ 欧元)",
+    "pay crypto"                     => "如果你需要用加密货币支付, 联系 @TgDBSupport (最少 15€ 欧元)",
     "send username for where"        => "发送你想搜索的用户名或id:",
     "0 credits"                      => "你没有足够的积分去搜索。\n你有 0 个积分.\n用 /credits 买它",
     "not enough credits"             => "{0}你没有足够的积分去搜索。\n你需要 %price% 积分, 但是你没有。\n用 /credits 买它
