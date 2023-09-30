@@ -65,14 +65,14 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 <b>Please note that</b> the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.",
 
     "terms"                          => "Terms and Conditions",
-    "support"                        => "Join @tgdbchat or write to @tgdb_support for support.",
+    "support"                        => "Join @tgdbchat or write to @TgDBSupport for support.",
     "block"                          => "Your account is temporarily blocked. To get unblocked, contact support with /support.",
     "flood warn"                     => "You are sending too many messages. Please wait a bit before sending more.",
     "where header"                   => "Results for ",
     "btn credits"                    => "%credits% %bonus% credits - %price%€",
     "btn pay crypto"                 => "Pay with cryptocurrencies",
     "you have x credits"             => "{0}You have no credits.|{1}You have %count% credit.|]1,Inf[You have %count% credits.",
-    "pay crypto"                     => "If you need to pay with crypto, contact @tgdb_support (min 15€)",
+    "pay crypto"                     => "If you need to pay with crypto, contact @TgDBSupport (min 15€)",
     "send username for where"        => "Send username or id of whoever you want to search for:",
     "0 credits"                      => "You don't have enough credits to search.\nYou have 0 credits.\nBuy them with /credits",
     "not enough credits"             => "{0}You don't have enough credits to search.\nYou need %price% credits, but you have no credits.\nBuy them with /credits
