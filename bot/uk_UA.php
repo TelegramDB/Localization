@@ -51,14 +51,14 @@
 <b>Майте на увазі, що</b> результати можуть також включати групи, в яких користувач був присутнім раніше, тому запам'ятайте, що користувач може бути доданий до цієї групи іншою особою без його згоди.",
 
     "terms"                                 => "Умови та Положення",
-    "support"                               => "Приєднуйтеся до @tgdbchat або напишіть @TgDBSupport для підтримки.",
+    "support"                               => "Приєднуйтеся до @tgdbchat або напишіть @tgdb_support для підтримки.",
     "block"                                 => "Ваш аккаунт був тимчасово заблокований. Щоб бути розблокованим, зв'яжіться з підтримкою за допомогою /support.",
     "flood warn"                            => "Ви надсилаєте занадто багато повідомлень. Будь ласка, зачекайте кілька хвилин, перш ніж надсилати ще.",
     "where header"                          => "Результати ",
     "btn credits"                           => "%credits% %bonus% кредити - %price%€",
     "btn pay crypto"                        => "Розраховуйтеся криптовалютами",
     "you have x credits"                    => "{0}У вас немає кредитів.|{1}У вас %count% кредит.|]1,Inf[У вас %count% кредитів.",
-    "pay crypto"                            => "Якщо вам потрібно заплатити криптовалютою, зв'яжіться з @TgDBSupport (мінімум 15€)",
+    "pay crypto"                            => "Якщо вам потрібно заплатити криптовалютою, зв'яжіться з @tgdb_support (мінімум 15€)",
     "send username for where"               => "Відправте ім'я користувача або ID людини, яку ви хочете знайти:",
     "0 credits"                             => "У вас недостатньо кредитів для виконання пошуку.\nУ вас 0 кредитів.\nВи можете купити їх за допомогою /credits",
     "not enough credits"                    => "{0}У вас недостатньо кредитів для виконання пошуку.\nВам потрібно %price% кредитів, але у вас їх немає.\nВи можете купити їх за допомогою /credits
@@ -168,7 +168,7 @@
     "send username for search" => "Напишіть мені, що ви хочете шукати.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -176,15 +176,14 @@
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
 
-    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
-    "lang set ua" => "Мову змінено на українську.",
+    "lang uk"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set uk" => "Мову змінено на українську.",
 
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
-    "lang set cn" => "语言改为中文。",
+    "lang zh"     => "\u{1F1E8}\u{1F1F3} 中国",
+    "lang set zh" => "语言改为中文。",
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
-
     // Add below the language you are translating as above
 
 

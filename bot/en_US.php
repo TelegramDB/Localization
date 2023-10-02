@@ -65,14 +65,14 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 <b>Please note that</b> the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.",
 
     "terms"                          => "Terms and Conditions",
-    "support"                        => "Join @tgdbchat or write to @TgDBSupport for support.",
+    "support"                        => "Join @tgdbchat or write to @tgdb_support for support.",
     "block"                          => "Your account is temporarily blocked. To get unblocked, contact support with /support.",
     "flood warn"                     => "You are sending too many messages. Please wait a bit before sending more.",
     "where header"                   => "Results for ",
     "btn credits"                    => "%credits% %bonus% credits - %price%€",
     "btn pay crypto"                 => "Pay with cryptocurrencies",
     "you have x credits"             => "{0}You have no credits.|{1}You have %count% credit.|]1,Inf[You have %count% credits.",
-    "pay crypto"                     => "If you need to pay with crypto, contact @TgDBSupport (min 15€)",
+    "pay crypto"                     => "If you need to pay with crypto, contact @tgdb_support (min 15€)",
     "send username for where"        => "Send username or id of whoever you want to search for:",
     "0 credits"                      => "You don't have enough credits to search.\nYou have 0 credits.\nBuy them with /credits",
     "not enough credits"             => "{0}You don't have enough credits to search.\nYou need %price% credits, but you have no credits.\nBuy them with /credits
@@ -185,7 +185,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "send username for search" => "Write me what you want to search.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -193,15 +193,15 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
 
-    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
-    "lang set ua" => "Мову змінено на українську.",
+    "lang uk"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set uk" => "Мову змінено на українську.",
 
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
-    "lang set cn" => "语言改为中文。",
+    "lang zh"     => "\u{1F1E8}\u{1F1F3} 中国",
+    "lang set zh" => "语言改为中文。",
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
-    
+
     // Add below the language you are translating as above
 
 

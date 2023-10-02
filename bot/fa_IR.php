@@ -190,11 +190,11 @@ For any info or doubts join @tgdbchat",*/
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
 
-    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
-    "lang set ua" => "Мову змінено на українську.",
+    "lang uk"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set uk" => "Мову змінено на українську.",
 
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
-    "lang set cn" => "语言改为中文。",
+    "lang zh"     => "\u{1F1E8}\u{1F1F3} 中国",
+    "lang set zh" => "语言改为中文。",
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",

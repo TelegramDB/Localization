@@ -65,14 +65,14 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 <b>Tieni presente che</b> i risultati possono includere anche gruppi in cui l'utente era presente in passato, quindi ricorda che un utente potrebbe essere stato aggiunto a quel gruppo da un'altra persona senza la sua approvazione.",
 
     "terms"                          => "Termini e condizioni",
-    "support"                        => "Unisciti a @tgdbchat o scrivi a @TgDBSupport per il supporto.",
+    "support"                        => "Unisciti a @tgdbchat o scrivi a @tgdb_support per il supporto.",
     "block"                          => "Il tuo account è stato temporaneamente bloccato. Per essere sbloccato, contatta il supporto con /support.",
     "flood warn"                     => "Stai mandando troppi messaggi. Si prega di attendere un po' prima di inviarne altri.",
     "where header"                   => "Risultati di ",
     "btn credits"                    => "%credits% %bonus% crediti - %price%€",
     "btn pay crypto"                 => "Paga con criptovalute",
     "you have x credits"             => "{0}Non hai crediti.|{1}Hai %count% credito.|]1,Inf[Hai %count% crediti.",
-    "pay crypto"                     => "Se hai bisogno di pagare con le crypto, contatta @TgDBSupport (min 15€)",
+    "pay crypto"                     => "Se hai bisogno di pagare con le crypto, contatta @tgdb_support (min 15€)",
     "send username for where"        => "Manda l'username o l'id della persona che vuoi cercare:",
     "0 credits"                      => "Non hai abbastanza crediti per fare la ricerca.\nHai 0 crediti.\nPuoi comprarli con /credits",
     "not enough credits"             => "{0}Non hai abbastanza crediti per fare la ricerca.\nHai bisogno di %price% crediti, ma non hai crediti.\nPuoi comprarli con /credits
@@ -186,7 +186,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "send username for search" => "Scrivimi quello che vuoi cercare.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -194,15 +194,14 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
 
-    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
-    "lang set ua" => "Мову змінено на українську.",
+    "lang uk"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set uk" => "Мову змінено на українську.",
 
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
-    "lang set cn" => "语言改为中文。",
+    "lang zh"     => "\u{1F1E8}\u{1F1F3} 中国",
+    "lang set zh" => "语言改为中文。",
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
-
     // Add below the language you are translating as above
 
 

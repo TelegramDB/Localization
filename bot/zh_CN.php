@@ -51,14 +51,14 @@ return [
 <b>请注意</b> 结果还可能包括用户过去曾参加过的群组，因此必须注意，用户可能已在未经其批准的情况下被另一个人添加到该群组中。",
 
     "terms"                          => "条件和协议",
-    "support"                        => "加入 @tgdbchat 或者写给 @TgDBSupport 以寻求支持。",
+    "support"                        => "加入 @tgdbchat 或者写给 @tgdb_support 以寻求支持。",
     "block"                          => "您的帐户被暂时冻结。若要解冻，使用 /support 联系技术支持。",
     "flood warn"                     => "你发送的信息太多了，请稍后再发。",
     "where header"                   => "结果为 ",
     "btn credits"                    => "%credits% %bonus% 积分 - %price%€ （欧元）",
     "btn pay crypto"                 => "使用加密货币支付",
     "you have x credits"             => "{0}你没有积分.|{1}你有 %count% 个积分.|]1,Inf[你有 %count% 个积分.",
-    "pay crypto"                     => "如果你需要用加密货币支付, 联系 @TgDBSupport (最少 15€ 欧元)",
+    "pay crypto"                     => "如果你需要用加密货币支付, 联系 @tgdb_support (最少 15€ 欧元)",
     "send username for where"        => "发送你想搜索的用户名或id:",
     "0 credits"                      => "你没有足够的积分去搜索。\n你有 0 个积分.\n用 /credits 买它",
     "not enough credits"             => "{0}你没有足够的积分去搜索。\n你需要 %price% 积分, 但是你没有。\n用 /credits 买它
@@ -171,7 +171,7 @@ return [
     "send username for search" => "写给我你要找的东西",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -179,15 +179,14 @@ return [
     "lang it"     => "\u{1F1EE}\u{1F1F9} Italiano",
     "lang set it" => "Lingua cambiata in Italiano.",
 
-    "lang ua"     => "\u{1F1FA}\u{1F1E6} Українська",
-    "lang set ua" => "Мову змінено на українську.",
+    "lang uk"     => "\u{1F1FA}\u{1F1E6} Українська",
+    "lang set uk" => "Мову змінено на українську.",
 
-    "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
-    "lang set cn" => "语言改为中文。",
+    "lang zh"     => "\u{1F1E8}\u{1F1F3} 中国",
+    "lang set zh" => "语言改为中文。",
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
-
     // Add below the language you are translating as above
 
 
