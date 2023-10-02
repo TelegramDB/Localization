@@ -71,15 +71,13 @@ For any info or doubts join @tgdbchat",*/
     "where header"                   => "نتایج برای ",
     "btn credits"                    => "%credits% %bonus% credits - %price%€",
     "btn pay crypto"                 => "پرداخت با ارزهای رمزنگاری شده",
-    "you have x credits"             => "{0}You have no credits.|{1}You have %count% credit.|]1,Inf[You have %count% credits.",
+    "you have x credits"             => "شما %count% اعتبار دارید.",
     "pay crypto"                     => "اگر نیاز به پرداخت با رمزارز ها دارید ، با @tgdbsupport تماس بگیرید (حداقل 15€)",
     "send username for where"        => "نام کاربری یا شناسه هر کسی که می خواهید جستجو کنید را ارسال کنید:",
-    "0 credits"                      => "شما اعتبار کافی برای جستجو ندارید.\شما 0 اعتبار دارید.\ آنها را با /credits خریداری کنید",
-    "not enough credits"             => "{0}You don't have enough credits to search.\nYou need %price% credits, but you have no credits.\nBuy them with /credits
-|{1}You don't have enough credits to search.\nYou need %price% credits, but you only have %count% credit.\nBuy them with /credits
-|]1,Inf[You don't have enough credits to search.\nYou need %price% credits, but you only have %count% credits.\nBuy them with /credits",
+    "0 credits"                      => "شما اعتبار کافی برای جستجو ندارید.\nما 0 اعتبار دارید.\nآنها را با /credits خریداری کنید",
+    "not enough credits"             => "شما اعتبار کافی برای جستجو ندارید.\nما به %price% اعتبار نیاز دارید، اما فقط %count% اعتبار دارید.\nنها را با /credits بخرید.",
     "click to continue"              => "برای ادامه مطلب اینجا کلیک کنید",
-    "where results"                  => "{1}This search will return you one group where the user has been.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%|]1,Inf[This search will return you %count% groups where the user has been.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
+    "where results"                  => "[این جستجو %count% گروه‌هایی را که کاربر در آنجا بوده است به شما برمی‌گرداند.\n\nکاربر: %user_title% %user_id%\nهزینه جستجو: %price%\nاعتبارات شما: %credits%،",
 
     // commands
     "command help"                   => "پیام کمک",
@@ -101,11 +99,11 @@ For any info or doubts join @tgdbchat",*/
     // credit transaction
     "transaction title"              => "%credits% TGDB اعتبار",
     "transaction description"        => "از این اعتبارات برای جستجوی پایگاه داده استفاده کنید",
-    "transaction success"            => "You have spent %credits_spend% credits on this search.\nYou have %credits_left% credits left.",
+    "transaction success"            => "شما %credits_spend% اعتبار را در این جستجو صرف کرده اید.\n شما %credits_left% اعتبار را دارید.",
     // payments (eur)
     "payment in progress"            => "پرداخت در حال انجام.. در انتظار پرداخت.",
     "payment cannot continue"        => "پرداخت نمی تواند ادامه یابد.",
-    "payment success"                => "پرداخت موفق.\شما %credits% اعتبارات را دریافت کرده اید.",
+    "payment success"                => "پرداخت موفق.\nما %credits% اعتبارات را دریافت کرده اید.",
 
     // errors
     "error no results"               => "نتیجه ای در مورد این جستجو یافت نشد.",
@@ -127,14 +125,14 @@ For any info or doubts join @tgdbchat",*/
     "error button expired"                  => "خطا ، دکمه منقضی شده است",
     "error button user invalid"             => "خطا ، دکمه ای که فشار دادید توسط یوتیوب تولید نشده است",
     "error transaction still in progress"   => "خطا ، عملیات هنوز در حال انجام است ، لطفا قبل از انجام سوالات دیگر صبر کنید تا تمام شود.\nIf مشکل همچنان ادامه دارد ، لطفا از طریق /support با پشتیبانی تماس بگیرید",
-    "error cant use credits"                => "خطا ، قادر به استفاده از اعتبارات نیست ، لطفا بعدا دوباره امتحان کنید.\if مشکل همچنان ادامه داشته باشد ، لطفا از طریق /support با پشتیبانی تماس بگیرید",
-    "error showing results"                 => "خطایی در نمایش نتایج وجود داشت ، اعتبارات شما بازپرداخت شد.\لطفا از طریق /support با پشتیبانی تماس بگیرید",
-    "error showing results account blocked" => "خطایی در نمایش نتایج وجود داشت ، اعتبارات شما بازپرداخت شد.\ متاسفانه ، این خطا خیلی زیاد رخ داده و حساب شما به طور موقت تعلیق شده است.\برای باز کردن مسدود شدن ، لطفا از طریق /support با پشتیبانی تماس بگیرید",
-    "error payment success no credits"      => "پرداخت موفق.\اما اعتبارات نمی توانستند اضافه شوند (%credits% credits).\ لطفا با پشتیبانی /support تماس بگیرید .",
-    "error contact support"                 => "یک خطا رخ داده است.\لطفا با پشتیبانی /support تماس بگیرید",
-    "error try later"                       => "یک خطا رخ داده است.\ لطفا بعدا دوباره امتحان کنید",
-    "error backend floodwait"               => "خطا ، backend مشغول است.\ لطفا بعدا دوباره امتحان کنید .",
-    "error timeout"                         => "خطا ، جستجو خیلی طول کشید ،بک اند ممکن است آفلاین باشد.\لطفا بعدا دوباره امتحان کنید.",
+    "error cant use credits"                => "خطا ، قادر به استفاده از اعتبارات نیست ، لطفا بعدا دوباره امتحان کنید.\nf مشکل همچنان ادامه داشته باشد ، لطفا از طریق /support با پشتیبانی تماس بگیرید",
+    "error showing results"                 => "خطایی در نمایش نتایج وجود داشت ، اعتبارات شما بازپرداخت شد.\nطفا از طریق /support با پشتیبانی تماس بگیرید",
+    "error showing results account blocked" => "خطایی در نمایش نتایج وجود داشت ، اعتبارات شما بازپرداخت شد.\nمتاسفانه ، این خطا خیلی زیاد رخ داده و حساب شما به طور موقت تعلیق شده است.\nرای باز کردن مسدود شدن ، لطفا از طریق /support با پشتیبانی تماس بگیرید",
+    "error payment success no credits"      => "پرداخت موفق.\nما اعتبارات نمی توانستند اضافه شوند (%credits% credits).\nلطفا با پشتیبانی /support تماس بگیرید .",
+    "error contact support"                 => "یک خطا رخ داده است.\nطفا با پشتیبانی /support تماس بگیرید",
+    "error try later"                       => "یک خطا رخ داده است.\nلطفا بعدا دوباره امتحان کنید",
+    "error backend floodwait"               => "خطا ، backend مشغول است.\nلطفا بعدا دوباره امتحان کنید .",
+    "error timeout"                         => "خطا ، جستجو خیلی طول کشید ،بک اند ممکن است آفلاین باشد.\nطفا بعدا دوباره امتحان کنید.",
 
 
     "query already done"                        => "<b>شما قبلاً همین جستجو را چندی پیش انجام دادید.</b>\nآیا مطمئن هستید که می‌خواهید ادامه دهید؟،",
@@ -180,7 +178,7 @@ For any info or doubts join @tgdbchat",*/
     "hidden forward" => "عدم توانایی در نمایش اطلاعات پیام ارسال شده ، تنظیمات حریم خصوصی کاربر ممکن است از آن جلوگیری کند.",
 
     "search header1"           => "<b>جستجو:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}بدون نتیجه.|{1}%count%%plus% نتایج:|]1,Inf[%count%%plus% نتایج:",
+    "search header2"           => "%count%%plus% نتایج:",
     "send username for search" => "آنچه را که می خواهید جستجو کنید بنویسید.",
 
     // language
@@ -222,7 +220,7 @@ For any info or doubts join @tgdbchat",*/
     "command not available for chat" => "فرمان برای کسانی که به عنوان یک کانال یا به عنوان یک ادمین ناشناس می نویسند در دسترس نیست.",
 
     "search more"            => "نمایش نتایج بیشتر",
-    "search pre"             => "This search will give you %n_results% results\n\nQuery: %query%\nSearch cost: %price%\nYour credits: %credits%",
+    "search pre"             => "این جستجو %n_results% نتیجه را به شما می دهد\n\nQuery: %query%\nSearch cost: %price%\nاعتبارات شما: %credits%",
     "search more no credits" => "برای دریافت نتایج بیشتر به اعتبار نیاز دارید.\nآنها را با /credits بخرید",
 
     "start invalid" => "پارامتر اشتباه",
