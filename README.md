@@ -12,6 +12,7 @@ You can help us translate these guidelines, or localize the bot and the site in 
 ### Translations made by external contributors
 - 🇺🇦 Ukrainian, thanks to [@giulianbiolo_01](https://t.me/giulianbiolo_01)
 - 🇨🇳 Chinese, thanks to [@happyforyou0](https://t.me/happyforyou0)
+- 🇮🇷 Persian, thanks to [@Sirfalcon](https://t.me/Sirfalcon)
 
 ### Unmaintained
  - _none_
