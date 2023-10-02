@@ -199,6 +199,10 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 
     "lang cn"     => "\u{1F1E8}\u{1F1F3} 中国",
     "lang set cn" => "语言改为中文。",
+
+    "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
+    "lang set fa" => "زبان به فارسی تغییر نمود.",
+
     // Add below the language you are translating as above
 
 
