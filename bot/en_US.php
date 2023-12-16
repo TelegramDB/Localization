@@ -11,9 +11,11 @@ Use our inline queries to get user details from usernames and IDs.
 /search [name] - <code>Search for groups and channel</code>
 /group [name] - <code>Search for groups</code>  
 /channel [name] - <code>Search for channels</code>
+/bot [name] - <code>Search for bots</code>
 
 \u{1F4B2} <b>Premium commands:</b>
 /where [id or username] - <code>Find groups in which a user is present</code>
+/members [id or username] - <code>Find members of a group</code>
 /credits - <code>Buy credits</code>
 
 \u{2139} <b>Other commands:</b>
@@ -59,6 +61,12 @@ Example:
 100 results cost 5 credits
 3 base price + 2 (100/40 = 2.5)
 
+The price for the /members command is calculated with this formula: <code>3+0.6x^0.8</code>.
+X is the number of results, and is rounded down.
+
+Example:
+100 achievements cost 26 credits
+
 <b>How can I delete a chat from the bot results?</b>
 Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</code>\" as the subject, provide the chat id/username, and a short explanation of why the chat must be removed.
 
@@ -97,6 +105,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "command cancel"                 => "Cancel current operation",
     "command language"               => "Choose the language",
     "command referral"               => "Referral link",
+    "command members"                => "Find members of a group",
 
     // credit transaction
     "transaction title"              => "%credits% TGDB credits",
@@ -249,4 +258,13 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "temp_not_available" => "This command is not available at the moment.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
 
     "search no free uses" => "You have exhausted your daily free searches. You can purchase credits to unlock more searches.",
+
+    "csv caption info" => "You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.",
+    "send username for members"        => "Send username or id of group you want to search for:",
+    "members results"                  => "{1}This search will return you one group member.\n\nGroup: %group_title% %group_id%\nSearch cost: %price%\nYour credits: %credits%|]1,Inf[This search will return you up to %count% group members.\n\nGroup: %group_title% %group_id%\nMaximum search cost: %price%\nYour credits: %credits%",
+    "error members search only public groups" => "You can only search for members of public groups.",
+    "error members search only groups" => "You can only search for members of groups.",
+    "error members no results"         => "Sorry, your search returned no members for this group.",
+    "floodwait members"                => "Sorry, you made too many requests, please try again later.",
+    "btn members" => "%members% members - %price% credits",
 ];

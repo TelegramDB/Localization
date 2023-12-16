@@ -11,9 +11,11 @@ return [
 /search [name] - <code>جستجو برای کانال ها و گروه ها</code>
 /group [name] - <code>چستجو برای گروه ها</code>  
 /channel [name] - <code>جستجو برای کانال ها</code>
+/bot [name] - <code>جستجو برای ربات ها</code>
 
 \u{1F4B2} <b>:دستورات ویژه</b>
 /where [id or username] - <code>پیدا کردن گروه هایی که کاربر در آنها حضور دارد</code>
+/members [id or username] - <code>نمایش اعضای گروه</code>
 /credits - <code>خرید اعتبار</code>
 
 \u{2139} <b>:دیگر دستورات</b>
@@ -59,6 +61,12 @@ For any info or doubts join @tgdbchat",*/
 صد نتیجه ، 5 اعتبار هزینه دارد 
 سه اعتبار قیمت پایه + 2 (100/40 = 2.5)
 
+قیمت دستور /members با این فرمول محاسبه می شود: <code>3+0.6x^0.8</code>.
+X تعداد نتایج است و به پایین گرد می شود.
+
+مثال:
+100 دستاورد 26 اعتبار هزینه دارد
+
 <b>چگونه می توانم یک گفت و گو را از نتایج ربات حذف کنم؟</b>
 ارسال ایمیل به webmaster@telegramdb.org ، با \"<code>درخواست حذف چت</code>\" به عنوان موضوع ، شناسه چت/نام کاربری را ارائه دهید و توضیح کوتاهی در مورد اینکه چرا چت باید حذف شود.
 
@@ -95,6 +103,7 @@ For any info or doubts join @tgdbchat",*/
     "command cancel"                 => "لغو عملیات فعلی",
     "command language"               => "انتخاب زبان",
     "command referral"               => "رفرال لینک",
+    "command members"                => "نمایش اعضای گروه",
 
     // credit transaction
     "transaction title"              => "%credits% TGDB اعتبار",
@@ -246,4 +255,13 @@ For any info or doubts join @tgdbchat",*/
     "temp_not_available" => "این دستور در حال حاضر در دسترس نیست.\n\nاگر می‌خواهید از زمان عرضه مجدد مطلع شوید، به کانال ما بپیوندید:\nhttps://t.me/tgdatabase",
 
     "search no free uses" => "شما جستجوهای رایگان روزانه خود را تمام کرده اید. برای باز کردن قفل جستجوهای بیشتر می توانید اعتبار خریداری کنید.",
+
+    "csv caption info" => "می‌توانید این فایل را به‌عنوان یک متن، صفحه‌گسترده باز کنید یا می‌توانید با Import → Import an Exported Table آن را به Maltego وارد کنید.",
+    "send username for members"        => "نام کاربری یا شناسه گروه را ارسال کنید:",
+    "members results"                  => "{1}این جستجو یک عضو گروه را به شما برمی گرداند.\n\nگروه: %group_title% %group_id%\nهزینه جستجو: %price%\nاعتبارات شما: %credits%|]1,Inf[این جستجو شما را به %count% اعضای گروه.\n\nگروه: %group_title% %group_id%\nحداکثر هزینه جستجو: %price%\nاعتبارات شما: %credits%",
+    "error members search only public groups" => "شما فقط می‌توانید در گروه‌های عمومی جستجو کنید.",
+    "error members search only groups" => "شما فقط می‌توانید در گروه‌ها جستجو کنید.",
+    "error members no results"         => "متاسفم، جستجوی شما نتیجه‌ای نداشت.",
+    "floodwait members"                => "با عرض پوزش، شما درخواست های زیادی کردید، لطفاً بعداً دوباره امتحان کنید.",
+    "btn members" => "%members% اعضا - %price% اعتبار",
 ];

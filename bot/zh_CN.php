@@ -11,9 +11,11 @@ return [
 /search [name] - <code>搜索群组和频道</code>
 /group [name] - <code>搜索群组</code>  
 /channel [name] - <code>搜索频道</code>
+/bot [name] - <code>搜索机器人</code>
 
 \u{1F4B2} <b>高级命令:</b>
 /where [id或username] - <code>查找用户所在的群组</code>
+/members [id或username] - <code>查看群组成员</code>
 /credits - <code>购买积分</code>
 
 \u{2139} <b>其他命令:</b>
@@ -44,6 +46,12 @@ return [
 示例:
 100 结果需要 5 个积分
 3 基础价格 + 2 (100/40 = 2.5)
+
+/members 命令的价格使用以下公式计算：<code>3+0.6x^0.8</code>。
+X 是结果数，向下舍入。
+
+例子：
+100 个成就需要 26 个学分
 
 <b>我如何从机器人结果中删除一个会话?</b>
 发送电子邮件给网站管理员@telegramdb.org, 用 \"<code>删除会话请求</code>\" 作为主题, 提供会话 id/用户名, 和一个简短的解释为什么聊天必须删除。
@@ -83,6 +91,7 @@ return [
     "command cancel"                 => "取消当前操作",
     "command language"               => "选择语言",
     "command referral"               => "推荐链接",
+    "command members"                => "查看群组成员",
 
     // 信用交易
     "transaction title"              => "%credits% TGDB 积分",
@@ -221,7 +230,7 @@ return [
     "ref_already_created" => "您已经创建了推荐链接。",
     "ref_had_credits"     => "已经使用机器人后，您无法兑换此推荐，但您可以用您的推荐邀请朋友，只要点击 /referral 然后发给他们链接。",
     "ref_promo_finished"  => "对不起，促销活动已经结束，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
-    "ref_promo_pay_ok"    => "您已经成功兑换了推荐， %credits% 积分将添加到您的首次购买中。",
+    "ref_promo_pay_ok"    => "您已经成功兑换了推荐，%credits% 积分将添加到您的首次购买中。",
     "ref_lock"            => "您已经使用了太多推荐链接，请稍后再试。",
     "ref_voip"            => "我们发现您在使用二级账户兑换推荐。",
 
@@ -232,4 +241,13 @@ return [
     "ref_error_generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
     "search no free uses" => "你已经用完了你的每日免费搜索。你可以购买点数来解锁更多的搜索。",
+
+    "csv caption info" => "您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。",
+    "send username for members"        => "发送你想搜索的用户名或id:",
+    "members results"                  => "{1}该搜索将返回该组中的一个用户。\n\n用户: %group_title% %group_id%\n搜索花费: %price%\n你的积分: %credits%|]1,Inf[此搜索将返回最多 %count% 个群组成员。\n\n用户: %group_title% %group_id%\n最大搜索成本: %price%\n你的积分: %credits%",
+    "error members search only public groups" => "你只能搜索公开群组的成员。",
+    "error members search only groups" => "你只能搜索群组的成员。",
+    "error members no results"         => "对不起，您的搜索没有结果。",
+    "floodwait members"                => "抱歉，您的请求过多，请稍后重试。",
+    "btn members" => "%members% 个成员 - %price% 积分",
 ];

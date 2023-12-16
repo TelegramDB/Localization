@@ -11,9 +11,11 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 /search [nome] - <code>Cerca gruppi e canali</code>
 /group [nome] - <code>Cerca gruppi</code>
 /channel [nome] - <code>Cerca canali</code>
+/bot [nome] - <code>Cerca bot</code>
 
 \u{1F4B2} <b>Comandi premium:</b>
 /where [id o username] - <code>Cerca i gruppi di un utente</code>
+/members [id o username] - <code>Ottieni la lista di membri di un gruppo</code>
 /credits - <code>Compra crediti</code>
 
 \u{2139} <b>Altri comandi:</b>
@@ -59,6 +61,12 @@ Esempio:
 100 risultati costano 5 crediti
 3 prezzo base + 2 (100/40 = 2.5)
 
+Il prezzo per il comando /members è calcolato con questa formula: <code>3+0.6x^0.8</code>.
+X è il numero di risultati, e viene approssimato per difetto.
+
+Esempio:
+100 risultati costano 26 crediti
+
 <b>Come posso richiedere l'eliminazione di una chat dal bot?</b>
 Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>chat deletion request</code>\", fornendo l'id/username della chat e una breve spiegazione del motivo per cui la chat debba essere rimossa.
 
@@ -97,6 +105,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "command cancel"                 => "Annulla il comando",
     "command language"               => "Scegli la lingua",
     "command referral"               => "Link di invito",
+    "command members"                => "Ottieni la lista di membri di un gruppo",
 
     // credit transaction
     "transaction title"              => "%credits% TGDB crediti",
@@ -247,4 +256,13 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "ref_error_generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
 
     "search no free uses" => "Hai esaurito le tue ricerche gratuite giornaliere. Puoi acquistare dei crediti per sbloccare più ricerche.",
+
+    "csv caption info" => "È possibile aprire questo file come testo, foglio di calcolo, oppure importarlo in Maltego con Importa → Importa una tabella esportata.",
+    "send username for members"        => "Manda l'username o l'id del gruppo che vuoi cercare:",
+    "members results"                  => "{1}Questa ricerca ti restituirà un utente del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%|]1,Inf[Questa ricerca ti restituirà fino a %count% utenti del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto massimo ricerca: %price%\nI tuoi crediti: %credits%",
+    "error members search only public groups" => "Puoi cercare solo utenti di gruppi pubblici.",
+    "error members search only groups" => "Puoi cercare solo utenti di gruppi.",
+    "error members no results"         => "Spiacenti, la ricerca non ha trovato utenti per questo gruppo.",
+    "floodwait members"                => "Spiacenti, hai fatto troppe richieste, riprova più tardi.",
+    "btn members" => "%members% membri - %price% crediti",
 ];
