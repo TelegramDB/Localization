@@ -2,7 +2,7 @@
 return [
     "start" => "\u{1F44B} <i>欢迎来到TelegramDB搜索机器人。</i>
     
-这个机器人可以让你找到公共频道和群组，并通过不断更新的数据库查看用户正在或已经参加的公共聊天记录 <b>拥有2亿多聊天记录和6亿多用户！</b>。
+这个机器人可以让你找到公共频道和群组，并通过不断更新的数据库查看用户正在或已经参加的公共聊天记录 <b>拥有2亿多聊天记录和9亿多用户！</b>。
 
 使用我们的内联查询，从用户名和ID中获取用户详情。
 
@@ -16,6 +16,7 @@ return [
 \u{1F4B2} <b>高级命令:</b>
 /where [id或username] - <code>查找用户所在的群组</code>
 /members [id或username] - <code>查看群组成员</code>
+/near [id或username] - <code>查找用户附近的组（使用常用组）</code>
 /credits - <code>购买积分</code>
 
 \u{2139} <b>其他命令:</b>
@@ -37,7 +38,12 @@ return [
 <b>你有多少数据?</b>
 点击 https://telegramdb.org/stats 去查看最新的数据.
 
-<b>多少钱？</b>
+<b>附近是如何工作的？</b>
+它获取搜索用户所有群组的所有成员列表，并为每个用户分配一个分数。
+用户出现的群组越多，得分就越高。
+如果群组规模较小，得分就会比大型群组高。
+
+<b>费用是多少？</b>
 在付费查看结果之前，机器人会告诉你有多少结果，以及它需要多少钱。
 
 /where 命令的基础价格为 <b>3 积分</b>.
@@ -92,6 +98,7 @@ X 是结果数，向下舍入。
     "command language"               => "选择语言",
     "command referral"               => "推荐链接",
     "command members"                => "查看群组成员",
+    "command near"                   => "查找用户附近的组",
 
     // 信用交易
     "transaction title"              => "%credits% TGDB 积分",
@@ -180,7 +187,7 @@ X 是结果数，向下舍入。
     "send username for search" => "写给我你要找的东西",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -196,6 +203,10 @@ X 是结果数，向下舍入。
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
+
+    "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
+    "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
     // Add below the language you are translating as above
 
 
@@ -223,31 +234,31 @@ X 是结果数，向下舍入。
     "start invalid" => "不正确的参数",
 
 
-    "ref_invalid"         => "您尝试使用推荐无效。",
-    "ref_self"            => "您不能使用自己的推荐链接。",
-    "ref_already_used"    => "您已经使用了推荐链接。",
-    "ref_promo_max_usage" => "此推荐已被太多人使用，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
-    "ref_already_created" => "您已经创建了推荐链接。",
-    "ref_had_credits"     => "已经使用机器人后，您无法兑换此推荐，但您可以用您的推荐邀请朋友，只要点击 /referral 然后发给他们链接。",
-    "ref_promo_finished"  => "对不起，促销活动已经结束，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
-    "ref_promo_pay_ok"    => "您已经成功兑换了推荐，%credits% 积分将添加到您的首次购买中。",
-    "ref_lock"            => "您已经使用了太多推荐链接，请稍后再试。",
-    "ref_voip"            => "我们发现您在使用二级账户兑换推荐。",
+    "ref invalid"         => "您尝试使用推荐无效。",
+    "ref self"            => "您不能使用自己的推荐链接。",
+    "ref already used"    => "您已经使用了推荐链接。",
+    "ref promo max usage" => "此推荐已被太多人使用，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
+    "ref already created" => "您已经创建了推荐链接。",
+    "ref had credits"     => "已经使用机器人后，您无法兑换此推荐，但您可以用您的推荐邀请朋友，只要点击 /referral 然后发给他们链接。",
+    "ref promo finished"  => "对不起，促销活动已经结束，但是，在您通过此推荐首次购买时，您可以获得 %credits% 免费积分。",
+    "ref promo pay ok"    => "您已经成功兑换了推荐，%credits% 积分将添加到您的首次购买中。",
+    "ref lock"            => "您已经使用了太多推荐链接，请稍后再试。",
+    "ref voip"            => "我们发现您在使用二级账户兑换推荐。",
 
-    "ref_ok_redeemed"     => "您已经正确的兑换了推荐，%credits% 积分将被添加您",
-    "ref_ok_used"         => "一个用户使用了您的推荐, %credits% 积分将被添加给您",
-    "ref_ok_error_api"    => "推荐有效，但无法添加积分，请稍后重试，如果错误仍然存在，请通过 /support 联系技术支持。",
-    "ref_ok_generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
-    "ref_error_generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
+    "ref ok redeemed"     => "您已经正确的兑换了推荐，%credits% 积分将被添加您",
+    "ref ok used"         => "一个用户使用了您的推荐, %credits% 积分将被添加给您",
+    "ref ok error api"    => "推荐有效，但无法添加积分，请稍后重试，如果错误仍然存在，请通过 /support 联系技术支持。",
+    "ref ok generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
+    "ref error generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
     "search no free uses" => "你已经用完了你的每日免费搜索。你可以购买点数来解锁更多的搜索。",
 
-    "csv caption info" => "您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。",
-    "send username for members"        => "发送你想搜索的用户名或id:",
-    "members results"                  => "{1}该搜索将返回该组中的一个用户。\n\n用户: %group_title% %group_id%\n搜索花费: %price%\n你的积分: %credits%|]1,Inf[此搜索将返回最多 %count% 个群组成员。\n\n用户: %group_title% %group_id%\n最大搜索成本: %price%\n你的积分: %credits%",
+    "csv caption info"                        => "您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。",
+    "send username for members"               => "发送你想搜索的用户名或id:",
+    "members results"                         => "{1}该搜索将返回该组中的一个用户。\n\n用户: %group_title% %group_id%\n搜索花费: %price%\n你的积分: %credits%|]1,Inf[此搜索将返回最多 %count% 个群组成员。\n\n用户: %group_title% %group_id%\n最大搜索成本: %price%\n你的积分: %credits%",
     "error members search only public groups" => "你只能搜索公开群组的成员。",
-    "error members search only groups" => "你只能搜索群组的成员。",
-    "error members no results"         => "对不起，您的搜索没有结果。",
-    "floodwait members"                => "抱歉，您的请求过多，请稍后重试。",
-    "btn members" => "%members% 个成员 - %price% 积分",
+    "error members search only groups"        => "你只能搜索群组的成员。",
+    "error members no results"                => "对不起，您的搜索没有结果。",
+    "floodwait members"                       => "抱歉，您的请求过多，请稍后重试。",
+    "btn members"                             => "%members% 个成员 - %price% 积分",
 ];

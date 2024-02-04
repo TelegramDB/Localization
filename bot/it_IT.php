@@ -2,7 +2,7 @@
 return [
     "start" => "\u{1F44B} Benvenuto su TelegramDB Search Bot.
     
-Questo bot ti consente di cercare canali e gruppi pubblici, e di vedere in quali chat pubbliche si trova o è stato un utente, utilizzando un database costantemente aggiornato con <b>oltre 200 milioni di chat e oltre 600 milioni di utenti!</b>
+Questo bot ti consente di cercare canali e gruppi pubblici, e di vedere in quali chat pubbliche si trova o è stato un utente, utilizzando un database costantemente aggiornato con <b>oltre 250 milioni di chat e oltre 900 milioni di utenti!</b>
 
 Usa il bot in modalità inline per ottenere informazioni di utente tramite username o ID.
 
@@ -16,6 +16,7 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 \u{1F4B2} <b>Comandi premium:</b>
 /where [id o username] - <code>Cerca i gruppi di un utente</code>
 /members [id o username] - <code>Ottieni la lista di membri di un gruppo</code>
+/near [id o username] - <code>Ottieni la lista di utenti più vicina all'utente cercato (utilizza i gruppi in comune)</code>
 /credits - <code>Compra crediti</code>
 
 \u{2139} <b>Altri comandi:</b>
@@ -51,7 +52,12 @@ No, tenere traccia di tutti i gruppi di Telegram sarebbe impossibile: abbiamo so
 <b>Quanti dati avete?</b>
 Controlla https://telegramdb.org/stats per vedere gli ultimi dati.
 
-<b>Quanto costa?</b>
+<b>Come funziona il near?</b>
+Prende la lista di tutti i membri di tutti i gruppi dell'utente cercato e assegna uno score a ogni utente.
+In più gruppi appare un utente e più sale lo score.
+Se il gruppo è piccolo lo score ha più valore rispetto a un gruppo grosso.
+
+<b>Quanto costa il where?</b>
 Prima di pagare per vedere i risultati, il bot ti farà vedere quanti risultati ci sono e quanto costano.
 
 Il prezzo base per il comando /where è di <b>3 crediti</b>.
@@ -105,7 +111,8 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "command cancel"                 => "Annulla il comando",
     "command language"               => "Scegli la lingua",
     "command referral"               => "Link di invito",
-    "command members"                => "Ottieni la lista di membri di un gruppo",
+    "command members"                => "Cerca di membri di un gruppo",
+    "command near"                   => "Cerca gli utenti vicino a un utente",
 
     // credit transaction
     "transaction title"              => "%credits% TGDB crediti",
@@ -195,7 +202,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "send username for search" => "Scrivimi quello che vuoi cercare.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -211,6 +218,10 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
+
+    "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
+    "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
     // Add below the language you are translating as above
 
 
@@ -238,31 +249,39 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "start invalid" => "Parametro non corretto",
 
 
-    "ref_invalid"         => "Il referral che stai provando a usare non è valido.",
-    "ref_self"            => "Non puoi usare il tuo stesso referral.",
-    "ref_already_used"    => "Hai già utilizzato un referral, non puoi usarne altri.",
-    "ref_promo_max_usage" => "Questo referral è già stato usato da troppe persone, tuttavia, potrai ottenere %credits% crediti gratuiti, sul tuo primo acquisto grazie a questo referral.",
-    "ref_already_created" => "Hai già creato un tuo referral, non puoi riscattarne altri.",
-    "ref_had_credits"     => "Avendo già usato il bot, non puoi riscattare questo referral, ma puoi invitare un amico con il tuo referral, ti basterà fare /referral e inviargli il link.",
-    "ref_promo_finished"  => "Siamo spiacenti, ma la promo è terminata, tuttavia, potrai ottenere %credits% crediti gratuiti, sul tuo primo acquisto grazie a questo referral.",
-    "ref_promo_pay_ok"    => "Hai riscattato correttamente il referral, al tuo primo acquisto ti verranno aggiunti %credits% crediti.",
-    "ref_lock"            => "Stai usando troppi referral, riprova più tardi.",
-    "ref_voip"            => "Abbiamo rilevato che stai usando un account secondario per riscattare il referral.",
+    "ref invalid"         => "Il referral che stai provando a usare non è valido.",
+    "ref self"            => "Non puoi usare il tuo stesso referral.",
+    "ref already used"    => "Hai già utilizzato un referral, non puoi usarne altri.",
+    "ref promo max usage" => "Questo referral è già stato usato da troppe persone, tuttavia, potrai ottenere %credits% crediti gratuiti, sul tuo primo acquisto grazie a questo referral.",
+    "ref already created" => "Hai già creato un tuo referral, non puoi riscattarne altri.",
+    "ref had credits"     => "Avendo già usato il bot, non puoi riscattare questo referral, ma puoi invitare un amico con il tuo referral, ti basterà fare /referral e inviargli il link.",
+    "ref promo finished"  => "Siamo spiacenti, ma la promo è terminata, tuttavia, potrai ottenere %credits% crediti gratuiti, sul tuo primo acquisto grazie a questo referral.",
+    "ref promo pay ok"    => "Hai riscattato correttamente il referral, al tuo primo acquisto ti verranno aggiunti %credits% crediti.",
+    "ref lock"            => "Stai usando troppi referral, riprova più tardi.",
+    "ref voip"            => "Abbiamo rilevato che stai usando un account secondario per riscattare il referral.",
 
-    "ref_ok_redeemed"     => "Hai riscattato correttamente il referral, ti sono stati aggiunti %credits% crediti.",
-    "ref_ok_used"         => "Un utente ha usato il tuo referral, ti sono stati aggiunti %credits% crediti.",
-    "ref_ok_error_api"    => "Il referral è valido, ma non è stato possibile aggiungere i crediti, riprova più tardi, se l'errore persiste, contatta il supporto con /support",
-    "ref_ok_generated"    => "Il tuo referral è stato generato, invialo ai tuoi amici, e riceverete entrambi %credits% crediti quando l'invitato effettuerà il primo acquisto.\n\nLink di invito: https://t.me/%username%?start=%ref%",
-    "ref_error_generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
+    "ref ok redeemed"     => "Hai riscattato correttamente il referral, ti sono stati aggiunti %credits% crediti.",
+    "ref ok used"         => "Un utente ha usato il tuo referral, ti sono stati aggiunti %credits% crediti.",
+    "ref ok error api"    => "Il referral è valido, ma non è stato possibile aggiungere i crediti, riprova più tardi, se l'errore persiste, contatta il supporto con /support",
+    "ref ok generated"    => "Il tuo referral è stato generato, invialo ai tuoi amici, e riceverete entrambi %credits% crediti quando l'invitato effettuerà il primo acquisto.\n\nLink di invito: https://t.me/%username%?start=%ref%",
+    "ref error generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
 
     "search no free uses" => "Hai esaurito le tue ricerche gratuite giornaliere. Puoi acquistare dei crediti per sbloccare più ricerche.",
 
-    "csv caption info" => "È possibile aprire questo file come testo, foglio di calcolo, oppure importarlo in Maltego con Importa → Importa una tabella esportata.",
-    "send username for members"        => "Manda l'username o l'id del gruppo che vuoi cercare:",
-    "members results"                  => "{1}Questa ricerca ti restituirà un utente del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%|]1,Inf[Questa ricerca ti restituirà fino a %count% utenti del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto massimo ricerca: %price%\nI tuoi crediti: %credits%",
+    "csv caption info"                        => "È possibile aprire questo file come testo, foglio di calcolo, oppure importarlo in Maltego con Importa → Importa una tabella esportata.",
+    "send username for members"               => "Manda l'username o l'id del gruppo che vuoi cercare:",
+    "members results"                         => "{1}Questa ricerca ti restituirà un utente del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%|]1,Inf[Questa ricerca ti restituirà fino a %count% utenti del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto massimo ricerca: %price%\nI tuoi crediti: %credits%",
     "error members search only public groups" => "Puoi cercare solo utenti di gruppi pubblici.",
-    "error members search only groups" => "Puoi cercare solo utenti di gruppi.",
-    "error members no results"         => "Spiacenti, la ricerca non ha trovato utenti per questo gruppo.",
-    "floodwait members"                => "Spiacenti, hai fatto troppe richieste, riprova più tardi.",
-    "btn members" => "%members% membri - %price% crediti",
+    "error members search only groups"        => "Puoi cercare solo utenti di gruppi.",
+    "error members no results"                => "Spiacenti, la ricerca non ha trovato utenti per questo gruppo.",
+    "floodwait members"                       => "Spiacenti, hai fatto troppe richieste, riprova più tardi.",
+    "btn members"                             => "%members% membri - %price% crediti",
+
+    "near no groups" => "Non ci sono abbastanza gruppi per effettuare questo comando.",
+    "near time" => "Tempo impiegato: ",
+    "near results" => "Questa ricerca cercherà in %count% gruppi in cui è/è stato l'utente.\n\nUtente: %user_title% %user_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
+    "near wait" => "Attendi l'esecuzione del comando, ci potrebbe volere qualche minuto...",
+    "near not accurate" => "Sono stati trovati pochi gruppi per questo utente, potrebbe mostrare risultati poco accurati!",
+    "error near max commands" => "Questo comando è in uso da troppi utenti, riprova tra pochi minuti.",
+    "error near max commands from same user" => "Questo comando è limitato; attendi che finisca l'esecuzione del precedente.",
 ];

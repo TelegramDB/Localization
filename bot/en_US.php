@@ -2,7 +2,7 @@
 return [
     "start" => "\u{1F44B} <i>Welcome to TelegramDB Search Bot.</i>
     
-This bot allows you to find public channels and groups, and see what public chats a user is in, or has been in, using a constantly updated database <b>with 200+ million chats and 600+ million users!</b>
+This bot allows you to find public channels and groups, and see what public chats a user is in, or has been in, using a constantly updated database <b>with 250+ million chats and 900+ million users!</b>
 
 Use our inline queries to get user details from usernames and IDs.
 
@@ -16,6 +16,7 @@ Use our inline queries to get user details from usernames and IDs.
 \u{1F4B2} <b>Premium commands:</b>
 /where [id or username] - <code>Find groups in which a user is present</code>
 /members [id or username] - <code>Find members of a group</code>
+/near [id or username] - <code>Find groups near a user (uses common groups)</code>
 /credits - <code>Buy credits</code>
 
 \u{2139} <b>Other commands:</b>
@@ -51,7 +52,12 @@ No, tracking all groups would be impossible: we have only a part of the <u>publi
 <b>How much data do you have?</b>
 Check https://telegramdb.org/stats to see the latest data.
 
-<b>How much does it cost?</b>
+<b>How does the near work?</b>
+It takes the list of all members of all groups of the searched user and assigns a score to each user.
+The more groups a user appears in, the higher the score goes up.
+If the group is small, the score has more value than in a large group.
+
+<b>How much does where cost?</b>
 Before paying to see the results, the bot will show you how many results are there, and how much does it cost.
 
 The base price for the /where command is <b>3 credits</b>.
@@ -106,6 +112,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "command language"               => "Choose the language",
     "command referral"               => "Referral link",
     "command members"                => "Find members of a group",
+    "command near"                   => "Find users near a user",
 
     // credit transaction
     "transaction title"              => "%credits% TGDB credits",
@@ -194,7 +201,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "send username for search" => "Write me what you want to search.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7}زبان را انتخاب کنید",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -210,6 +217,9 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 
     "lang fa"     => "\u{1F1EE}\u{1F1F7} فارسی",
     "lang set fa" => "زبان به فارسی تغییر نمود.",
+
+    "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
+    "lang set ar" => "تم تغيير اللغة إلى العربية.",
 
     // Add below the language you are translating as above
 
@@ -238,33 +248,41 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "start invalid" => "Incorrect parameter",
 
 
-    "ref_invalid"         => "The referral you are trying to use is invalid.",
-    "ref_self"            => "You can't use your own referral link.",
-    "ref_already_used"    => "You have already used a referral link.",
-    "ref_promo_max_usage" => "This referral has already been used by too many people, however, you can get %credits% free credits, on your first purchase through this referral.",
-    "ref_already_created" => "You have already created a referral link.",
-    "ref_had_credits"     => "Having already used the bot, you cannot redeem this referral, but you can invite a friend with your referral, just do /referral and send them the link.",
-    "ref_promo_finished"  => "Sorry, but the promo has ended, however, you can get %credits% free credits, on your first purchase through this referral.",
-    "ref_promo_pay_ok"    => "You have successfully redeemed the referral, %credits% credits will be added to your first purchase.",
-    "ref_lock"            => "You are using too many referrals, try again later.",
-    "ref_voip"            => "We detected that you are using a secondary account to redeem the referral.",
+    "ref invalid"         => "The referral you are trying to use is invalid.",
+    "ref self"            => "You can't use your own referral link.",
+    "ref already used"    => "You have already used a referral link.",
+    "ref promo max usage" => "This referral has already been used by too many people, however, you can get %credits% free credits, on your first purchase through this referral.",
+    "ref already created" => "You have already created a referral link.",
+    "ref had credits"     => "Having already used the bot, you cannot redeem this referral, but you can invite a friend with your referral, just do /referral and send them the link.",
+    "ref promo finished"  => "Sorry, but the promo has ended, however, you can get %credits% free credits, on your first purchase through this referral.",
+    "ref promo pay ok"    => "You have successfully redeemed the referral, %credits% credits will be added to your first purchase.",
+    "ref lock"            => "You are using too many referrals, try again later.",
+    "ref voip"            => "We detected that you are using a secondary account to redeem the referral.",
 
-    "ref_ok_redeemed"     => "You redeemed the referral correctly, %credits% credits were added.",
-    "ref_ok_used"         => "A user used your referral, %credits% credits were added to you.",
-    "ref_ok_error_api"    => "The referral is valid, but the credits could not be added, try again later, if the error persists, contact support with /support",
-    "ref_ok_generated"    => "Your referral has been generated, send it to your friends, and you will both receive %credits% credits when the invitee makes the first purchase.\n\nReferral link: https://t.me/%username%?start=%ref%",
-    "ref_error_generated" => "Sorry, but you cannot generate invitation links if you have never made a purchase.",
+    "ref ok redeemed"     => "You redeemed the referral correctly, %credits% credits were added.",
+    "ref ok used"         => "A user used your referral, %credits% credits were added to you.",
+    "ref ok error api"    => "The referral is valid, but the credits could not be added, try again later, if the error persists, contact support with /support",
+    "ref ok generated"    => "Your referral has been generated, send it to your friends, and you will both receive %credits% credits when the invitee makes the first purchase.\n\nReferral link: https://t.me/%username%?start=%ref%",
+    "ref error generated" => "Sorry, but you cannot generate invitation links if you have never made a purchase.",
 
-    "temp_not_available" => "This command is not available at the moment.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
+    "temp not available" => "This command is not available at the moment.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
 
     "search no free uses" => "You have exhausted your daily free searches. You can purchase credits to unlock more searches.",
 
-    "csv caption info" => "You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.",
-    "send username for members"        => "Send username or id of group you want to search for:",
-    "members results"                  => "{1}This search will return you one group member.\n\nGroup: %group_title% %group_id%\nSearch cost: %price%\nYour credits: %credits%|]1,Inf[This search will return you up to %count% group members.\n\nGroup: %group_title% %group_id%\nMaximum search cost: %price%\nYour credits: %credits%",
+    "csv caption info"                        => "You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.",
+    "send username for members"               => "Send username or id of group you want to search for:",
+    "members results"                         => "{1}This search will return you one group member.\n\nGroup: %group_title% %group_id%\nSearch cost: %price%\nYour credits: %credits%|]1,Inf[This search will return you up to %count% group members.\n\nGroup: %group_title% %group_id%\nMaximum search cost: %price%\nYour credits: %credits%",
     "error members search only public groups" => "You can only search for members of public groups.",
-    "error members search only groups" => "You can only search for members of groups.",
-    "error members no results"         => "Sorry, your search returned no members for this group.",
-    "floodwait members"                => "Sorry, you made too many requests, please try again later.",
-    "btn members" => "%members% members - %price% credits",
+    "error members search only groups"        => "You can only search for members of groups.",
+    "error members no results"                => "Sorry, your search returned no members for this group.",
+    "floodwait members"                       => "Sorry, you made too many requests, please try again later.",
+    "btn members"                             => "%members% members - %price% credits",
+
+    "near no groups" => "There are not enough groups to use this command.",
+    "near time" => "Load time: ",
+    "near results" => "This search will look in %count% groups in which the user is/was.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
+    "near wait" => "Wait for the execution of the command, it may take a few minutes....",
+    "near not accurate" => "Few groups were found for this user, may show inaccurate results!",
+    "error near max commands" => "This command is in use by too many users, try again in a few minutes.",
+    "error near max commands from same user" => "This command is limited; wait until it finishes executing the previous one.",
 ];
