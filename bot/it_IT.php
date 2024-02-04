@@ -284,4 +284,6 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "near not accurate" => "Sono stati trovati pochi gruppi per questo utente, potrebbe mostrare risultati poco accurati!",
     "error near max commands" => "Questo comando è in uso da troppi utenti, riprova tra pochi minuti.",
     "error near max commands from same user" => "Questo comando è limitato; attendi che finisca l'esecuzione del precedente.",
+
+    "command similar" => "Volevi fare %command%?",
 ];

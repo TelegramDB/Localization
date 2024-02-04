@@ -285,4 +285,6 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "near not accurate" => "Few groups were found for this user, may show inaccurate results!",
     "error near max commands" => "This command is in use by too many users, try again in a few minutes.",
     "error near max commands from same user" => "This command is limited; wait until it finishes executing the previous one.",
+
+    "command similar" => "Did you want to execute the %command% command?",
 ];
