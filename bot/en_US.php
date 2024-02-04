@@ -280,7 +280,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 
     "near no groups" => "There are not enough groups to use this command.",
     "near time" => "Load time: ",
-    "near results" => "This search will look in %count% groups in which the user is/was.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
+    "near results" => "This search will find users close to the user.\nNeighboring users will be calculated by %count% groups in which he/she is/has been.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
     "near wait" => "Wait for the execution of the command, it may take a few minutes....",
     "near not accurate" => "Few groups were found for this user, may show inaccurate results!",
     "error near max commands" => "This command is in use by too many users, try again in a few minutes.",

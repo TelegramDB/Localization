@@ -279,7 +279,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 
     "near no groups" => "Non ci sono abbastanza gruppi per effettuare questo comando.",
     "near time" => "Tempo impiegato: ",
-    "near results" => "Questa ricerca cercherà in %count% gruppi in cui è/è stato l'utente.\n\nUtente: %user_title% %user_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
+    "near results" => "Questa ricerca troverà gli utenti vicini all'utente.\nGli utenti vicini verranno calcolati tramite gli %count% gruppi in cui è/è stato.\n\nUtente: %user_title% %user_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
     "near wait" => "Attendi l'esecuzione del comando, ci potrebbe volere qualche minuto...",
     "near not accurate" => "Sono stati trovati pochi gruppi per questo utente, potrebbe mostrare risultati poco accurati!",
     "error near max commands" => "Questo comando è in uso da troppi utenti, riprova tra pochi minuti.",
