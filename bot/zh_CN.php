@@ -179,6 +179,7 @@ X 是结果数，向下舍入。
     "username"                                  => "用户名",
     "description"                               => "描述",
     "dc"                                        => "DC",
+    "members"                                   => "成员",
 
     "hidden forward" => "无法显示所转发邮件的信息，用户的隐私设置可能会阻止它。",
 
@@ -251,7 +252,7 @@ X 是结果数，向下舍入。
     "ref ok generated"    => "您的推荐已生成，请将其发送给您的朋友们，当受邀者进行第一次购买时，你们都会收到 %credits% 积分。\n\n推荐链接: https://t.me/%username%?start=%ref%",
     "ref error generated" => "抱歉，如果您从未购买过，则无法生成邀请链接。",
 
-    "search no free uses" => "你已经用完了你的每日免费搜索。你可以购买点数来解锁更多的搜索。",
+    "search no free uses" => "您已达到每日搜索上限。请使用 /support 联系技术支持以获取更多信息，或明天再试。",
 
     "csv caption info"                        => "您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。",
     "send username for members"               => "发送你想搜索的用户名或id:",
@@ -261,4 +262,19 @@ X 是结果数，向下舍入。
     "error members no results"                => "对不起，您的搜索没有结果。",
     "floodwait members"                       => "抱歉，您的请求过多，请稍后重试。",
     "btn members"                             => "%members% 个成员 - %price% 积分",
+
+    "near no groups"                         => "没有足够的组来使用此命令。",
+    "near time"                              => "加载时间：",
+    "near results"                           => "这种搜索会找到与用户相近的用户。\n邻近用户将按他/她所在/曾所在的组的 %count% 计算。\n\n用户： %user_title% %user_id%\n搜索成本：%price\n您的学分： %credits%",
+    "near results info"                      => "所谓 \"近 \"是指 Telegram 社区之间的虚拟距离，而不是用户之间的物理距离。",
+    "near wait"                              => "等待命令执行，可能需要几分钟时间",
+    "near not accurate"                      => "为该用户找到的组很少，可能会显示不准确的结果！",
+    "error near max commands"                => "太多用户正在使用此命令，请几分钟后再试。",
+    "error near max commands from same user" => "这条命令是有限制的，请等待它执行完前一条命令。",
+
+    "command similar" => "您想执行 %command% 命令吗？",
+
+    "footer where" => "用户是哪些组的成员？",
+    "footer near" => "附近有哪些用户？",
+    "footer members" => "成员有哪些？",
 ];

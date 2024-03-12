@@ -194,6 +194,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "username"                                  => "Username",
     "description"                               => "Descrizione",
     "dc"                                        => "DC",
+    "members"                                   => "Membri",
 
     "hidden forward" => "Impossibile mostrare le informazioni del messaggio inoltrato, le impostazioni della privacy del utente potrebbero impedirlo.",
 
@@ -266,24 +267,29 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "ref ok generated"    => "Il tuo referral è stato generato, invialo ai tuoi amici, e riceverete entrambi %credits% crediti quando l'invitato effettuerà il primo acquisto.\n\nLink di invito: https://t.me/%username%?start=%ref%",
     "ref error generated" => "Mi dispiace, ma non puoi generare link di invito se non hai mai effettuato un acquisto.",
 
-    "search no free uses" => "Hai esaurito le tue ricerche gratuite giornaliere. Puoi acquistare dei crediti per sbloccare più ricerche.",
+    "search no free uses" => "Hai esaurito le tue ricerche gratuite giornaliere. Contatta il supporto con /support per ulteriori informazioni o riprova domani.",
 
     "csv caption info"                        => "È possibile aprire questo file come testo, foglio di calcolo, oppure importarlo in Maltego con Importa → Importa una tabella esportata.",
     "send username for members"               => "Manda l'username o l'id del gruppo che vuoi cercare:",
     "members results"                         => "{1}Questa ricerca ti restituirà un utente del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%|]1,Inf[Questa ricerca ti restituirà fino a %count% utenti del gruppo.\n\nGruppo: %group_title% %group_id%\nCosto massimo ricerca: %price%\nI tuoi crediti: %credits%",
-    "error members search only public groups" => "Puoi cercare solo utenti di gruppi pubblici.",
-    "error members search only groups"        => "Puoi cercare solo utenti di gruppi.",
+    "error members search only public groups" => "Puoi cercare solo membri di un gruppo pubblico.",
+    "error members search only groups"        => "Puoi cercare solo membri di un gruppo.",
     "error members no results"                => "Spiacenti, la ricerca non ha trovato utenti per questo gruppo.",
     "floodwait members"                       => "Spiacenti, hai fatto troppe richieste, riprova più tardi.",
     "btn members"                             => "%members% membri - %price% crediti",
 
-    "near no groups" => "Non ci sono abbastanza gruppi per effettuare questo comando.",
-    "near time" => "Tempo impiegato: ",
-    "near results" => "Questa ricerca troverà gli utenti vicini all'utente.\nGli utenti vicini verranno calcolati tramite gli %count% gruppi in cui è/è stato.\n\nUtente: %user_title% %user_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
-    "near wait" => "Attendi l'esecuzione del comando, ci potrebbe volere qualche minuto...",
-    "near not accurate" => "Sono stati trovati pochi gruppi per questo utente, potrebbe mostrare risultati poco accurati!",
-    "error near max commands" => "Questo comando è in uso da troppi utenti, riprova tra pochi minuti.",
+    "near no groups"                         => "Non ci sono abbastanza gruppi per effettuare questo comando.",
+    "near time"                              => "Tempo impiegato: ",
+    "near results"                           => "Questa ricerca troverà gli utenti vicini all'utente.\nGli utenti vicini verranno calcolati tramite gli %count% gruppi in cui è/è stato.\n\nUtente: %user_title% %user_id%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
+    "near results info"                      => "Il termine vicino si riferisce a una distanza virtuale tra le community di Telegram, e non alla distanza fisica tra gli utenti",
+    "near wait"                              => "Attendi l'esecuzione del comando, ci potrebbe volere qualche minuto...",
+    "near not accurate"                      => "Sono stati trovati pochi gruppi per questo utente, potrebbe mostrare risultati poco accurati!",
+    "error near max commands"                => "Questo comando è in uso da troppi utenti, riprova tra pochi minuti.",
     "error near max commands from same user" => "Questo comando è limitato; attendi che finisca l'esecuzione del precedente.",
 
     "command similar" => "Volevi fare %command%?",
+
+    "footer where"   => "In che gruppi si trova?",
+    "footer near"    => "Quali sono gli utenti vicini?",
+    "footer members" => "Quali sono i membri?",
 ];

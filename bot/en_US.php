@@ -193,6 +193,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "username"                                  => "Username",
     "description"                               => "Description",
     "dc"                                        => "DC",
+    "members"                                   => "Members",
 
     "hidden forward" => "Unable to show info of the forwarded message, the user's privacy settings may prevent it.",
 
@@ -267,7 +268,7 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 
     "temp not available" => "This command is not available at the moment.\n\nIf you want to be notified when it will be available again, join our channel:\nhttps://t.me/tgdatabase",
 
-    "search no free uses" => "You have exhausted your daily free searches. You can purchase credits to unlock more searches.",
+    "search no free uses" => "You have reached the daily search limit. Contact support with /support for more information or try again tomorrow.",
 
     "csv caption info"                        => "You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.",
     "send username for members"               => "Send username or id of group you want to search for:",
@@ -278,13 +279,18 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "floodwait members"                       => "Sorry, you made too many requests, please try again later.",
     "btn members"                             => "%members% members - %price% credits",
 
-    "near no groups" => "There are not enough groups to use this command.",
-    "near time" => "Load time: ",
-    "near results" => "This search will find users close to the user.\nNeighboring users will be calculated by %count% groups in which he/she is/has been.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
-    "near wait" => "Wait for the execution of the command, it may take a few minutes....",
-    "near not accurate" => "Few groups were found for this user, may show inaccurate results!",
-    "error near max commands" => "This command is in use by too many users, try again in a few minutes.",
+    "near no groups"                         => "There are not enough groups to use this command.",
+    "near time"                              => "Load time: ",
+    "near results"                           => "This search will find users close to the user.\nNeighboring users will be calculated by %count% groups in which he/she is/has been.\n\nUser: %user_title% %user_id%\nSearch cost: %price%\nYour credits: %credits%",
+    "near results info"                      => "The term near refers to a virtual distance between Telegram communities, and not to the physical distance between users.",
+    "near wait"                              => "Wait for the execution of the command, it may take a few minutes...",
+    "near not accurate"                      => "Few groups were found for this user, may show inaccurate results!",
+    "error near max commands"                => "This command is in use by too many users, try again in a few minutes.",
     "error near max commands from same user" => "This command is limited; wait until it finishes executing the previous one.",
 
     "command similar" => "Did you want to execute the %command% command?",
+
+    "footer where"   => "What groups is the user a member of?",
+    "footer near"    => "Who are the nearby users?",
+    "footer members" => "Who are the members?",
 ];
