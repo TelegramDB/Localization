@@ -197,12 +197,13 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 
     "hidden forward" => "Unable to show info of the forwarded message, the user's privacy settings may prevent it.",
 
-    "search header1"           => "<b>Search:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}No result.|{1}%count%%plus% result:|]1,Inf[%count%%plus% results:",
-    "send username for search" => "Write me what you want to search.",
+    "search header1"               => "🔍 <code>%query%</code>",
+    "search header2"               => "{0}No result.|{1}%count% result|]1,Inf[about %total% results",
+    "search header2 without about" => "{0}No result.|{1}%count% result|]1,Inf[%total% results",
+    "send username for search"     => "Write me what you want to search.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك\n\u{1F1EB}\u{1F1F7} Choisissez votre langue",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -221,6 +222,9 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
 
     "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
     "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
+    "lang fr"     => "\u{1F1EB}\u{1F1F7} Français",
+    "lang set fr" => "La langue a été changée en français.",
 
     // Add below the language you are translating as above
 
@@ -293,4 +297,8 @@ Send an email to webmaster@telegramdb.org, with \"<code>chat deletion request</c
     "footer where"   => "What groups is the user a member of?",
     "footer near"    => "Who are the nearby users?",
     "footer members" => "Who are the members?",
+
+    "btn search"              => "%n_res% results - %price% credits",
+    "footer search truncated" => "The results have been truncated, to see the full results see the CSV file.",
+
 ];

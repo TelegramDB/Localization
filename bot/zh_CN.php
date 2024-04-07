@@ -183,12 +183,13 @@ X 是结果数，向下舍入。
 
     "hidden forward" => "无法显示所转发邮件的信息，用户的隐私设置可能会阻止它。",
 
-    "search header1"           => "<b>搜索:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}无结果.|{1}%count%%plus% 结果:|]1,Inf[%count%%plus% 结果:",
-    "send username for search" => "写给我你要找的东西",
+    "search header1"               => "🔍 <code>%query%</code>",
+    "search header2"               => "{0}没有结果。|{1}%count% 结果|]1,Inf[大约 %total% 结果",
+    "search header2 without about" => "{0}没有结果。|{1}%count% 结果|]1,Inf[%total% 结果",
+    "send username for search"     => "写给我你要找的东西",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك\n\u{1F1EB}\u{1F1F7} Choisissez votre langue",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -207,6 +208,9 @@ X 是结果数，向下舍入。
 
     "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
     "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
+    "lang fr"     => "\u{1F1EB}\u{1F1F7} Français",
+    "lang set fr" => "La langue a été changée en français.",
 
     // Add below the language you are translating as above
 
@@ -274,7 +278,11 @@ X 是结果数，向下舍入。
 
     "command similar" => "您想执行 %command% 命令吗？",
 
-    "footer where" => "用户是哪些组的成员？",
-    "footer near" => "附近有哪些用户？",
+    "footer where"   => "用户是哪些组的成员？",
+    "footer near"    => "附近有哪些用户？",
     "footer members" => "成员有哪些？",
+
+    "btn search"              => "%n_res% 结果 - %price% 积分",
+    "footer search truncated" => "结果已被截断，要查看完整结果，请参阅 CSV 文件。",
+
 ];

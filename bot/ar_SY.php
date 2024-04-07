@@ -202,13 +202,14 @@ X هو عدد النتائج، ويتم تقريبه لأقرب عدد صحيح 
 
     "hidden forward" => "غير قادر على عرض معلومات الرسالة المرسلة، قد تمنع إعدادات الخصوصية للمستخدم ذلك.",
 
-    "search header1"           => "<b>البحث:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}لا توجد نتيجة.|{1}%count%%plus% نتيجة:|]1,Inf[%count%%plus% نتيجة:",
-    "send username for search" => "اكتب لي ما تريد البحث عنه.",
+    "search header1"               => "🔍 <code>%query%</code>",
+    "search header2"               => "{0}لا توجد نتيجة.|{1}%count% result|]1,Inf[حول %total% من النتائج",
+    "search header2 without about" => "{0}لا توجد نتيجة.|{1}%count% result|]1,Inf[%total% results",
+    "send username for search"     => "اكتب لي ما تريد البحث عنه.",
 
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك\n\u{1F1EB}\u{1F1F7} Choisissez votre langue",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -227,6 +228,9 @@ X هو عدد النتائج، ويتم تقريبه لأقرب عدد صحيح 
 
     "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
     "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
+    "lang fr"     => "\u{1F1EB}\u{1F1F7} Français",
+    "lang set fr" => "La langue a été changée en français.",
 
     // Add below the language you are translating as above
 
@@ -301,4 +305,8 @@ X هو عدد النتائج، ويتم تقريبه لأقرب عدد صحيح 
     "footer where"   => "ما هي المجموعات التي ينتمي إليها المستخدم؟",
     "footer near"    => "من هم المستخدمين القريبين؟",
     "footer members" => "من هم الأعضاء؟",
+
+    "btn search"              => "%n_res% نتيجة - %price% رصيد",
+    "footer search truncated" => "تم اقتطاع النتائج، لرؤية النتائج الكاملة، راجع ملف CSV.",
+
 ];

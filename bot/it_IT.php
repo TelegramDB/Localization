@@ -198,12 +198,13 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 
     "hidden forward" => "Impossibile mostrare le informazioni del messaggio inoltrato, le impostazioni della privacy del utente potrebbero impedirlo.",
 
-    "search header1"           => "<b>Ricerca:</b> <code>%query%</code>\n",
-    "search header2"           => "{0}Nessun risultato.|{1}%count%%plus% risultato:|]1,Inf[%count%%plus% risultati:",
-    "send username for search" => "Scrivimi quello che vuoi cercare.",
+    "search header1"               => "🔍 <code>%query%</code>",
+    "search header2"               => "{0}Nessun risultato.|{1}%count% risultato|]1,Inf[circa %total% risultati",
+    "search header2 without about" => "{0}Nessun risultato.|{1}%count% risultato|]1,Inf[%total% risultati",
+    "send username for search"     => "Scrivimi quello che vuoi cercare.",
 
     // language
-    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك",
+    "lang"                     => "\u{1F1EC}\u{1F1E7} Choose your language\n\u{1F1EE}\u{1F1F9} Scegli la tua lingua\n\u{1F1FA}\u{1F1E6} Виберіть свою мову\n\u{1F1E8}\u{1F1F3} 选择你的语言\n\u{1F1EE}\u{1F1F7} زبان را انتخاب کنید \n\u{1F1F8}\u{1F1E6} اختر لغتك\n\u{1F1EB}\u{1F1F7} Choisissez votre langue",
 
     "lang en"     => "\u{1F1EC}\u{1F1E7} English",
     "lang set en" => "Language changed to English.",
@@ -222,6 +223,9 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
 
     "lang ar"     => "\u{1F1F8}\u{1F1E6} العربية",
     "lang set ar" => "تم تغيير اللغة إلى العربية.",
+
+    "lang fr"     => "\u{1F1EB}\u{1F1F7} Français",
+    "lang set fr" => "La langue a été changée en français.",
 
     // Add below the language you are translating as above
 
@@ -244,7 +248,7 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "command not available for chat" => "Comando non disponibile per chi scrive come canale o come admin anonimo.",
 
     "search more"            => "Mostra più risultati",
-    "search pre"             => "Questa ricerca ti darà %n_results% risultati\n\nQuery: %query%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
+    "search pre"             => "Questa ricerca ti darà fino a %n_results% risultati\n\nQuery: %query%\nCosto ricerca: %price%\nI tuoi crediti: %credits%",
     "search more no credits" => "Per avere più risultati hai bisogno di crediti.\nPer comprarli fai /credits",
 
     "start invalid" => "Parametro non corretto",
@@ -292,4 +296,9 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto \"<code>ch
     "footer where"   => "In che gruppi si trova?",
     "footer near"    => "Quali sono gli utenti vicini?",
     "footer members" => "Quali sono i membri?",
+
+    "btn search"              => "%n_res% risultati - %price% crediti",
+    "footer search truncated" => "I risultati sono stati troncati, per vedere tutti i risultati consultare il file CSV.",
+
+
 ];
