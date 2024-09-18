@@ -18,6 +18,7 @@ Use our inline queries to get user details from usernames and IDs.
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
+/add [username] - &lt;code&gt;Add a user to TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Premium commands:&lt;/b&gt;
 /where [id or username] - &lt;code&gt;Find groups in which a user has been&lt;/code&gt;
@@ -29,7 +30,7 @@ Use our inline queries to get user details from usernames and IDs.
 ℹ &lt;b&gt;Other commands:&lt;/b&gt;
 /faq - &lt;code&gt;Frequently Asked Questions&lt;/code&gt;
 /language - &lt;code&gt;Choose the language&lt;/code&gt;
-/support - &lt;code&gt;Support chat&lt;/code&gt;
+/support - &lt;code&gt;Support chat for TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Show statistics&lt;/code&gt;
 /terms - &lt;code&gt;Terms and conditions&lt;/code&gt;
 /cancel - &lt;code&gt;Cancel current operation&lt;/code&gt;
@@ -47,6 +48,7 @@ For any info or doubts join @tgdbchat</source>
 /group [ім'я] - &lt;code&gt;Пошук груп&lt;/code&gt;
 /channel [ім'я] - &lt;code&gt;Пошук каналів&lt;/code&gt;
 /bot [ім'я] - &lt;code&gt;Пошук ботів&lt;/code&gt;
+/add [ім'я] - &lt;code&gt;Додати користувача до TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Преміум управління:&lt;/b&gt;
 /where [ID або ім'я] - &lt;code&gt;Пошук груп користувача&lt;/code&gt;
@@ -58,7 +60,7 @@ For any info or doubts join @tgdbchat</source>
 ℹ &lt;b&gt;Інші команди:&lt;/b&gt;
 /faq - &lt;code&gt;Часті запитання&lt;/code&gt;
 /language - &lt;code&gt;Виберіть мову&lt;/code&gt;
-/support - &lt;code&gt;Чат підтримки&lt;/code&gt;
+/support - &lt;code&gt;Чат підтримки для TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Показати статистику&lt;/code&gt;
 /terms - &lt;code&gt;Умови та положення&lt;/code&gt;
 /cancel - &lt;code&gt;Скасувати команду&lt;/code&gt;
@@ -108,8 +110,12 @@ X – кількість результатів, округлена в менш�
 &lt;b&gt;Майте на увазі, що&lt;/b&gt; результати можуть також включати групи, в яких користувач був присутнім раніше, тому запам'ятайте, що користувач може бути доданий до цієї групи іншою особою без його згоди.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$4" resname="support" datatype="plaintext" xml:space="preserve">
-        <source>support</source>
-        <target state="translated">Приєднуйтеся до @tgdbchat або напишіть @tgdb_support для підтримки.</target>
+        <source>We are not Telegram, we can only answer questions related to TelegramDB!
+
+Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
+        <target state="translated">Ми не Telegram, ми можемо відповідати тільки на питання, пов'язані з TelegramDB!
+
+Приєднуйтесь до @tgdbchat або пишіть на @tgdb_support для підтримки TelegramDB.org.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$5" resname="block" datatype="plaintext" xml:space="preserve">
         <source>block</source>
@@ -144,7 +150,7 @@ other {У вас # кредитів.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-uk:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>send-username-user</source>
+        <source>Send the username or id of the person you want to search:</source>
         <target state="translated">Відправте ім'я користувача або ID людини, яку ви хочете знайти:</target>
       </trans-unit>
       <trans-unit id="loco-uk:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
@@ -248,8 +254,8 @@ other {Цей пошук поверне вам # груп, де знаходит
         <target state="translated">Умови та Положення</target>
       </trans-unit>
       <trans-unit id="loco-uk:$27" resname="command-support" datatype="plaintext" xml:space="preserve">
-        <source>command-support</source>
-        <target state="translated">Чат підтримки</target>
+        <source>Contact bot support</source>
+        <target state="translated">Зверніться до служби підтримки ботів</target>
       </trans-unit>
       <trans-unit id="loco-uk:$28" resname="command-stats" datatype="plaintext" xml:space="preserve">
         <source>command-stats</source>
@@ -582,7 +588,7 @@ other {#/{total} результати}
 }</target>
       </trans-unit>
       <trans-unit id="loco-uk:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>send-username-text</source>
+        <source>Write me what you want to search.</source>
         <target state="translated">Напишіть мені, що ви хочете шукати.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$101" resname="lang" datatype="plaintext" xml:space="preserve">
@@ -629,7 +635,7 @@ https://t.me/tgdatabase</target>
         <source>answercb-pay-maintenance</source>
         <target state="translated">обслуговування</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$122" resname="credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$122" resname="credits-text" datatype="plaintext" xml:space="preserve">
         <source>credits</source>
         <target state="translated">кредити</target>
       </trans-unit>
@@ -919,9 +925,145 @@ https://t.me/tgdatabase</target>
         <source>Select the group to send</source>
         <target state="translated">Виберіть групу для надсилання</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">На жаль, ви можете шукати тільки групи.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+        <source>Pay with card via Telegram</source>
+        <target state="translated">Оплата карткою через Telegram</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$185" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+        <source>Pay with Telegram Stars</source>
+        <target state="translated">Платіть за допомогою Telegram Stars</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$186" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+        <source>Back</source>
+        <target state="translated">Повертайся</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} кредитів - {price, number} Зірки</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} кредитів - {price, number, :: currency/EUR}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment.
+Please contact support with /support.</source>
+        <target state="translated">Виникла проблема з оплатою.
+Будь ласка, зверніться до служби підтримки за допомогою /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with card</source>
+        <target state="translated">Оплата карткою</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Sorry, the search is too long and cannot be done.</source>
+        <target state="translated">Вибачте, пошук занадто довгий і не може бути виконаний.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment, it will be tried again later.
+If the error persists for a long time, please contact support with /support.</source>
+        <target state="translated">Виникла проблема з оплатою, її буде повторено пізніше.
+Якщо помилка не зникає протягом тривалого часу, зверніться до служби підтримки з командою /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Payment was successful, {credits} credits were added to you!</source>
+        <target state="translated">Оплата пройшла успішно, вам нараховано {credits} кредитів!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with PayPal</source>
+        <target state="translated">Оплатіть через PayPal</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay</source>
+        <target state="translated">Заплати</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">Виникла помилка з оплатою через криптовалюту, будь ласка, зверніться до служби підтримки з командою /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">Криптовалютний платіж обробляється, протягом декількох хвилин ви отримаєте свої кредити.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
+        <target state="translated">Ви оплатили лише частину рахунку в криптовалюті, вам нарахували лише {credits} кредитів.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">Виникла помилка з оплатою через криптовалюту, будь ласка, зверніться до служби підтримки з командою /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">Криптовалютний платіж обробляється, протягом декількох хвилин ви отримаєте свої кредити.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem adding credits to you, please contact support with /support.</source>
+        <target state="translated">Виникли проблеми з додаванням кредитів, зверніться до служби підтримки з командою /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
+        <target state="translated">Ми чекаємо на ваш криптовалютний платіж, це може зайняти кілька хвилин.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select the channel to send</source>
+        <target state="translated">Виберіть канал для надсилання</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Crypto payments could take several minutes.</source>
+        <target state="translated">Криптовалютні платежі можуть зайняти кілька хвилин.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Old username</source>
+        <target state="translated">Старе ім'я користувача</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Verified</source>
+        <target state="translated">Перевірено</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Fake</source>
+        <target state="translated">Фальшивка.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Premium</source>
+        <target state="translated">Преміум</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Scam</source>
+        <target state="translated">Шахрайство</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TelegramDB</source>
+        <target state="translated">Додати чат до TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error: Write a username/forward/share a user</source>
+        <target state="translated">Написати ім'я користувача/переслати/поділити користувача</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
+        <target state="translated">Успішно додано до бази даних, за кілька хвилин він буде доступний на TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TgDB</source>
+        <target state="translated">Додати чат до TgDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Update the username on TelegramDB</source>
+        <target state="translated">Оновлення імені користувача в TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Username added on TelegramDB!</source>
+        <target state="translated">Ім'я користувача додано в TelegramDB!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Write me the username you want to add to the TelegramDB.</source>
+        <target state="translated">Напишіть мені ім'я користувача, якого ви хочете додати до TelegramDB.</target>
       </trans-unit>
     </body>
   </file>

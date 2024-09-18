@@ -18,6 +18,7 @@ Use our inline queries to get user details from usernames and IDs.
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
+/add [username] - &lt;code&gt;Add a user to TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Premium commands:&lt;/b&gt;
 /where [id or username] - &lt;code&gt;Find groups in which a user has been&lt;/code&gt;
@@ -29,7 +30,7 @@ Use our inline queries to get user details from usernames and IDs.
 ℹ &lt;b&gt;Other commands:&lt;/b&gt;
 /faq - &lt;code&gt;Frequently Asked Questions&lt;/code&gt;
 /language - &lt;code&gt;Choose the language&lt;/code&gt;
-/support - &lt;code&gt;Support chat&lt;/code&gt;
+/support - &lt;code&gt;Support chat for TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Show statistics&lt;/code&gt;
 /terms - &lt;code&gt;Terms and conditions&lt;/code&gt;
 /cancel - &lt;code&gt;Cancel current operation&lt;/code&gt;
@@ -47,6 +48,7 @@ For any info or doubts join @tgdbchat</source>
 /group [الاسم] - &lt;code&gt;البحث عن المجموعات&lt;/code&gt;
 /channel [الاسم] - &lt;code&gt;البحث عن القنوات&lt;/code&gt;
 /bot [name] - &lt;code&gt;البحث عن الروبوتات&lt;/code&gt;
+/add [اسم المستخدم] - &lt;code&gt;إضافة مستخدم إلى TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;الأوامر المميزة:&lt;/b&gt;
 /where [المعرف أو اسم المستخدم] - &lt;code&gt;ابحث عن المجموعات التي كان المستخدم فيها&lt;/code&gt;
@@ -58,7 +60,7 @@ For any info or doubts join @tgdbchat</source>
 ℹ &lt;b&gt;أوامر أخرى:&lt;/b&gt;
 /faq - &lt;code&gt;الأسئلة المتداولة&lt;/code&gt;
 /language - &lt;code&gt;اختر اللغة&lt;/code&gt;
-/support - &lt;code&gt;دعم الدردشة&lt;/code&gt;
+/support - &lt;code&gt;دعم الدردشة لـ TgDB&lt;/code&gt;
 /stats - &lt;code&gt;إظهار الإحصائيات&lt;/code&gt;
 /terms - &lt;code&gt;الشروط والأحكام&lt;/code&gt;
 /cancel - &lt;code&gt;إلغاء العملية الحالية&lt;/code&gt;
@@ -112,8 +114,12 @@ X هو عدد النتائج، ويتم تقريبه للأسفل.
         <target state="translated">&lt;b&gt;يرجى ملاحظة أن&lt;/b&gt; النتائج قد تتضمن أيضًا المجموعات التي كان المستخدم فيها في الماضي، لذا يجب أن يتم مراعاة أن المستخدم قد تمت إضافته إلى تلك المجموعة من قبل شخص آخر دون موافقته.</target>
       </trans-unit>
       <trans-unit id="loco-ar:$5" resname="support" datatype="plaintext" xml:space="preserve">
-        <source>support</source>
-        <target state="translated">انضم إلى @tgdbchat أو اكتب إلى @tgdb_support للحصول على الدعم.</target>
+        <source>We are not Telegram, we can only answer questions related to TelegramDB!
+
+Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
+        <target state="translated">نحن لسنا Telegram، يمكننا فقط الإجابة على الأسئلة المتعلقة بـ TelegramDB!
+
+انضم إلى @tgdbchat أو راسل @tgdb_support للحصول على دعم TelegramDB.org.</target>
       </trans-unit>
       <trans-unit id="loco-ar:$6" resname="block" datatype="plaintext" xml:space="preserve">
         <source>block</source>
@@ -148,7 +154,7 @@ other {لديك # اعتمادات.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-ar:$13" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>send-username-user</source>
+        <source>Send the username or id of the person you want to search:</source>
         <target state="translated">أرسل اسم المستخدم أو المعرف للشخص الذي تريد البحث عنه:</target>
       </trans-unit>
       <trans-unit id="loco-ar:$14" resname="0-credits" datatype="plaintext" xml:space="preserve">
@@ -252,8 +258,8 @@ other {ستعيد هذه البحث # مجموعات حيث كان المستخ�
         <target state="translated">الشروط والأحكام</target>
       </trans-unit>
       <trans-unit id="loco-ar:$28" resname="command-support" datatype="plaintext" xml:space="preserve">
-        <source>command-support</source>
-        <target state="translated">دردشة الدعم</target>
+        <source>Contact bot support</source>
+        <target state="translated">اتصل بدعم الروبوت</target>
       </trans-unit>
       <trans-unit id="loco-ar:$29" resname="command-stats" datatype="plaintext" xml:space="preserve">
         <source>command-stats</source>
@@ -586,7 +592,7 @@ other {#/{total} النتائج}
 }</target>
       </trans-unit>
       <trans-unit id="loco-ar:$101" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>send-username-text</source>
+        <source>Write me what you want to search.</source>
         <target state="translated">اكتب لي ما تريد البحث عنه.</target>
       </trans-unit>
       <trans-unit id="loco-ar:$102" resname="lang" datatype="plaintext" xml:space="preserve">
@@ -633,7 +639,7 @@ https://t.me/tgdatabase</target>
         <source>answercb-pay-maintenance</source>
         <target state="translated">صيانة</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$123" resname="credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$123" resname="credits-text" datatype="plaintext" xml:space="preserve">
         <source>credits</source>
         <target state="translated">اعتمادات</target>
       </trans-unit>
@@ -920,9 +926,145 @@ other {سيعيد هذا البحث لك ما يصل إلى # من أعضاء ا
         <source>Select the group to send</source>
         <target state="translated">حدد المجموعة المراد إرسالها</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">عذرًا، يمكنك البحث عن المجموعات فقط.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+        <source>Pay with card via Telegram</source>
+        <target state="translated">الدفع بالبطاقة عبر Telegram</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$185" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+        <source>Back</source>
+        <target state="translated">عُد</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+        <source>Pay with Telegram Stars</source>
+        <target state="translated">الدفع باستخدام Telegram Stars</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} ساعة معتمدة - {price, number} Stars</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Payment was successful, {credits} credits were added to you!</source>
+        <target state="translated">تم الدفع بنجاح، تمت إضافة {credits} الأرصدة لك!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} ائتمان - {price, number, :: currency/EUR}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment.
+Please contact support with /support.</source>
+        <target state="translated">كانت هناك مشكلة في الدفع.
+يرجى الاتصال بالدعم عن طريق /الدعم.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with card</source>
+        <target state="translated">الدفع بالبطاقة</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Sorry, the search is too long and cannot be done.</source>
+        <target state="translated">عذرًا، البحث طويل جدًا ولا يمكن القيام به.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment, it will be tried again later.
+If the error persists for a long time, please contact support with /support.</source>
+        <target state="translated">كانت هناك مشكلة في الدفع، ستتم المحاولة مرة أخرى في وقت لاحق.
+إذا استمر الخطأ لفترة طويلة، يُرجى الاتصال بالدعم من خلال /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with PayPal</source>
+        <target state="translated">الدفع بواسط باى بال</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay</source>
+        <target state="translated">الراتب</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">حدث خطأ في الدفع عن طريق العملة المشفرة، يُرجى التواصل مع الدعم باستخدام /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">تتم الآن معالجة الدفع بالعملة الرقمية، وفي غضون دقائق قليلة ستتلقى أرصدةك.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">تتم الآن معالجة الدفع بالعملة الرقمية، وفي غضون دقائق قليلة ستتلقى أرصدةك.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
+        <target state="translated">لقد دفعت جزءًا من الفاتورة بالعملات المشفرة فقط، تمت إضافة أرصدة {الأرصدة} فقط لك.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem adding credits to you, please contact support with /support.</source>
+        <target state="translated">كانت هناك مشكلة في إضافة أرصدة لك، يُرجى الاتصال بالدعم باستخدام /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
+        <target state="translated">نحن في انتظار الدفع بالعملات الرقمية الخاصة بك، قد يستغرق الأمر بضع دقائق.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">حدث خطأ في الدفع عن طريق العملة المشفرة، يُرجى التواصل مع الدعم باستخدام /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select the channel to send</source>
+        <target state="translated">حدد القناة المراد إرسالها</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Crypto payments could take several minutes.</source>
+        <target state="translated">قد تستغرق مدفوعات العملات المشفرة عدة دقائق.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Premium</source>
+        <target state="translated">غالي</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Verified</source>
+        <target state="translated">تم التحقق</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Scam</source>
+        <target state="translated">غش</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Fake</source>
+        <target state="translated">مزيف</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Old username</source>
+        <target state="translated">اسم المستخدم القديم</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TelegramDB</source>
+        <target state="translated">أضف دردشة إلى TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error: Write a username/forward/share a user</source>
+        <target state="translated">اكتب اسم المستخدم/أعد توجيه/شارك مستخدمًا</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
+        <target state="translated">تم الإضافة بنجاح إلى قاعدة البيانات، وسوف تكون متاحة على TelegramDB في غضون دقائق قليلة</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TgDB</source>
+        <target state="translated">أضف دردشة إلى TgDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Update the username on TelegramDB</source>
+        <target state="translated">تحديث اسم المستخدم على TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Username added on TelegramDB!</source>
+        <target state="translated">تمت إضافة اسم المستخدم على TelegramDB!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Write me the username you want to add to the TelegramDB.</source>
+        <target state="translated">اكتب لي اسم المستخدم الذي تريد إضافته إلى TelegramDB.</target>
       </trans-unit>
     </body>
   </file>

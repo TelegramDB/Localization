@@ -18,6 +18,7 @@ Use our inline queries to get user details from usernames and IDs.
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
+/add [username] - &lt;code&gt;Add a user to TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Premium commands:&lt;/b&gt;
 /where [id or username] - &lt;code&gt;Find groups in which a user has been&lt;/code&gt;
@@ -29,7 +30,7 @@ Use our inline queries to get user details from usernames and IDs.
 ℹ &lt;b&gt;Other commands:&lt;/b&gt;
 /faq - &lt;code&gt;Frequently Asked Questions&lt;/code&gt;
 /language - &lt;code&gt;Choose the language&lt;/code&gt;
-/support - &lt;code&gt;Support chat&lt;/code&gt;
+/support - &lt;code&gt;Support chat for TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Show statistics&lt;/code&gt;
 /terms - &lt;code&gt;Terms and conditions&lt;/code&gt;
 /cancel - &lt;code&gt;Cancel current operation&lt;/code&gt;
@@ -47,6 +48,7 @@ For any info or doubts join @tgdbchat</source>
 /group [name] - &lt;code&gt;搜索群组&lt;/code&gt;
 /channel [name] - &lt;code&gt;搜索频道&lt;/code&gt;
 /bot [name] - &lt;code&gt;搜索机器人&lt;/code&gt;
+/add [username] - &lt;code&gt;向 TelegramDB 添加用户&lt;/code&gt;
 
 💲 &lt;b&gt;高级命令:&lt;/b&gt;
 /where [id或username] - &lt;code&gt;查找用户所在的群组&lt;/code&gt;
@@ -58,7 +60,7 @@ For any info or doubts join @tgdbchat</source>
 ℹ &lt;b&gt;其他命令:&lt;/b&gt;
 /faq - &lt;code&gt;常见问答&lt;/code&gt;
 /language - &lt;code&gt;选择语言&lt;/code&gt;
-/support - &lt;code&gt;联系支持&lt;/code&gt;
+/support - &lt;code&gt;TgDB 支持聊天&lt;/code&gt;
 /stats - &lt;code&gt;显示统计信息&lt;/code&gt;
 /terms - &lt;code&gt;条件和协议&lt;/code&gt;
 /cancel - &lt;code&gt;取消当前操作&lt;/code&gt;
@@ -108,8 +110,12 @@ X 是结果数，向下舍入。
 &lt;b&gt;请注意&lt;/b&gt; 结果还可能包括用户过去曾参加过的群组，因此必须注意，用户可能已在未经其批准的情况下被另一个人添加到该群组中。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$4" resname="support" datatype="plaintext" xml:space="preserve">
-        <source>support</source>
-        <target state="translated">加入 @tgdbchat 或者写给 @tgdb_support 以寻求支持。</target>
+        <source>We are not Telegram, we can only answer questions related to TelegramDB!
+
+Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
+        <target state="translated">我们不是 Telegram，我们只能回答与 TelegramDB 相关的问题！
+
+加入 @tgdbchat 或致信 @tgdb_support 寻求 TelegramDB.org 支持。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$5" resname="block" datatype="plaintext" xml:space="preserve">
         <source>block</source>
@@ -144,7 +150,7 @@ other {你有 # 个积分.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-zh:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>send-username-user</source>
+        <source>Send the username or id of the person you want to search:</source>
         <target state="translated">发送你想搜索的用户名或id:</target>
       </trans-unit>
       <trans-unit id="loco-zh:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
@@ -248,8 +254,8 @@ other {此搜索将会返回你 # 个此用户 在/在过 的群组.
         <target state="translated">条件和协议</target>
       </trans-unit>
       <trans-unit id="loco-zh:$27" resname="command-support" datatype="plaintext" xml:space="preserve">
-        <source>command-support</source>
-        <target state="translated">联系支持</target>
+        <source>Contact bot support</source>
+        <target state="translated">联系机器人支持</target>
       </trans-unit>
       <trans-unit id="loco-zh:$28" resname="command-stats" datatype="plaintext" xml:space="preserve">
         <source>command-stats</source>
@@ -582,7 +588,7 @@ other {#/{total} 结果}
 }</target>
       </trans-unit>
       <trans-unit id="loco-zh:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>send-username-text</source>
+        <source>Write me what you want to search.</source>
         <target state="translated">写给我你要找的东西。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$101" resname="lang" datatype="plaintext" xml:space="preserve">
@@ -629,7 +635,7 @@ https://t.me/tgdatabase</target>
         <source>answercb-pay-maintenance</source>
         <target state="translated">维护</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$122" resname="credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$122" resname="credits-text" datatype="plaintext" xml:space="preserve">
         <source>credits</source>
         <target state="translated">积分</target>
       </trans-unit>
@@ -919,9 +925,145 @@ https://t.me/tgdatabase</target>
         <source>Select the group to send</source>
         <target state="translated">选择要发送的组</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">抱歉，您只能搜索群组。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+        <source>Pay with card via Telegram</source>
+        <target state="translated">通过 Telegram 用卡付款</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$185" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+        <source>Back</source>
+        <target state="translated">回去</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+        <source>Pay with Telegram Stars</source>
+        <target state="translated">使用 Telegram Stars 付款</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} 学分 - {price, number} Stars</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Payment was successful, {credits} credits were added to you!</source>
+        <target state="translated">付款成功，您已获得 {credits} 积分！</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with card</source>
+        <target state="translated">使用卡付款</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} 积分 - {price, number, :: currency/EUR}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment.
+Please contact support with /support.</source>
+        <target state="translated">付款有问题。
+请使用 /support 联系技术支持。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Sorry, the search is too long and cannot be done.</source>
+        <target state="translated">抱歉，搜索时间太长，无法完成。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment, it will be tried again later.
+If the error persists for a long time, please contact support with /support.</source>
+        <target state="translated">付款出现问题，稍后再试。
+如果错误持续很长时间，请使用 /support 联系技术支持。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with PayPal</source>
+        <target state="translated">使用 PayPal 付款</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay</source>
+        <target state="translated">薪酬</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">通过加密货币支付时出现错误，请使用/support 联系支持人员。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">加密货币支付正在处理中，几分钟内您就会收到积分。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">通过加密货币支付时出现错误，请使用/support 联系支持人员。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
+        <target state="translated">我们正在等待您的加密货币付款，可能需要几分钟时间。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">加密货币支付正在处理中，几分钟内您就会收到积分。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
+        <target state="translated">你只用加密货币支付了部分账单，只有 {credits} 点数被添加到了你的账户中。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem adding credits to you, please contact support with /support.</source>
+        <target state="translated">为您添加点数时出现问题，请使用 /support 联系支持人员。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select the channel to send</source>
+        <target state="translated">选择要发送的频道</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Crypto payments could take several minutes.</source>
+        <target state="translated">加密货币支付可能需要几分钟。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Old username</source>
+        <target state="translated">旧用户名</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Verified</source>
+        <target state="translated">已验证</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Scam</source>
+        <target state="translated">骗局</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Fake</source>
+        <target state="translated">伪造</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Premium</source>
+        <target state="translated">高级</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TelegramDB</source>
+        <target state="translated">将聊天添加到 TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error: Write a username/forward/share a user</source>
+        <target state="translated">编写用户名/转发/共享用户</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
+        <target state="translated">已成功添加到数据库，几分钟后即可在 TelegramDB 上查看</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TgDB</source>
+        <target state="translated">添加聊天到 TgDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Update the username on TelegramDB</source>
+        <target state="translated">更新 TelegramDB 上的用户名</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Username added on TelegramDB!</source>
+        <target state="translated">已在 TelegramDB 上添加用户名！</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Write me the username you want to add to the TelegramDB.</source>
+        <target state="translated">写下您要添加到 TelegramDB 的用户名。</target>
       </trans-unit>
     </body>
   </file>

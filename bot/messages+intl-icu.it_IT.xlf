@@ -18,6 +18,7 @@ Use our inline queries to get user details from usernames and IDs.
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
+/add [username] - &lt;code&gt;Add a user to TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Premium commands:&lt;/b&gt;
 /where [id or username] - &lt;code&gt;Find groups in which a user has been&lt;/code&gt;
@@ -29,7 +30,7 @@ Use our inline queries to get user details from usernames and IDs.
 ℹ &lt;b&gt;Other commands:&lt;/b&gt;
 /faq - &lt;code&gt;Frequently Asked Questions&lt;/code&gt;
 /language - &lt;code&gt;Choose the language&lt;/code&gt;
-/support - &lt;code&gt;Support chat&lt;/code&gt;
+/support - &lt;code&gt;Support chat for TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Show statistics&lt;/code&gt;
 /terms - &lt;code&gt;Terms and conditions&lt;/code&gt;
 /cancel - &lt;code&gt;Cancel current operation&lt;/code&gt;
@@ -47,6 +48,7 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 /group [nome] - &lt;code&gt;Cerca gruppi&lt;/code&gt;
 /channel [nome] - &lt;code&gt;Cerca canali&lt;/code&gt;
 /bot [nome] - &lt;code&gt;Cerca bot&lt;/code&gt;
+/add [username] - &lt;code&gt;Aggiungi una chat a TelegramDB&lt;/code&gt;
 
 💲 &lt;b&gt;Comandi premium:&lt;/b&gt;
 /where [id o username] - &lt;code&gt;Cerca i gruppi di un utente&lt;/code&gt;
@@ -58,7 +60,7 @@ Usa il bot in modalità inline per ottenere informazioni di utente tramite usern
 ℹ &lt;b&gt;Altri comandi:&lt;/b&gt;
 /faq - &lt;code&gt;Domande frequenti&lt;/code&gt;
 /language - &lt;code&gt;Scegli la lingua&lt;/code&gt;
-/support - &lt;code&gt;Chat di supporto&lt;/code&gt;
+/support - &lt;code&gt;Chat di supporto per TgDB&lt;/code&gt;
 /stats - &lt;code&gt;Mostra le statistiche&lt;/code&gt;
 /terms - &lt;code&gt;Termini e condizioni&lt;/code&gt;
 /cancel - &lt;code&gt;Annulla il comando&lt;/code&gt;
@@ -108,8 +110,12 @@ Invia una email a webmaster@telegramdb.org, specificando come oggetto "&lt;code&
 &lt;b&gt;Tieni presente che&lt;/b&gt; i risultati possono includere anche gruppi in cui l'utente era presente in passato, quindi ricorda che un utente potrebbe essere stato aggiunto a quel gruppo da un'altra persona senza la sua approvazione.</target>
       </trans-unit>
       <trans-unit id="loco-it:$4" resname="support" datatype="plaintext" xml:space="preserve">
-        <source>support</source>
-        <target state="translated">Unisciti a @tgdbchat o scrivi a @tgdb_support per il supporto.</target>
+        <source>We are not Telegram, we can only answer questions related to TelegramDB!
+
+Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
+        <target state="translated">Non siamo Telegram, possiamo rispondere solo alle domande relative a TelegramDB!
+
+Unisciti a @tgdbchat o scrivi a @tgdb_support per ricevere assistenza da TelegramDB.org.</target>
       </trans-unit>
       <trans-unit id="loco-it:$5" resname="block" datatype="plaintext" xml:space="preserve">
         <source>block</source>
@@ -144,7 +150,7 @@ other {Hai # crediti.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-it:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>send-username-user</source>
+        <source>Send the username or id of the person you want to search:</source>
         <target state="translated">Manda l'username o l'id della persona che vuoi cercare:</target>
       </trans-unit>
       <trans-unit id="loco-it:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
@@ -248,8 +254,8 @@ I tuoi crediti: {credits}}
         <target state="translated">Termini e condizioni</target>
       </trans-unit>
       <trans-unit id="loco-it:$27" resname="command-support" datatype="plaintext" xml:space="preserve">
-        <source>command-support</source>
-        <target state="translated">Chat di supporto</target>
+        <source>Contact bot support</source>
+        <target state="translated">Contatta il supporto del bot</target>
       </trans-unit>
       <trans-unit id="loco-it:$28" resname="command-stats" datatype="plaintext" xml:space="preserve">
         <source>command-stats</source>
@@ -582,7 +588,7 @@ other {#/{total} risultati}
 }</target>
       </trans-unit>
       <trans-unit id="loco-it:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>send-username-text</source>
+        <source>Write me what you want to search.</source>
         <target state="translated">Scrivimi quello che vuoi cercare.</target>
       </trans-unit>
       <trans-unit id="loco-it:$101" resname="lang" datatype="plaintext" xml:space="preserve">
@@ -629,7 +635,7 @@ https://t.me/tgdatabase</target>
         <source>answercb-pay-maintenance</source>
         <target state="translated">Manutenzione</target>
       </trans-unit>
-      <trans-unit id="loco-it:$122" resname="credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-it:$122" resname="credits-text" datatype="plaintext" xml:space="preserve">
         <source>credits</source>
         <target state="translated">crediti</target>
       </trans-unit>
@@ -919,9 +925,145 @@ https://t.me/tgdatabase</target>
         <source>Select the group to send</source>
         <target state="translated">Seleziona il gruppo da inviare</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">Spiacenti, puoi cercare solo gruppi.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+        <source>Pay with card via Telegram</source>
+        <target state="translated">Paga con carta via Telegram</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$185" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+        <source>Pay with Telegram Stars</source>
+        <target state="translated">Paga con Stelle Telegram</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$186" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+        <source>Back</source>
+        <target state="translated">Indietro</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} crediti - {price, number} Stelle</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Payment was successful, {credits} credits were added to you!</source>
+        <target state="translated">Il pagamento è andato a buon fine, ti sono stati aggiunti {credits} crediti!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
+        <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} crediti - {price, number, :: currency/EUR}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment.
+Please contact support with /support.</source>
+        <target state="translated">Si è verificato un problema con il pagamento.
+Per favore, contatta l'assistenza con /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem with the payment, it will be tried again later.
+If the error persists for a long time, please contact support with /support.</source>
+        <target state="translated">Si è verificato un problema con il pagamento. Verrà riprovato più tardi.
+Se l'errore persistesse a lungo, contattare l'assistenza con /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Sorry, the search is too long and cannot be done.</source>
+        <target state="translated">Siamo spiacenti, la ricerca è troppo lunga e non può essere effettuata.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with card</source>
+        <target state="translated">Paga con carta</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay with PayPal</source>
+        <target state="translated">Paga con PayPal</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">Si è verificato un errore con il pagamento tramite criptovaluta, si prega di contattare il supporto con /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Pay</source>
+        <target state="translated">Paga</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">Il pagamento con criptovalute è in fase di elaborazione, entro pochi minuti riceverai i crediti.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
+        <target state="translated">Il pagamento con criptovalute è in fase di elaborazione, entro pochi minuti riceverai i crediti.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
+        <target state="translated">Siamo in attesa del pagamento in criptovaluta, potrebbe volerci qualche minuto.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
+        <target state="translated">Hai pagato solo una parte della fattura in cripto, ti sono stati aggiunti solo {crediti}.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
+        <target state="translated">Si è verificato un errore con il pagamento tramite criptovaluta, si prega di contattare il supporto con /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>There was a problem adding credits to you, please contact support with /support.</source>
+        <target state="translated">Si è verificato un problema nell'aggiunta dei crediti all'utente, si prega di contattare il supporto con /support.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select the channel to send</source>
+        <target state="translated">Seleziona il canale da inviare</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Crypto payments could take several minutes.</source>
+        <target state="translated">I pagamenti in cripto potrebbero richiedere diversi minuti.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Old username</source>
+        <target state="translated">Vecchio username</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Verified</source>
+        <target state="translated">Verificato</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Scam</source>
+        <target state="translated">Truffa</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Fake</source>
+        <target state="translated">Falso</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Premium</source>
+        <target state="translated">Premium</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TelegramDB</source>
+        <target state="translated">Aggiungi una chat a TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error: Write a username/forward/share a user</source>
+        <target state="translated">Errore: Scrivi uno username/inoltra/condividi un utente</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
+        <target state="translated">Aggiunto con successo al database, tra pochi minuti sarà disponibile su TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Add a chat to TgDB</source>
+        <target state="translated">Aggiungi una chat a TgDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Update the username on TelegramDB</source>
+        <target state="translated">Aggiorna lo username su TelegramDB</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Username added on TelegramDB!</source>
+        <target state="translated">Nome utente aggiunto a TelegramDB!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Write me the username you want to add to the TelegramDB.</source>
+        <target state="translated">Scrivi lo username che vuoi aggiungere a TelegramDB.</target>
       </trans-unit>
     </body>
   </file>
