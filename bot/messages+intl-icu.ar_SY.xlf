@@ -277,7 +277,7 @@ other {ستعيد هذه البحث # مجموعات حيث كان المستخ�
       </trans-unit>
       <trans-unit id="loco-ar:$22" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
-        <target state="translated">البحث عن مجموعات وقناة بالاسم</target>
+        <target state="translated">ابحث عن أي شيء</target>
       </trans-unit>
       <trans-unit id="loco-ar:$23" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -652,8 +652,8 @@ other {#/{total} النتائج}
 }</target>
       </trans-unit>
       <trans-unit id="loco-ar:$101" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">اكتب لي ما تريد البحث عنه.</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">اكتب لي ما تريد البحث عنه، أو انقر على أحد الأزرار أدناه.</target>
       </trans-unit>
       <trans-unit id="loco-ar:$102" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>

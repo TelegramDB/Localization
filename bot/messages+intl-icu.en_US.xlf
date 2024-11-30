@@ -465,8 +465,8 @@ other {#/{total} results}
 }</source>
       </trans-unit>
       <trans-unit id="loco-en:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Write me what you want to search.</source>
-        <target state="translated">Write me what you want to search.</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">Write me what you want to search, or click on one of the buttons below.</target>
       </trans-unit>
       <trans-unit id="loco-en:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>

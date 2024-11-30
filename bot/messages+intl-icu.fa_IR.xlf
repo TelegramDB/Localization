@@ -273,7 +273,7 @@ other {این جستجو # گروه‌هایی را که کاربر در آنج�
       </trans-unit>
       <trans-unit id="loco-fa:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
-        <target state="translated">جستجو گروه ها و کانال ها بر اساس نام</target>
+        <target state="translated">هر چیزی را جستجو کنید</target>
       </trans-unit>
       <trans-unit id="loco-fa:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -648,8 +648,8 @@ other {#/{total} نتیجه}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fa:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">آنچه را که می خواهید جستجو کنید بنویسید.</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">من شما را دیدم و خواستم جستجو کنم و دوست دارم در مورد تونس و پالائو بیشتر بدانم.</target>
       </trans-unit>
       <trans-unit id="loco-fa:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>

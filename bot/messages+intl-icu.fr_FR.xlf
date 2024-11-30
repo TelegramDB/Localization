@@ -273,7 +273,7 @@ Votre crédits : {credits}}
       </trans-unit>
       <trans-unit id="loco-fr:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
-        <target state="translated">Recherche de groupes et de canaux par nom</target>
+        <target state="translated">Recherchez n'importe quoi</target>
       </trans-unit>
       <trans-unit id="loco-fr:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -636,8 +636,8 @@ other {# sur environ {total} résultats}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fr:$99" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">Écrivez-moi ce que vous voulez rechercher.</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">Écrivez-moi ce que vous voulez rechercher, ou cliquez sur l'un des boutons ci-dessous.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$100" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>

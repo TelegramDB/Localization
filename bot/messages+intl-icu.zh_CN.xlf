@@ -273,7 +273,7 @@ other {此搜索将会返回你 # 个此用户 在/在过 的群组.
       </trans-unit>
       <trans-unit id="loco-zh:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
-        <target state="translated">按名称搜索群组和频道</target>
+        <target state="translated">搜索任何内容</target>
       </trans-unit>
       <trans-unit id="loco-zh:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -648,8 +648,8 @@ other {#/{total} 结果}
 }</target>
       </trans-unit>
       <trans-unit id="loco-zh:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">写给我你要找的东西。</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">请告诉我您想搜索什么，或点击下面的按钮。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>

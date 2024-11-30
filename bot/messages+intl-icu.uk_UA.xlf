@@ -273,7 +273,7 @@ other {Цей пошук поверне вам # груп, де знаходит
       </trans-unit>
       <trans-unit id="loco-uk:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
-        <target state="translated">Пошук груп та каналів</target>
+        <target state="translated">Шукайте будь-що</target>
       </trans-unit>
       <trans-unit id="loco-uk:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -648,8 +648,8 @@ other {#/{total} результати}
 }</target>
       </trans-unit>
       <trans-unit id="loco-uk:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">Напишіть мені, що ви хочете шукати.</target>
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">Напишіть мені, що ви хочете шукати, або натисніть на одну з кнопок нижче.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>
