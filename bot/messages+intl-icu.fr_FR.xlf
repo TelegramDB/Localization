@@ -13,8 +13,9 @@ This bot allows you to find public channels and groups, and see what public chat
 Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
+/search - &lt;code&gt;Search for anything&lt;/code&gt;
 /resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
-/search [name] - &lt;code&gt;Search for groups and channel&lt;/code&gt;
+/title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
@@ -43,8 +44,9 @@ Ce robot vous permet de trouver des canaux et des groupes publics et de voir dan
 Utilisez nos requêtes en ligne pour obtenir des informations sur les utilisateurs à partir des noms d'utilisateur et des identifiants.
 
 🆓 &lt;b&gt;Commandes gratuites:&lt;/b&gt;
+/search - &lt;code&gt;Recherchez n'importe quoi&lt;/code&gt;
 /resolve [id ou username] - &lt;code&gt;Résoudre un nom d'utilisateur ou un identifiant&lt;/code&gt;
-/search [name] - &lt;code&gt;Recherche de groupes et de chaînes&lt;/code&gt;
+/title [name] - &lt;code&gt;Recherche de groupes et de chaînes&lt;/code&gt;
 /group [name] - &lt;code&gt;Recherche de groupes&lt;/code&gt;
 /channel [name] - &lt;code&gt;Recherche de chaînes&lt;/code&gt;
 /bot [name] - &lt;code&gt;Recherche de bot&lt;/code&gt;
@@ -68,7 +70,45 @@ Utilisez nos requêtes en ligne pour obtenir des informations sur les utilisateu
 Pour toute information ou doute, rejoignez @tgdbchat</target>
       </trans-unit>
       <trans-unit id="loco-fr:$2" resname="faq" datatype="plaintext" xml:space="preserve">
-        <source>faq</source>
+        <source>&lt;b&gt;How does it work?&lt;/b&gt;
+The bot queries a database containing &lt;u&gt;public&lt;/u&gt; groups and users, crawled by TelegramDB.
+
+&lt;b&gt;Do you really track all groups?&lt;/b&gt;
+No, tracking all groups would be impossible: we have only a part of the &lt;u&gt;public&lt;/u&gt; groups on Telegram.
+
+&lt;b&gt;How much data do you have?&lt;/b&gt;
+Check https://telegramdb.org/stats to see the latest data.
+
+&lt;b&gt;What is the near command?&lt;/b&gt;
+The term "near" refers to users who have interacted with the searched user or are in common groups, such as friends.
+"Near" is intended as users who have interacted with each other or are part of common groups with the searched user, such as friends.
+&lt;u&gt;It does not find chats that are geographically close.&lt;/u&gt;
+
+&lt;b&gt;What is the network command?&lt;/b&gt;
+The network command finds the chats closest to the searched chat.
+It finds chats frequented by approximately the same audience of users, such as groups with the same topic, or being part of a network.
+&lt;u&gt;It does not find chats that are geographically close.&lt;/u&gt;
+
+&lt;b&gt;How much does where cost?&lt;/b&gt;
+Before paying to see the results, the bot will show you how many results are there, and how much does it cost.
+
+The base price for the /where command is &lt;b&gt;3 credits&lt;/b&gt;.
+In addition, every 40 results the cost increases by 1 credit.
+
+Example:
+100 results cost 5 credits
+3 base price + 2 (100/40 = 2.5)
+
+The price for the /members command is calculated with this formula: &lt;code&gt;3+0.6x^0.8&lt;/code&gt;.
+X is the number of results, and is rounded down.
+
+Example:
+100 achievements cost 26 credits
+
+&lt;b&gt;How can I delete a chat from the bot results?&lt;/b&gt;
+Send an email to webmaster@telegramdb.org, with "&lt;code&gt;chat deletion request&lt;/code&gt;" as the subject, provide the chat id/username, and a short explanation of why the chat must be removed.
+
+&lt;b&gt;Please note that&lt;/b&gt; the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.</source>
         <target state="translated">&lt;b&gt;Comment cela fonctionne-t-il ?&lt;/b&gt;
 Le robot interroge une base de données contenant des groupes et des utilisateurs &lt;u&gt;publics&lt;/u&gt;, explorée par TelegramDB.
 
@@ -118,15 +158,15 @@ Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
 Rejoignez @tgdbchat ou écrivez à @tgdb_support pour obtenir de l'aide sur TelegramDB.org.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$5" resname="block" datatype="plaintext" xml:space="preserve">
-        <source>block</source>
+        <source>Your account is temporarily blocked. To get unblocked, contact support with /support.</source>
         <target state="translated">Votre compte est temporairement bloqué. Pour le débloquer, contactez le support avec /support.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$6" resname="flood-warn" datatype="plaintext" xml:space="preserve">
-        <source>flood-warn</source>
+        <source>You are sending too many messages. Please wait a bit before sending more.</source>
         <target state="translated">Vous envoyez trop de messages. Veuillez attendre un peu avant d'en envoyer d'autres.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$7" resname="where-header" datatype="plaintext" xml:space="preserve">
-        <source>where-header</source>
+        <source>Results for </source>
         <target state="translated">Résultats pour </target>
       </trans-unit>
       <trans-unit id="loco-fr:$8" resname="btn-credits" datatype="plaintext" xml:space="preserve">
@@ -134,7 +174,7 @@ Rejoignez @tgdbchat ou écrivez à @tgdb_support pour obtenir de l'aide sur Tele
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$9" resname="btn-pay-crypto" datatype="plaintext" xml:space="preserve">
-        <source>btn-pay-crypto</source>
+        <source>Pay with cryptocurrencies</source>
         <target state="translated">Payer avec des crypto-monnaies</target>
       </trans-unit>
       <trans-unit id="loco-fr:$10" resname="you-have-x-credits" datatype="plaintext" xml:space="preserve">
@@ -154,7 +194,9 @@ other {Vous avez # de crédits.}
         <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant de la personne que vous souhaitez rechercher :</target>
       </trans-unit>
       <trans-unit id="loco-fr:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
-        <source>0-credits</source>
+        <source>You don't have enough credits to search.
+You have 0 credits.
+Buy them with /credits</source>
         <target state="translated">Vous n'avez pas assez de crédits pour effectuer une recherche.
 Vous avez 0 crédits.
 Achetez-les avec /credits</target>
@@ -184,7 +226,7 @@ Achetez-les avec /credits}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fr:$15" resname="click-to-continue" datatype="plaintext" xml:space="preserve">
-        <source>click-to-continue</source>
+        <source>Click here to continue</source>
         <target state="translated">Cliquez ici pour continuer</target>
       </trans-unit>
       <trans-unit id="loco-fr:$16" resname="where-results" datatype="plaintext" xml:space="preserve">
@@ -214,43 +256,43 @@ Votre crédits : {credits}}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fr:$17" resname="command-help" datatype="plaintext" xml:space="preserve">
-        <source>command-help</source>
+        <source>Help message</source>
         <target state="translated">Message d'aide</target>
       </trans-unit>
       <trans-unit id="loco-fr:$18" resname="command-credits" datatype="plaintext" xml:space="preserve">
-        <source>command-credits</source>
+        <source>Buy credits</source>
         <target state="translated">Acheter des crédits</target>
       </trans-unit>
       <trans-unit id="loco-fr:$19" resname="command-where" datatype="plaintext" xml:space="preserve">
-        <source>command-where</source>
+        <source>Find groups in which a user has been</source>
         <target state="translated">Rechercher les groupes dans lesquels un utilisateur est présent</target>
       </trans-unit>
       <trans-unit id="loco-fr:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
-        <source>command-resolve</source>
-        <target state="translated">Résout un nom d'utilisateur ou un identifiant</target>
+        <source>Get info</source>
+        <target state="translated">Obtenir des informations</target>
       </trans-unit>
       <trans-unit id="loco-fr:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
-        <source>command-search</source>
+        <source>Search for anything</source>
         <target state="translated">Recherche de groupes et de canaux par nom</target>
       </trans-unit>
       <trans-unit id="loco-fr:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
-        <source>command-group</source>
+        <source>Search for groups</source>
         <target state="translated">Recherche de groupes</target>
       </trans-unit>
       <trans-unit id="loco-fr:$23" resname="command-channel" datatype="plaintext" xml:space="preserve">
-        <source>command-channel</source>
+        <source>Search for channels</source>
         <target state="translated">Recherche de chaînes</target>
       </trans-unit>
       <trans-unit id="loco-fr:$24" resname="command-bot" datatype="plaintext" xml:space="preserve">
-        <source>command-bot</source>
+        <source>Search for bots</source>
         <target state="translated">Recherche de bots</target>
       </trans-unit>
       <trans-unit id="loco-fr:$25" resname="command-faq" datatype="plaintext" xml:space="preserve">
-        <source>command-faq</source>
+        <source>Frequently asked questions</source>
         <target state="translated">Questions fréquemment posées</target>
       </trans-unit>
       <trans-unit id="loco-fr:$26" resname="command-terms" datatype="plaintext" xml:space="preserve">
-        <source>command-terms</source>
+        <source>Terms and conditions</source>
         <target state="translated">Conditions d'utilisation</target>
       </trans-unit>
       <trans-unit id="loco-fr:$27" resname="command-support" datatype="plaintext" xml:space="preserve">
@@ -258,43 +300,44 @@ Votre crédits : {credits}}
         <target state="translated">Contacter le service d'assistance aux bot</target>
       </trans-unit>
       <trans-unit id="loco-fr:$28" resname="command-stats" datatype="plaintext" xml:space="preserve">
-        <source>command-stats</source>
+        <source>Show statistics</source>
         <target state="translated">Afficher les statistiques</target>
       </trans-unit>
       <trans-unit id="loco-fr:$29" resname="command-cancel" datatype="plaintext" xml:space="preserve">
-        <source>command-cancel</source>
+        <source>Cancel current operation</source>
         <target state="translated">Annuler l'opération en cours</target>
       </trans-unit>
       <trans-unit id="loco-fr:$30" resname="command-language" datatype="plaintext" xml:space="preserve">
-        <source>command-language</source>
+        <source>Choose the language</source>
         <target state="translated">Choisir la langue</target>
       </trans-unit>
       <trans-unit id="loco-fr:$31" resname="command-referral" datatype="plaintext" xml:space="preserve">
-        <source>command-referral</source>
+        <source>Referral link</source>
         <target state="translated">Lien de référence</target>
       </trans-unit>
       <trans-unit id="loco-fr:$32" resname="command-members" datatype="plaintext" xml:space="preserve">
-        <source>command-members</source>
+        <source>Find members of a group</source>
         <target state="translated">Rechercher les membres d'un groupe</target>
       </trans-unit>
       <trans-unit id="loco-fr:$33" resname="command-near" datatype="plaintext" xml:space="preserve">
-        <source>command-near</source>
+        <source>Find nearest users</source>
         <target state="translated">Trouver les utilisateurs les plus proches</target>
       </trans-unit>
       <trans-unit id="loco-fr:$34" resname="command-network" datatype="plaintext" xml:space="preserve">
-        <source>command-network</source>
+        <source>Find nearest chats</source>
         <target state="translated">Trouver les chats les plus proches</target>
       </trans-unit>
       <trans-unit id="loco-fr:$35" resname="transaction-title" datatype="plaintext" xml:space="preserve">
-        <source>transaction-title</source>
+        <source>{credits} TGDB credits</source>
         <target state="translated">{credits} Crédits TGDB</target>
       </trans-unit>
       <trans-unit id="loco-fr:$36" resname="transaction-description" datatype="plaintext" xml:space="preserve">
-        <source>transaction-description</source>
+        <source>Use these credits to search the database</source>
         <target state="translated">Utilisez les crédits suivants pour effectuer une recherche dans la base de données</target>
       </trans-unit>
       <trans-unit id="loco-fr:$37" resname="transaction-success" datatype="plaintext" xml:space="preserve">
-        <source>transaction-success</source>
+        <source>You have spent {credits_spend} credits on this search.
+You have {credits_left} credits left.</source>
         <target state="translated">Vous avez dépensé {credits_spend} crédits pour cette recherche.
 Il vous reste {credits_left} de crédits.</target>
       </trans-unit>
@@ -303,53 +346,55 @@ Il vous reste {credits_left} de crédits.</target>
         <target state="translated">Paiement en cours… En attente de paiement.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$39" resname="payment-cannot-continue" datatype="plaintext" xml:space="preserve">
-        <source>payment-cannot-continue</source>
+        <source>Payment cannot continue.</source>
         <target state="translated">Le paiement ne peut se poursuivre.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$40" resname="payment-success" datatype="plaintext" xml:space="preserve">
-        <source>payment-success</source>
+        <source>Payment successful.
+You have received {credits} credits.</source>
         <target state="translated">Paiement réussi.
 Vous avez reçu {credits} crédits.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$41" resname="error-no-results" datatype="plaintext" xml:space="preserve">
-        <source>error-no-results</source>
+        <source>There are no results for this search.</source>
         <target state="translated">Il n'y a pas de résultats pour cette recherche.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$42" resname="error-where-resolve-no-results" datatype="plaintext" xml:space="preserve">
-        <source>error-where-resolve-no-results</source>
+        <source>The user you were looking for could not be found.</source>
         <target state="translated">L'utilisateur que vous recherchiez n'a pas pu être trouvé.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$43" resname="error-where-no-results" datatype="plaintext" xml:space="preserve">
-        <source>error-where-no-results</source>
+        <source>Sorry, the search found no groups for this user.</source>
         <target state="translated">Désolé, la recherche n'a trouvé aucun groupe pour cet utilisateur.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$44" resname="error-search-no-results" datatype="plaintext" xml:space="preserve">
-        <source>error-search-no-results</source>
+        <source>Sorry, your search returned no results.</source>
         <target state="translated">Désolé, votre recherche n'a donné aucun résultat.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$45" resname="error-where-params" datatype="plaintext" xml:space="preserve">
-        <source>error-where-params</source>
+        <source>Error in parameters</source>
         <target state="translated">Erreur dans les paramètres</target>
       </trans-unit>
       <trans-unit id="loco-fr:$46" resname="error-where-input" datatype="plaintext" xml:space="preserve">
-        <source>error-where-input</source>
+        <source>Error in input</source>
         <target state="translated">Erreur d'entrée</target>
       </trans-unit>
       <trans-unit id="loco-fr:$47" resname="error-where-search-yourself" datatype="plaintext" xml:space="preserve">
-        <source>error-where-search-yourself</source>
+        <source>You cannot search for yourself.</source>
         <target state="translated">Vous ne pouvez pas vous chercher vous-même.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$48" resname="error-where-search-only-users" datatype="plaintext" xml:space="preserve">
-        <source>error-where-search-only-users</source>
+        <source>You can only search for users.</source>
         <target state="translated">Vous ne pouvez rechercher que des utilisateurs.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$49" resname="error-where-invalid-input" datatype="plaintext" xml:space="preserve">
-        <source>error-where-invalid-input</source>
+        <source>Error, username or id invalid.
+Remember that you can only search for users.</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide.
 N'oubliez pas que vous ne pouvez rechercher que des utilisateurs.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$50" resname="error-invalid-input" datatype="plaintext" xml:space="preserve">
-        <source>error-invalid-input</source>
+        <source>Error, username or id invalid</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide</target>
       </trans-unit>
       <trans-unit id="loco-fr:$51" resname="error-backend-offline" datatype="plaintext" xml:space="preserve">
@@ -357,37 +402,40 @@ N'oubliez pas que vous ne pouvez rechercher que des utilisateurs.</target>
         <target state="translated">Erreur, backend hors ligne</target>
       </trans-unit>
       <trans-unit id="loco-fr:$52" resname="error-user-not-found" datatype="plaintext" xml:space="preserve">
-        <source>error-user-not-found</source>
+        <source>Error, user not found</source>
         <target state="translated">Erreur, utilisateur non trouvé</target>
       </trans-unit>
       <trans-unit id="loco-fr:$53" resname="error-button-invalid" datatype="plaintext" xml:space="preserve">
-        <source>error-button-invalid</source>
+        <source>Error, invalid button</source>
         <target state="translated">Erreur, bouton invalide</target>
       </trans-unit>
       <trans-unit id="loco-fr:$54" resname="error-button-already-press" datatype="plaintext" xml:space="preserve">
-        <source>error-button-already-press</source>
+        <source>Error, button already pressed</source>
         <target state="translated">Erreur, bouton déjà enfoncé</target>
       </trans-unit>
       <trans-unit id="loco-fr:$55" resname="error-button-expired" datatype="plaintext" xml:space="preserve">
-        <source>error-button-expired</source>
+        <source>Error, button expired</source>
         <target state="translated">Erreur, le bouton a expiré</target>
       </trans-unit>
       <trans-unit id="loco-fr:$56" resname="error-button-user-invalid" datatype="plaintext" xml:space="preserve">
-        <source>error-button-user-invalid</source>
+        <source>Error, the button you pressed was not generated by you</source>
         <target state="translated">Erreur, le bouton sur lequel vous avez appuyé n'a pas été généré par vous</target>
       </trans-unit>
       <trans-unit id="loco-fr:$57" resname="error-transaction-still-in-progress" datatype="plaintext" xml:space="preserve">
-        <source>error-transaction-still-in-progress</source>
+        <source>Error, operation still in progress, please wait for it to finish before doing other queries.
+If the problem persists, please contact support via /support</source>
         <target state="translated">Erreur, l'opération est toujours en cours, veuillez attendre qu'elle se termine avant d'effectuer d'autres requêtes.
 Si le problème persiste, veuillez contacter le support via /support</target>
       </trans-unit>
       <trans-unit id="loco-fr:$58" resname="error-cant-use-credits" datatype="plaintext" xml:space="preserve">
-        <source>error-cant-use-credits</source>
+        <source>Error, unable to use credits, please try again later.
+If the problem persists, please contact support via /support</source>
         <target state="translated">Erreur, impossible d'utiliser les crédits, veuillez réessayer plus tard.
 Si le problème persiste, veuillez contacter l'assistance via /support</target>
       </trans-unit>
       <trans-unit id="loco-fr:$59" resname="error-showing-results" datatype="plaintext" xml:space="preserve">
-        <source>error-showing-results</source>
+        <source>There was an error showing the results, your credits were refunded.
+Please, contact support via /support</source>
         <target state="translated">Une erreur s'est produite lors de l'affichage des résultats, votre crédits ont été remboursés.
 Veuillez contacter le service d'assistance via /support</target>
       </trans-unit>
@@ -408,48 +456,60 @@ Mais les crédits n'ont pas pu être ajoutés ({credits} credits).
 Veuillez contacter l'assistance avec /support.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$62" resname="error-contact-support" datatype="plaintext" xml:space="preserve">
-        <source>error-contact-support</source>
+        <source>An error occurred.
+Please, contact support with /support</source>
         <target state="translated">Une erreur s'est produite.
 Veuillez contacter l'assistance avec /support</target>
       </trans-unit>
       <trans-unit id="loco-fr:$63" resname="error-try-later" datatype="plaintext" xml:space="preserve">
-        <source>error-try-later</source>
+        <source>An error occurred.
+Please, try again later</source>
         <target state="translated">Une erreur s'est produite.
 Veuillez réessayer plus tard</target>
       </trans-unit>
       <trans-unit id="loco-fr:$64" resname="error-backend-floodwait" datatype="plaintext" xml:space="preserve">
-        <source>error-backend-floodwait</source>
+        <source>Error, backend is busy.
+Please, try again later.</source>
         <target state="translated">Erreur, le backend est occupé.
 Veuillez réessayer plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$65" resname="error-timeout" datatype="plaintext" xml:space="preserve">
-        <source>error-timeout</source>
+        <source>Error, the search took too long, the backend may be offline.
+Please try again later.</source>
         <target state="translated">Erreur, la recherche a pris trop de temps, le backend est peut-être hors ligne.
 Veuillez réessayer plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$66" resname="query-already-done" datatype="plaintext" xml:space="preserve">
-        <source>query-already-done</source>
+        <source>&lt;b&gt;You already did the same search a while ago.&lt;/b&gt;
+Are you sure you want to continue?</source>
         <target state="translated">&lt;b&gt;Vous avez déjà effectué la même recherche il y a quelque temps.&lt;/b&gt;
 Es-tu sur de vouloir continuer ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$67" resname="hour-ago" datatype="plaintext" xml:space="preserve">
-        <source>hour-ago</source>
+        <source>hour ago</source>
         <target state="translated">heure</target>
       </trans-unit>
       <trans-unit id="loco-fr:$68" resname="hours-ago" datatype="plaintext" xml:space="preserve">
-        <source>hours-ago</source>
+        <source>hours ago</source>
         <target state="translated">heures</target>
       </trans-unit>
       <trans-unit id="loco-fr:$69" resname="minutes-ago" datatype="plaintext" xml:space="preserve">
-        <source>minutes-ago</source>
+        <source>minutes ago</source>
         <target state="translated">minutes</target>
       </trans-unit>
       <trans-unit id="loco-fr:$70" resname="less-than-1-minute" datatype="plaintext" xml:space="preserve">
-        <source>less-than-1-minute</source>
+        <source>less than 1 minute ago</source>
         <target state="translated">il y a moins d'une minute</target>
       </trans-unit>
       <trans-unit id="loco-fr:$71" resname="stats" datatype="plaintext" xml:space="preserve">
-        <source>stats</source>
+        <source>&lt;b&gt;Last update:&lt;/b&gt; &lt;code&gt;{time_str}&lt;/code&gt;
+&lt;b&gt;Chats:&lt;/b&gt; &lt;code&gt;{chat}&lt;/code&gt;
+&lt;b&gt;Groups:&lt;/b&gt; &lt;code&gt;{groups}&lt;/code&gt;
+&lt;b&gt;Users:&lt;/b&gt; &lt;code&gt;{user}&lt;/code&gt;
+&lt;b&gt;Bots:&lt;/b&gt; &lt;code&gt;{bot}&lt;/code&gt;
+&lt;b&gt;User-Group associations:&lt;/b&gt; &lt;code&gt;{members}&lt;/code&gt;
+
+More stats: https://www.telegramdb.org/stats</source>
         <target state="translated">&lt;b&gt;Dernière mise à jour : &lt;/b&gt;&lt;code&gt;{time_str}&lt;/code&gt;
 &lt;b&gt;Chats&lt;/b&gt; : &lt;code&gt;{chat}&lt;/code&gt;
 &lt;b&gt;Groupes&lt;/b&gt; &lt;code&gt;{groups}&lt;/code&gt;
@@ -460,107 +520,107 @@ Es-tu sur de vouloir continuer ?</target>
 Plus de statistiques : https ://www.telegramdb.org/stats</target>
       </trans-unit>
       <trans-unit id="loco-fr:$72" resname="inline-no-input" datatype="plaintext" xml:space="preserve">
-        <source>inline-no-input</source>
+        <source>No results!</source>
         <target state="translated">Aucun résultat !</target>
       </trans-unit>
       <trans-unit id="loco-fr:$73" resname="inline-no-input-desc" datatype="plaintext" xml:space="preserve">
-        <source>inline-no-input-desc</source>
+        <source>Please, write me a username or id to get results.</source>
         <target state="translated">Veuillez m'indiquer un nom d'utilisateur ou un identifiant pour obtenir des résultats.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$74" resname="inline-resolve-no-title" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-no-title</source>
+        <source>No title</source>
         <target state="translated">Pas de titre</target>
       </trans-unit>
       <trans-unit id="loco-fr:$75" resname="inline-resolve-title" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-title</source>
+        <source>{title}</source>
         <target state="translated">{title}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$76" resname="inline-resolve-desc" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-desc</source>
+        <source>{id}</source>
         <target state="translated">{id}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$77" resname="inline-resolve-error-title" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-error-title</source>
+        <source>Error</source>
         <target state="translated">Erreur</target>
       </trans-unit>
       <trans-unit id="loco-fr:$78" resname="inline-resolve-error-desc" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-error-desc</source>
+        <source>Error, username or id invalid/not found.</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide ou n'a pas été trouvé.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$79" resname="inline-resolve-error-text" datatype="plaintext" xml:space="preserve">
-        <source>inline-resolve-error-text</source>
+        <source>Error, username or id invalid/not found.</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide ou n'a pas été trouvé.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$80" resname="try-inline" datatype="plaintext" xml:space="preserve">
-        <source>try-inline</source>
+        <source>Try me inline</source>
         <target state="translated">Essayez-moi en ligne</target>
       </trans-unit>
       <trans-unit id="loco-fr:$81" resname="error-pay-api-offline" datatype="plaintext" xml:space="preserve">
-        <source>error-pay-api-offline</source>
+        <source>Error, unable to connect to the credit server, please try again later.</source>
         <target state="translated">Erreur, impossible de se connecter au serveur de crédit, veuillez réessayer plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$82" resname="error-pay-api-offline-revert-transactions" datatype="plaintext" xml:space="preserve">
-        <source>error-pay-api-offline-revert-transactions</source>
+        <source>Error, results could not be shown, and credit refund failed, please contact support with /support</source>
         <target state="translated">Erreur, les résultats n'ont pas pu être affichés, et le remboursement du crédit a échoué, veuillez contacter le support avec /support</target>
       </trans-unit>
       <trans-unit id="loco-fr:$83" resname="user" datatype="plaintext" xml:space="preserve">
-        <source>user</source>
+        <source>User</source>
         <target state="translated">User</target>
       </trans-unit>
       <trans-unit id="loco-fr:$84" resname="supergroup" datatype="plaintext" xml:space="preserve">
-        <source>supergroup</source>
+        <source>SuperGroup</source>
         <target state="translated">SuperGroupe</target>
       </trans-unit>
       <trans-unit id="loco-fr:$85" resname="basicgroup" datatype="plaintext" xml:space="preserve">
-        <source>basicgroup</source>
+        <source>BasicGroup</source>
         <target state="translated">Groupe de base</target>
       </trans-unit>
       <trans-unit id="loco-fr:$86" resname="channel" datatype="plaintext" xml:space="preserve">
-        <source>channel</source>
+        <source>Channel</source>
         <target state="translated">Chaîne</target>
       </trans-unit>
       <trans-unit id="loco-fr:$87" resname="supergrouporchannel" datatype="plaintext" xml:space="preserve">
-        <source>supergrouporchannel</source>
+        <source>SuperGroup or Channel</source>
         <target state="translated">SuperGroupe ou Canal</target>
       </trans-unit>
       <trans-unit id="loco-fr:$88" resname="group" datatype="plaintext" xml:space="preserve">
-        <source>group</source>
+        <source>Group</source>
         <target state="translated">Groupe</target>
       </trans-unit>
       <trans-unit id="loco-fr:$89" resname="bot" datatype="plaintext" xml:space="preserve">
-        <source>bot</source>
+        <source>Bot</source>
         <target state="translated">Bot</target>
       </trans-unit>
       <trans-unit id="loco-fr:$90" resname="type" datatype="plaintext" xml:space="preserve">
-        <source>type</source>
+        <source>Type</source>
         <target state="translated">Type</target>
       </trans-unit>
       <trans-unit id="loco-fr:$91" resname="title" datatype="plaintext" xml:space="preserve">
-        <source>title</source>
+        <source>Title</source>
         <target state="translated">Titre</target>
       </trans-unit>
       <trans-unit id="loco-fr:$92" resname="username" datatype="plaintext" xml:space="preserve">
-        <source>username</source>
+        <source>Username</source>
         <target state="translated">Nom d'utilisateur</target>
       </trans-unit>
       <trans-unit id="loco-fr:$93" resname="description" datatype="plaintext" xml:space="preserve">
-        <source>description</source>
+        <source>Description</source>
         <target state="translated">Description</target>
       </trans-unit>
       <trans-unit id="loco-fr:$94" resname="dc" datatype="plaintext" xml:space="preserve">
-        <source>dc</source>
+        <source>DC</source>
         <target state="translated">DC</target>
       </trans-unit>
       <trans-unit id="loco-fr:$95" resname="members" datatype="plaintext" xml:space="preserve">
-        <source>members</source>
+        <source>Members</source>
         <target state="translated">Les membres</target>
       </trans-unit>
       <trans-unit id="loco-fr:$96" resname="hidden-forward" datatype="plaintext" xml:space="preserve">
-        <source>hidden-forward</source>
+        <source>Unable to show info of the forwarded message, the user's privacy settings may prevent it.</source>
         <target state="translated">Impossible d'afficher les informations du message transféré, les paramètres de confidentialité de l'utilisateur peuvent l'empêcher.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$97" resname="search-header1" datatype="plaintext" xml:space="preserve">
-        <source>search-header1</source>
+        <source>🔍 &lt;code&gt;{query}&lt;/code&gt;</source>
         <target state="translated">🔍 &lt;code&gt;{query}&lt;/code&gt;</target>
       </trans-unit>
       <trans-unit id="loco-fr:$98" resname="search-header2" datatype="plaintext" xml:space="preserve">
@@ -584,23 +644,27 @@ other {# sur environ {total} résultats}
         <target state="translated">🇫🇷 Choisissez votre langue</target>
       </trans-unit>
       <trans-unit id="loco-fr:$113" resname="lang-btn" datatype="plaintext" xml:space="preserve">
-        <source>lang-btn</source>
+        <source>🇬🇧 English</source>
         <target state="translated">🇫🇷 Français</target>
       </trans-unit>
       <trans-unit id="loco-fr:$114" resname="lang-set" datatype="plaintext" xml:space="preserve">
-        <source>lang-set</source>
+        <source>Language changed to English.</source>
         <target state="translated">La langue a été changée en français.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$115" resname="cancel-empty" datatype="plaintext" xml:space="preserve">
-        <source>cancel-empty</source>
+        <source>There is no active command to cancel.</source>
         <target state="translated">Il n'y a pas de commande active pour annuler.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$116" resname="cancel-type" datatype="plaintext" xml:space="preserve">
-        <source>cancel-type</source>
+        <source>The {type} command has been cancelled.</source>
         <target state="translated">La commande {type} a été annulée.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$117" resname="maintenance" datatype="plaintext" xml:space="preserve">
-        <source>maintenance</source>
+        <source>This bot is currently in maintenance mode, this command is not available.
+Please, try again later.
+
+If you want to be notified when it will be available again, join our channel:
+https://t.me/tgdatabase</source>
         <target state="translated">Ce bot est actuellement en mode maintenance, cette commande n'est pas disponible.
 Veuillez réessayer plus tard.
 
@@ -608,7 +672,11 @@ Si vous souhaitez être informé(e) de sa disponibilité, rejoignez notre chaîn
 https://t.me/tgdatabase</target>
       </trans-unit>
       <trans-unit id="loco-fr:$118" resname="payment-blocked-maintenance" datatype="plaintext" xml:space="preserve">
-        <source>payment-blocked-maintenance</source>
+        <source>This bot is currently in maintenance mode, payments are not available.
+Please, try again later.
+
+If you want to be notified when it will be available again, join our channel:
+https://t.me/tgdatabase</source>
         <target state="translated">Ce bot est actuellement en mode maintenance, les paiements ne sont pas disponibles.
 Veuillez réessayer plus tard.
 
@@ -616,11 +684,11 @@ Si vous souhaitez être informé(e) de sa disponibilité, rejoignez notre chaîn
 https://t.me/tgdatabase</target>
       </trans-unit>
       <trans-unit id="loco-fr:$119" resname="answercb-pay" datatype="plaintext" xml:space="preserve">
-        <source>answercb-pay</source>
+        <source>Sending invoice</source>
         <target state="translated">Envoi de la facture</target>
       </trans-unit>
       <trans-unit id="loco-fr:$120" resname="answercb-pay-maintenance" datatype="plaintext" xml:space="preserve">
-        <source>answercb-pay-maintenance</source>
+        <source>Maintenance</source>
         <target state="translated">Maintenance</target>
       </trans-unit>
       <trans-unit id="loco-fr:$121" resname="credits-text" datatype="plaintext" xml:space="preserve">
@@ -628,32 +696,37 @@ https://t.me/tgdatabase</target>
         <target state="translated">crédits</target>
       </trans-unit>
       <trans-unit id="loco-fr:$122" resname="inline-maintenance" datatype="plaintext" xml:space="preserve">
-        <source>inline-maintenance</source>
+        <source>Maintenance</source>
         <target state="translated">Maintenance</target>
       </trans-unit>
       <trans-unit id="loco-fr:$123" resname="inline-maintenance-desc" datatype="plaintext" xml:space="preserve">
-        <source>inline-maintenance-desc</source>
+        <source>Maintenance, command is not available.
+Please, try again later.</source>
         <target state="translated">Maintenance, la commande n'est pas disponible.
 S'il vous plaît, réessayez plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$124" resname="command-pvt" datatype="plaintext" xml:space="preserve">
-        <source>command-pvt</source>
+        <source>To use this command, use private chat.</source>
         <target state="translated">Pour utiliser cette commande, utilisez le chat privé.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$125" resname="command-btn-pvt" datatype="plaintext" xml:space="preserve">
-        <source>command-btn-pvt</source>
+        <source>Start chat</source>
         <target state="translated">Démarrer la discussion</target>
       </trans-unit>
       <trans-unit id="loco-fr:$126" resname="command-not-available-for-chat" datatype="plaintext" xml:space="preserve">
-        <source>command-not-available-for-chat</source>
+        <source>Command not available for those who write as a channel or as an anonymous admin.</source>
         <target state="translated">Commande non disponible pour ceux qui écrivent en tant que canal ou en tant qu'administrateur anonyme.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$127" resname="search-more" datatype="plaintext" xml:space="preserve">
-        <source>search-more</source>
+        <source>Show more results</source>
         <target state="translated">Afficher plus de résultats</target>
       </trans-unit>
       <trans-unit id="loco-fr:$128" resname="search-pre" datatype="plaintext" xml:space="preserve">
-        <source>search-pre</source>
+        <source>This search will give you {n_results} results
+
+Query: {query}
+Search cost: {price}
+Your credits: {credits}</source>
         <target state="translated">Cette recherche vous donnera {n_results} results
 
 Query : {query}
@@ -661,93 +734,99 @@ Coût de la recherche : {price}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$129" resname="search-more-no-credits" datatype="plaintext" xml:space="preserve">
-        <source>search-more-no-credits</source>
+        <source>To get more results you need credits.
+Buy them with /credits</source>
         <target state="translated">Pour obtenir plus de résultats, vous avez besoin de crédits.
 Achetez-les avec /credits</target>
       </trans-unit>
       <trans-unit id="loco-fr:$130" resname="start-invalid" datatype="plaintext" xml:space="preserve">
-        <source>start-invalid</source>
+        <source>Incorrect parameter</source>
         <target state="translated">Paramètre incorrect</target>
       </trans-unit>
       <trans-unit id="loco-fr:$131" resname="ref-invalid" datatype="plaintext" xml:space="preserve">
-        <source>ref-invalid</source>
+        <source>The referral you are trying to use is invalid.</source>
         <target state="translated">La référence que vous essayez d'utiliser n'est pas valide.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$132" resname="ref-self" datatype="plaintext" xml:space="preserve">
-        <source>ref-self</source>
+        <source>You can't use your own referral link.</source>
         <target state="translated">Vous ne pouvez pas utiliser votre propre lien de parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$133" resname="ref-already-used" datatype="plaintext" xml:space="preserve">
-        <source>ref-already-used</source>
+        <source>You have already used a referral link.</source>
         <target state="translated">Vous avez déjà utilisé un lien de parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$134" resname="ref-promo-max-usage" datatype="plaintext" xml:space="preserve">
-        <source>ref-promo-max-usage</source>
+        <source>This referral has already been used by too many people, however, you can get {credits} free credits, on your first purchase through this referral.</source>
         <target state="translated">Ce parrainage a déjà été utilisé par trop de personnes, cependant, vous pouvez obtenir {credits} de crédits gratuits, lors de votre premier achat par le biais de ce parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$135" resname="ref-already-created" datatype="plaintext" xml:space="preserve">
-        <source>ref-already-created</source>
+        <source>You have already created a referral link.</source>
         <target state="translated">Vous avez déjà créé un lien de parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$136" resname="ref-had-credits" datatype="plaintext" xml:space="preserve">
-        <source>ref-had-credits</source>
+        <source>Having already used the bot, you cannot redeem this referral, but you can invite a friend with your referral, just do /referral and send them the link.</source>
         <target state="translated">Si vous avez déjà utilisé le bot, vous ne pouvez pas échanger ce parrainage, mais vous pouvez inviter un ami avec votre parrainage, il suffit de faire /referral et de lui envoyer le lien.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$137" resname="ref-promo-finished" datatype="plaintext" xml:space="preserve">
-        <source>ref-promo-finished</source>
+        <source>Sorry, but the promo has ended, however, you can get {credits} free credits, on your first purchase through this referral.</source>
         <target state="translated">Désolé, mais la promotion est terminée, cependant, vous pouvez obtenir {credits} de crédits gratuits, sur votre premier achat grâce à ce parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$138" resname="ref-promo-pay-ok" datatype="plaintext" xml:space="preserve">
-        <source>ref-promo-pay-ok</source>
+        <source>You have successfully redeemed the referral, {credits} credits will be added to your first purchase.</source>
         <target state="translated">Vous avez échangé avec succès le parrainage, {credits} crédits seront ajoutés à votre premier achat.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$139" resname="ref-lock" datatype="plaintext" xml:space="preserve">
-        <source>ref-lock</source>
+        <source>You are using too many referrals, try again later.</source>
         <target state="translated">Vous utilisez trop de références, réessayez plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$140" resname="ref-voip" datatype="plaintext" xml:space="preserve">
-        <source>ref-voip</source>
+        <source>We detected that you are using a secondary account to redeem the referral.</source>
         <target state="translated">Nous avons détecté que vous utilisiez un compte secondaire pour échanger le parrainage.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$141" resname="ref-ok-redeemed" datatype="plaintext" xml:space="preserve">
-        <source>ref-ok-redeemed</source>
+        <source>You redeemed the referral correctly, {credits} credits were added.</source>
         <target state="translated">Vous avez correctement échangé le parrainage, {credits} crédits ont été ajoutés.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$142" resname="ref-ok-used" datatype="plaintext" xml:space="preserve">
-        <source>ref-ok-used</source>
+        <source>A user used your referral, {credits} credits were added to you.</source>
         <target state="translated">Un utilisateur a utilisé votre référence, {credits} crédits vous ont été ajoutés.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$143" resname="ref-ok-error-api" datatype="plaintext" xml:space="preserve">
-        <source>ref-ok-error-api</source>
+        <source>The referral is valid, but the credits could not be added, try again later, if the error persists, contact support with /support</source>
         <target state="translated">La référence est valide, mais les crédits n'ont pas pu être ajoutés, réessayez plus tard, si l'erreur persiste, contactez le support avec /support</target>
       </trans-unit>
       <trans-unit id="loco-fr:$144" resname="ref-ok-generated" datatype="plaintext" xml:space="preserve">
-        <source>ref-ok-generated</source>
+        <source>Your referral has been generated, send it to your friends, and you will both receive {credits} credits when the invitee makes the first purchase.
+
+Referral link: https://t.me/{username}?start={ref}</source>
         <target state="translated">Votre parrainage a été généré, envoyez-le à votre amis et vous recevrez tous les deux {credits} crédits lorsque l'invité effectuera son premier achat.
 
 Lien de référence : https://t.me/{username}?start={ref}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$145" resname="ref-error-generated" datatype="plaintext" xml:space="preserve">
-        <source>ref-error-generated</source>
+        <source>Sorry, but you cannot generate invitation links if you have never made a purchase.</source>
         <target state="translated">Désolé, mais vous ne pouvez pas générer de liens d'invitation si vous n'avez jamais effectué d'achat.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$146" resname="temp-not-available" datatype="plaintext" xml:space="preserve">
-        <source>temp-not-available</source>
+        <source>This command is not available at the moment.
+
+If you want to be notified when it will be available again, join our channel:
+https://t.me/tgdatabase</source>
         <target state="translated">Cette commande n'est pas disponible pour le moment.
 
 Si vous souhaitez être informé de la date à laquelle il sera à nouveau disponible, rejoignez notre chaîne:
 https://t.me/tgdatabase</target>
       </trans-unit>
       <trans-unit id="loco-fr:$147" resname="search-no-free-uses" datatype="plaintext" xml:space="preserve">
-        <source>search-no-free-uses</source>
+        <source>You have reached the daily search limit. Contact support with /support for more information or try again tomorrow.</source>
         <target state="translated">Vous avez atteint la limite de recherche quotidienne. Contactez l'assistance avec /support pour plus d'informations ou réessayez demain.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$148" resname="csv-caption-info" datatype="plaintext" xml:space="preserve">
-        <source>csv-caption-info</source>
+        <source>You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.</source>
         <target state="translated">Vous pouvez ouvrir ce fichier en tant que texte, feuille de calcul ou l'importer dans Maltego avec Import → Importation d'un tableau exporté.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$149" resname="send-username-group" datatype="plaintext" xml:space="preserve">
-        <source>send-username-group</source>
+        <source>Send username or id of group you want to search for:</source>
         <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant du groupe que vous souhaitez rechercher :</target>
       </trans-unit>
       <trans-unit id="loco-fr:$150" resname="members-results" datatype="plaintext" xml:space="preserve">
@@ -777,35 +856,40 @@ Votre crédits : {credits}}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fr:$151" resname="error-members-search-only-public-groups" datatype="plaintext" xml:space="preserve">
-        <source>error-members-search-only-public-groups</source>
+        <source>You can only search for members of public groups.</source>
         <target state="translated">Vous ne pouvez rechercher que des membres de groupes publics.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$152" resname="error-members-search-only-groups" datatype="plaintext" xml:space="preserve">
-        <source>error-members-search-only-groups</source>
+        <source>You can only search for members of groups.</source>
         <target state="translated">Vous ne pouvez rechercher que des membres de groupes.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$153" resname="error-members-no-results" datatype="plaintext" xml:space="preserve">
-        <source>error-members-no-results</source>
+        <source>Sorry, your search returned no members for this group.</source>
         <target state="translated">Désolé, votre recherche n'a trouvé aucun membre pour ce groupe.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$154" resname="floodwait-members" datatype="plaintext" xml:space="preserve">
-        <source>floodwait-members</source>
+        <source>Sorry, you made too many requests, please try again later.</source>
         <target state="translated">Désolé, vous avez fait trop de demandes, veuillez réessayer plus tard.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$155" resname="btn-members" datatype="plaintext" xml:space="preserve">
-        <source>btn-members</source>
+        <source>{members} members - {price} credits</source>
         <target state="translated">{members} membres - {price} crédits</target>
       </trans-unit>
       <trans-unit id="loco-fr:$156" resname="near-no-groups" datatype="plaintext" xml:space="preserve">
-        <source>near-no-groups</source>
+        <source>There are not enough groups to use this command.</source>
         <target state="translated">Il n'y a pas assez de groupes pour utiliser cette commande.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$157" resname="near-time" datatype="plaintext" xml:space="preserve">
-        <source>near-time</source>
+        <source>Load time:</source>
         <target state="translated">Temps de chargement :</target>
       </trans-unit>
       <trans-unit id="loco-fr:$158" resname="near-results" datatype="plaintext" xml:space="preserve">
-        <source>near-results</source>
+        <source>This search will find users close to the user.
+
+User: {user_title} {user_id}
+Quality of results: {quality}
+Search cost: {price}
+Your credits: {credits}</source>
         <target state="translated">Cette recherche permet de trouver des utilisateurs proches de l'utilisateur.
 
 Utilisateur : {user_title} {user_id}
@@ -814,7 +898,7 @@ Coût de la recherche : {price}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$159" resname="near-results-info" datatype="plaintext" xml:space="preserve">
-        <source>near-results-info</source>
+        <source>The term near refers to a virtual distance between Telegram communities, and not to the physical distance between users.</source>
         <target state="translated">Le terme proche fait référence à une distance virtuelle entre les communautés Telegram, et non à la distance physique entre les utilisateurs.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$160" resname="near-wait" datatype="plaintext" xml:space="preserve">
@@ -822,43 +906,48 @@ Votre crédits : {credits}</target>
         <target state="translated">Attendez l'exécution de la commande, cela peut prendre quelques minutes…</target>
       </trans-unit>
       <trans-unit id="loco-fr:$161" resname="near-not-accurate" datatype="plaintext" xml:space="preserve">
-        <source>near-not-accurate</source>
+        <source>Few groups were found for this user, may show inaccurate results!</source>
         <target state="translated">Peu de groupes ont été trouvés pour cet utilisateur, les résultats peuvent être inexacts !</target>
       </trans-unit>
       <trans-unit id="loco-fr:$162" resname="error-near-max-commands" datatype="plaintext" xml:space="preserve">
-        <source>error-near-max-commands</source>
+        <source>This command is in use by too many users, try again in a few minutes.</source>
         <target state="translated">Cette commande est utilisée par un trop grand nombre d'utilisateurs, réessayez dans quelques minutes.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$163" resname="error-near-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
-        <source>error-near-max-commands-from-same-user</source>
+        <source>This command is limited; wait until it finishes executing the previous one.</source>
         <target state="translated">Cette commande est limitée ; attendez qu'elle ait fini d'exécuter la précédente.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$164" resname="command-similar" datatype="plaintext" xml:space="preserve">
-        <source>command-similar</source>
+        <source>Did you want to execute the {command} command?</source>
         <target state="translated">Voulez-vous exécuter la commande {command} ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$165" resname="footer-where" datatype="plaintext" xml:space="preserve">
-        <source>footer-where</source>
+        <source>What groups is the user a member of?</source>
         <target state="translated">De quels groupes l'utilisateur est-il membre ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$166" resname="footer-near" datatype="plaintext" xml:space="preserve">
-        <source>footer-near</source>
+        <source>Who are the nearby users?</source>
         <target state="translated">Qui sont les utilisateurs proches ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$167" resname="footer-members" datatype="plaintext" xml:space="preserve">
-        <source>footer-members</source>
+        <source>Who are the members?</source>
         <target state="translated">Qui sont les membres ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$168" resname="footer-network" datatype="plaintext" xml:space="preserve">
-        <source>footer-network</source>
+        <source>What are the nearby chats?</source>
         <target state="translated">Quels sont les chats à proximité ?</target>
       </trans-unit>
       <trans-unit id="loco-fr:$169" resname="network-no-groups" datatype="plaintext" xml:space="preserve">
-        <source>network-no-groups</source>
+        <source>There are not enough users to use this command.</source>
         <target state="translated">Il n'y a pas assez d'utilisateurs pour utiliser cette commande.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$170" resname="network-results" datatype="plaintext" xml:space="preserve">
-        <source>network-results</source>
+        <source>This search will find the chats closest to this one.
+
+Chat: {user_title} {user_id}
+Quality of results: {quality}
+Search cost: {price}
+Your credits: {credits}</source>
         <target state="translated">Cette recherche trouvera les chats les plus proches de celui-ci.
 
 Chat : {user_title} {user_id}
@@ -867,31 +956,31 @@ Coût de la recherche : {price}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$171" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
-        <source>network-not-accurate</source>
+        <source>Few members were found for this chat, may show inaccurate results!</source>
         <target state="translated">Peu de membres ont été trouvés pour ce chat, les résultats peuvent être inexacts !</target>
       </trans-unit>
       <trans-unit id="loco-fr:$172" resname="error-network-max-commands" datatype="plaintext" xml:space="preserve">
-        <source>error-network-max-commands</source>
+        <source>This command is in use by too many users, try again in a few minutes.</source>
         <target state="translated">Cette commande est utilisée par trop d'utilisateurs, réessayez dans quelques minutes.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$173" resname="error-network-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
-        <source>error-network-max-commands-from-same-user</source>
+        <source>This command is limited; wait until it finishes executing the previous one.</source>
         <target state="translated">Cette commande est limitée ; attendez qu'il ait fini d'exécuter le précédent.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$174" resname="quality-low" datatype="plaintext" xml:space="preserve">
-        <source>quality-low</source>
+        <source>Low</source>
         <target state="translated">Faible</target>
       </trans-unit>
       <trans-unit id="loco-fr:$175" resname="quality-acceptable" datatype="plaintext" xml:space="preserve">
-        <source>quality-acceptable</source>
+        <source>Acceptable</source>
         <target state="translated">Acceptable</target>
       </trans-unit>
       <trans-unit id="loco-fr:$176" resname="quality-good" datatype="plaintext" xml:space="preserve">
-        <source>quality-good</source>
+        <source>Good</source>
         <target state="translated">Bien</target>
       </trans-unit>
       <trans-unit id="loco-fr:$177" resname="quality-excellent" datatype="plaintext" xml:space="preserve">
-        <source>quality-excellent</source>
+        <source>Excellent</source>
         <target state="translated">Excellent</target>
       </trans-unit>
       <trans-unit id="loco-fr:$199" resname="btn-search" datatype="plaintext" xml:space="preserve">
@@ -934,7 +1023,7 @@ other {#/{total} résultats}
         <source>Pay with Telegram Stars</source>
         <target state="translated">Payez avec Telegram Stars</target>
       </trans-unit>
-      <trans-unit id="loco-en:$186" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-en:$186" resname="btn-back" datatype="plaintext" xml:space="preserve">
         <source>Back</source>
         <target state="translated">Retourner</target>
       </trans-unit>
@@ -1034,10 +1123,6 @@ Si l'erreur persiste longtemps, veuillez contacter l'assistance avec /support.</
         <source>Premium</source>
         <target state="translated">Premium</target>
       </trans-unit>
-      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Add a chat to TelegramDB</source>
-        <target state="translated">Ajouter un chat à TelegramDB</target>
-      </trans-unit>
       <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Error: Write a username/forward/share a user</source>
         <target state="translated">Écrire un nom d'utilisateur/transférer/partager un utilisateur</target>
@@ -1061,6 +1146,46 @@ Si l'erreur persiste longtemps, veuillez contacter l'assistance avec /support.</
       <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me the username you want to add to the TelegramDB.</source>
         <target state="translated">Écrivez-moi le nom d'utilisateur que vous souhaitez ajouter à TelegramDB.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select what you want to search for</source>
+        <target state="translated">Sélectionnez ce que vous voulez rechercher</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select what you want to do</source>
+        <target state="translated">Sélectionnez ce que vous voulez faire</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Start searching now!</source>
+        <target state="translated">Commencez à chercher dès maintenant !</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$223" resname="command-title" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Search by title</source>
+        <target state="translated">Recherche par titre</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
+        <source>Search by user</source>
+        <target state="translated">Recherche par utilisateur</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
+        <source>Search by group</source>
+        <target state="translated">Recherche par groupe</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
+        <source>Search by channel</source>
+        <target state="translated">Recherche par canal</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
+        <source>Search by bot</source>
+        <target state="translated">Recherche par bot</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
+        <source>Search by title</source>
+        <target state="translated">Recherche par titre</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Find groups in which a bot has been</source>
+        <target state="translated">Trouvez les groupes dans lesquels un robot a été</target>
       </trans-unit>
     </body>
   </file>

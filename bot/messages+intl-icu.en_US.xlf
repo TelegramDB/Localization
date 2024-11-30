@@ -13,8 +13,9 @@ This bot allows you to find public channels and groups, and see what public chat
 Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
+/search - &lt;code&gt;Search for anything&lt;/code&gt;
 /resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
-/search [name] - &lt;code&gt;Search for groups and channel&lt;/code&gt;
+/title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
@@ -43,8 +44,9 @@ This bot allows you to find public channels and groups, and see what public chat
 Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
+/search - &lt;code&gt;Search for anything&lt;/code&gt;
 /resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
-/search [name] - &lt;code&gt;Search for groups and channel&lt;/code&gt;
+/title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
 /bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
@@ -192,10 +194,10 @@ Your credits: {credits}}
         <source>Find groups in which a user has been</source>
       </trans-unit>
       <trans-unit id="loco-en:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
-        <source>Resolves a username or id</source>
+        <source>Get info</source>
       </trans-unit>
       <trans-unit id="loco-en:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
-        <source>Search for groups and channel by name</source>
+        <source>Search for anything</source>
       </trans-unit>
       <trans-unit id="loco-en:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
@@ -728,7 +730,7 @@ Your credits: {credits}</source>
         <source>Pay with Telegram Stars</source>
         <target state="translated">Pay with Telegram Stars</target>
       </trans-unit>
-      <trans-unit id="loco-en:$186" resname="btn-pay-back" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-en:$186" resname="btn-back" datatype="plaintext" xml:space="preserve">
         <source>Back</source>
         <target state="translated">Back</target>
       </trans-unit>
@@ -826,10 +828,6 @@ Please contact support with /support.</target>
         <source>Premium</source>
         <target state="translated">Premium</target>
       </trans-unit>
-      <trans-unit id="loco-en:$212" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Add to database</source>
-        <target state="translated">Add to database</target>
-      </trans-unit>
       <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Error: Write a username/forward/share a user</source>
         <target state="translated">Error: Write a username/forward/share a user</target>
@@ -837,10 +835,6 @@ Please contact support with /support.</target>
       <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
         <target state="translated">Successfully added to the database, in a few minutes it will be available on TelegramDB</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$215" resname="btn-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Add a chat to TelegramDB</source>
-        <target state="translated">Add a chat to TelegramDB</target>
       </trans-unit>
       <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Add a chat to TgDB</source>
@@ -857,6 +851,45 @@ Please contact support with /support.</target>
       <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me the username you want to add to the TelegramDB.</source>
         <target state="translated">Write me the username you want to add to the TelegramDB.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select what you want to search for</source>
+        <target state="translated">Select what you want to search for</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Select what you want to do</source>
+        <target state="translated">Select what you want to do</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Start searching now!</source>
+        <target state="translated">Start searching now!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$223" resname="command-title" datatype="plaintext" xml:space="preserve">
+        <source>Search by title</source>
+        <target state="translated">Search by title</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
+        <source>Search by user</source>
+        <target state="translated">Search by user</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
+        <source>Search by group</source>
+        <target state="translated">Search by group</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
+        <source>Search by channel</source>
+        <target state="translated">Search by channel</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
+        <source>Search by bot</source>
+        <target state="translated">Search by bot</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
+        <source>Search by title</source>
+        <target state="translated">Search by title</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve">
+        <source>Find groups in which a bot has been</source>
       </trans-unit>
     </body>
   </file>
