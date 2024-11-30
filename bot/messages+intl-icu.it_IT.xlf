@@ -648,8 +648,8 @@ other {#/{total} risultati}
 }</target>
       </trans-unit>
       <trans-unit id="loco-it:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search, or click on one of the buttons below.</source>
-        <target state="translated">Scrivimi quello che vuoi cercare, oppure clicca su uno dei pulsanti sottostanti.</target>
+        <source>Write me what you want to search.</source>
+        <target state="translated">Scrivimi quello che vuoi cercare.</target>
       </trans-unit>
       <trans-unit id="loco-it:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>
@@ -1186,6 +1186,10 @@ Se l'errore persistesse a lungo, contattare l'assistenza con /support.</target>
       <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Find groups in which a bot has been</source>
         <target state="translated">Trova i gruppi in cui un bot è stato</target>
+      </trans-unit>
+      <trans-unit id="loco-it:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve">
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">Scrivimi quello che vuoi cercare, oppure clicca su uno dei pulsanti sottostanti.</target>
       </trans-unit>
     </body>
   </file>

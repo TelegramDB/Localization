@@ -648,8 +648,8 @@ other {#/{total} 结果}
 }</target>
       </trans-unit>
       <trans-unit id="loco-zh:$100" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search, or click on one of the buttons below.</source>
-        <target state="translated">请告诉我您想搜索什么，或点击下面的按钮。</target>
+        <source>Write me what you want to search.</source>
+        <target state="translated">写给我你要找的东西。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$101" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>
@@ -1186,6 +1186,10 @@ If the error persists for a long time, please contact support with /support.</so
       <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Find groups in which a bot has been</source>
         <target state="translated">查找机器人所在的组</target>
+      </trans-unit>
+      <trans-unit id="loco-zh:$230" resname="send-username-text" datatype="plaintext" xml:space="preserve">
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">请告诉我您想搜索什么，或点击下面的按钮。</target>
       </trans-unit>
     </body>
   </file>

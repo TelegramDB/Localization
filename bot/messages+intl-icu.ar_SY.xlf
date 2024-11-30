@@ -153,7 +153,7 @@ X هو عدد النتائج، ويتم تقريبه للأسفل.
         <source>note</source>
         <target state="translated">&lt;b&gt;يرجى ملاحظة أن&lt;/b&gt; النتائج قد تتضمن أيضًا المجموعات التي كان المستخدم فيها في الماضي، لذا يجب أن يتم مراعاة أن المستخدم قد تمت إضافته إلى تلك المجموعة من قبل شخص آخر دون موافقته.</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$5" resname="support" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$4" resname="support" datatype="plaintext" xml:space="preserve">
         <source>We are not Telegram, we can only answer questions related to TelegramDB!
 
 Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
@@ -161,27 +161,27 @@ Join @tgdbchat or write to @tgdb_support for TelegramDB.org support.</source>
 
 انضم إلى @tgdbchat أو راسل @tgdb_support للحصول على دعم TelegramDB.org.</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$6" resname="block" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$5" resname="block" datatype="plaintext" xml:space="preserve">
         <source>Your account is temporarily blocked. To get unblocked, contact support with /support.</source>
         <target state="translated">تم حظر حسابك مؤقتًا. لإلغاء الحظر، اتصل بالدعم باستخدام /support.</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$7" resname="flood-warn" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$6" resname="flood-warn" datatype="plaintext" xml:space="preserve">
         <source>You are sending too many messages. Please wait a bit before sending more.</source>
         <target state="translated">أنت تقوم بإرسال الكثير من الرسائل. يرجى الانتظار قليلاً قبل إرسال المزيد.</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$8" resname="where-header" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$7" resname="where-header" datatype="plaintext" xml:space="preserve">
         <source>Results for </source>
         <target state="translated">النتائج لـ </target>
       </trans-unit>
-      <trans-unit id="loco-ar:$9" resname="btn-credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$8" resname="btn-credits" datatype="plaintext" xml:space="preserve">
         <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} اعتماد - {price, number, :: currency/EUR}</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$10" resname="btn-pay-crypto" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$9" resname="btn-pay-crypto" datatype="plaintext" xml:space="preserve">
         <source>Pay with cryptocurrencies</source>
         <target state="translated">الدفع بواسطة العملات المشفرة</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$11" resname="you-have-x-credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$10" resname="you-have-x-credits" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =0 {You have no credits.}
 =1 {You have # credit.}
@@ -193,11 +193,11 @@ other {You have # credits.}
 other {لديك # اعتمادات.}
 }</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$13" resname="send-username-user" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
         <source>Send the username or id of the person you want to search:</source>
         <target state="translated">أرسل اسم المستخدم أو المعرف للشخص الذي تريد البحث عنه:</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$14" resname="0-credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
         <source>You don't have enough credits to search.
 You have 0 credits.
 Buy them with /credits</source>
@@ -205,7 +205,7 @@ Buy them with /credits</source>
 لديك 0 اعتمادات.
 قم بشرائها باستخدام /credits</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$15" resname="not-enough-credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$14" resname="not-enough-credits" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =0 {You don't have enough credits to search.
 You need {price} credits, but you have no credits.
@@ -229,11 +229,11 @@ other {ليس لديك ما يكفي من الاعتمادات للبحث.
 قم بشرائها باستخدام /credits}
 }</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$16" resname="click-to-continue" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$15" resname="click-to-continue" datatype="plaintext" xml:space="preserve">
         <source>Click here to continue</source>
         <target state="translated">انقر هنا للمتابعة</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$17" resname="where-results" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$16" resname="where-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =1 {This search will return you one group where the user has been.
 
@@ -259,55 +259,55 @@ other {ستعيد هذه البحث # مجموعات حيث كان المستخ�
 اعتماداتك: {credits}}
 }</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$18" resname="command-help" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$17" resname="command-help" datatype="plaintext" xml:space="preserve">
         <source>Help message</source>
         <target state="translated">رسالة المساعدة</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$19" resname="command-credits" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$18" resname="command-credits" datatype="plaintext" xml:space="preserve">
         <source>Buy credits</source>
         <target state="translated">شراء الاعتمادات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$20" resname="command-where" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$19" resname="command-where" datatype="plaintext" xml:space="preserve">
         <source>Find groups in which a user has been</source>
         <target state="translated">البحث عن المجموعات التي يتواجد فيها مستخدم</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$21" resname="command-resolve" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
         <source>Get info</source>
         <target state="translated">احصل على معلومات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$22" resname="command-search" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$21" resname="command-search" datatype="plaintext" xml:space="preserve">
         <source>Search for anything</source>
         <target state="translated">ابحث عن أي شيء</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$23" resname="command-group" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$22" resname="command-group" datatype="plaintext" xml:space="preserve">
         <source>Search for groups</source>
         <target state="translated">البحث عن مجموعات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$24" resname="command-channel" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$23" resname="command-channel" datatype="plaintext" xml:space="preserve">
         <source>Search for channels</source>
         <target state="translated">البحث عن قنوات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$25" resname="command-bot" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$24" resname="command-bot" datatype="plaintext" xml:space="preserve">
         <source>Search for bots</source>
         <target state="translated">البحث عن روبوتات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$26" resname="command-faq" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$25" resname="command-faq" datatype="plaintext" xml:space="preserve">
         <source>Frequently asked questions</source>
         <target state="translated">الأسئلة المتكررة</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$27" resname="command-terms" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$26" resname="command-terms" datatype="plaintext" xml:space="preserve">
         <source>Terms and conditions</source>
         <target state="translated">الشروط والأحكام</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$28" resname="command-support" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$27" resname="command-support" datatype="plaintext" xml:space="preserve">
         <source>Contact bot support</source>
         <target state="translated">اتصل بدعم الروبوت</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$29" resname="command-stats" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$28" resname="command-stats" datatype="plaintext" xml:space="preserve">
         <source>Show statistics</source>
         <target state="translated">عرض الإحصائيات</target>
       </trans-unit>
-      <trans-unit id="loco-ar:$30" resname="command-cancel" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ar:$29" resname="command-cancel" datatype="plaintext" xml:space="preserve">
         <source>Cancel current operation</source>
         <target state="translated">إلغاء العملية الحالية</target>
       </trans-unit>
@@ -652,8 +652,8 @@ other {#/{total} النتائج}
 }</target>
       </trans-unit>
       <trans-unit id="loco-ar:$101" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search, or click on one of the buttons below.</source>
-        <target state="translated">اكتب لي ما تريد البحث عنه، أو انقر على أحد الأزرار أدناه.</target>
+        <source>Write me what you want to search.</source>
+        <target state="translated">اكتب لي ما تريد البحث عنه.</target>
       </trans-unit>
       <trans-unit id="loco-ar:$102" resname="lang" datatype="plaintext" xml:space="preserve">
         <source>🇬🇧 Choose your language</source>
@@ -1190,6 +1190,10 @@ If the error persists for a long time, please contact support with /support.</so
       <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Find groups in which a bot has been</source>
         <target state="translated">البحث عن المجموعات التي تم فيها إنشاء روبوت</target>
+      </trans-unit>
+      <trans-unit id="loco-ar:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve">
+        <source>Write me what you want to search, or click on one of the buttons below.</source>
+        <target state="translated">اكتب لي ما تريد البحث عنه، أو انقر على أحد الأزرار أدناه.</target>
       </trans-unit>
     </body>
   </file>
