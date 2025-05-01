@@ -14,7 +14,7 @@ Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
 /search - &lt;code&gt;Search for anything&lt;/code&gt;
-/resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
+/info [id or username] - &lt;code&gt;Show info from a username or ID&lt;/code&gt;
 /title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
@@ -45,7 +45,7 @@ For any info or doubts join @tgdbchat</source>
 
 🆓 &lt;b&gt;自由的命令。&lt;/b&gt;
 /search - &lt;code&gt;搜索任何内容&lt;/code&gt;
-/resolve [id或username] - &lt;code&gt;解决一个用户名或ID&lt;/code&gt;
+/info [id或username] - &lt;code&gt;显示用户名或 ID 的信息&lt;/code&gt;
 /title [name] - &lt;code&gt;搜索群组和频道&lt;/code&gt;
 /group [name] - &lt;code&gt;搜索群组&lt;/code&gt;
 /channel [name] - &lt;code&gt;搜索频道&lt;/code&gt;
@@ -190,8 +190,8 @@ other {你有 # 个积分.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-zh:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>Send the username or id of the person you want to search:</source>
-        <target state="translated">发送你想搜索的用户名或id:</target>
+        <source>Send the username or id of the person you want to search, or click the button below.</source>
+        <target state="translated">发送您要搜索的人的用户名或 ID，或点击下面的按钮。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
         <source>You don't have enough credits to search.
@@ -234,24 +234,24 @@ other {你没有足够的积分去搜索。
 =1 {This search will return you one group where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you # groups where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {此搜索将会返回一个此用户 在/在过 的群组.
 
 用户: {user_title} {user_id}
-搜索花费: {price}
+搜索花费: {price} {discount}
 你的积分: {credits}}
 other {此搜索将会返回你 # 个此用户 在/在过 的群组.
 
 用户: {user_title} {user_id}
-搜索花费: {price}
+搜索花费: {price} {discount}
 你的积分: {credits}}
 }</target>
       </trans-unit>
@@ -267,7 +267,7 @@ other {此搜索将会返回你 # 个此用户 在/在过 的群组.
         <source>Find groups in which a user has been</source>
         <target state="translated">查找用户所在的群组</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$20" resname="command-info" datatype="plaintext" xml:space="preserve">
         <source>Get info</source>
         <target state="translated">获取信息</target>
       </trans-unit>
@@ -527,27 +527,27 @@ More stats: https://www.telegramdb.org/stats</source>
         <source>Please, write me a username or id to get results.</source>
         <target state="translated">请给我写一个用户名或id来获得结果。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$74" resname="inline-resolve-no-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve">
         <source>No title</source>
         <target state="translated">无标题</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$75" resname="inline-resolve-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve">
         <source>{title}</source>
         <target state="translated">{title}</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$76" resname="inline-resolve-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve">
         <source>{id}</source>
         <target state="translated">{id}</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$77" resname="inline-resolve-error-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve">
         <source>Error</source>
         <target state="translated">错误</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$78" resname="inline-resolve-error-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">错误，用户名或id无效/未找到。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$79" resname="inline-resolve-error-text" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">错误，用户名或id无效/未找到。</target>
       </trans-unit>
@@ -737,12 +737,12 @@ Please, try again later.</source>
         <source>This search will give you {n_results} results
 
 Query: {query}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">此搜索会给你 {n_results} 个结果
 
 查询: {query}
-搜索花费: {price}
+搜索花费: {price} {discount}
 你的积分: {credits}</target>
       </trans-unit>
       <trans-unit id="loco-zh:$130" resname="search-more-no-credits" datatype="plaintext" xml:space="preserve">
@@ -828,32 +828,32 @@ Referral link: https://t.me/{username}?start={ref}</source>
         <target state="translated">您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$149" resname="send-username-group" datatype="plaintext" xml:space="preserve">
-        <source>Send username or id of group you want to search for:</source>
-        <target state="translated">发送你想搜索的用户名或id:</target>
+        <source>Send username or id of group you want to search for, or click the button below.</source>
+        <target state="translated">发送您要搜索的群组的用户名或 ID，或点击下面的按钮。</target>
       </trans-unit>
       <trans-unit id="loco-zh:$150" resname="members-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =1 {This search will return you one group member.
 
 Group: {group_title} {group_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you up to # group members.
 
 Group: {group_title} {group_id}
-Maximum search cost: {price}
+Maximum search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {该搜索将返回该组中的一个用户。
 
 用户: {group_title} {group_id}
-搜索花费: {price}
+搜索花费: {price} {discount}
 你的积分: {credits}}
 other {此搜索将返回最多 # 个群组成员。
 
 用户: {group_title} {group_id}
-最大搜索成本: {price}
+最大搜索成本: {price} {discount}
 你的积分: {credits}}
 }</target>
       </trans-unit>
@@ -890,13 +890,13 @@ other {此搜索将返回最多 # 个群组成员。
 
 User: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">这种搜索会找到与用户相近的用户。
 
 用户： {user_title} {user_id}
 结果质量：{quality}
-搜索成本：{price}
+搜索成本：{price} {discount}
 您的学分： {credits}</target>
       </trans-unit>
       <trans-unit id="loco-zh:$159" resname="near-results-info" datatype="plaintext" xml:space="preserve">
@@ -940,8 +940,8 @@ Your credits: {credits}</source>
         <target state="translated">附近的聊天内容是什么？</target>
       </trans-unit>
       <trans-unit id="loco-zh:$169" resname="btn-search" datatype="plaintext" xml:space="preserve">
-        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits</source>
-        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} 结果 - {price} 积分</target>
+        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits {discount}</source>
+        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} 结果 - {price} 积分 {discount}</target>
       </trans-unit>
       <trans-unit id="loco-zh:$170" resname="footer-search-truncated" datatype="plaintext" xml:space="preserve">
         <source>The results have been truncated, to see the full results see the CSV file.</source>
@@ -956,13 +956,13 @@ Your credits: {credits}</source>
 
 Chat: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">此搜索将找到与此最接近的聊天。
 
 聊天: {user_title} {user_id}
 结果质量: {quality}
-搜索费用: {price}
+搜索费用: {price} {discount}
 您的积分: {credits}</target>
       </trans-unit>
       <trans-unit id="loco-zh:$173" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
@@ -1144,8 +1144,8 @@ If the error persists for a long time, please contact support with /support.</so
         <target state="translated">已在 TelegramDB 上添加用户名！</target>
       </trans-unit>
       <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Write me the username you want to add to the TelegramDB.</source>
-        <target state="translated">写下您要添加到 TelegramDB 的用户名。</target>
+        <source>Write me the username you want to add to the TelegramDB, or click the button below.</source>
+        <target state="translated">给我写下您想添加到 TelegramDB 的用户名，或点击下面的按钮。</target>
       </trans-unit>
       <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to search for</source>
@@ -1188,8 +1188,36 @@ If the error persists for a long time, please contact support with /support.</so
         <target state="translated">查找机器人所在的组</target>
       </trans-unit>
       <trans-unit id="loco-zh:$230" resname="send-username-text" datatype="plaintext" xml:space="preserve">
+        <source>Write me what you want to search.</source>
+        <target state="translated">写下您想要搜索的内容。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">请告诉我您想搜索什么，或点击下面的按钮。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+        <source>Discount -{value}%</source>
+        <target state="translated">折扣 -{value}%</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+        <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
+        <target state="translated">代码格式不正确。请检查输入是否正确。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+        <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
+        <target state="translated">连接 tgdb.org 时发生错误。请检查您的代码。如果错误仍然存在，请稍后再试。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+        <source>Successfully connected to tgdb.org!</source>
+        <target state="translated">成功连接到 tgdb.org！</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+        <source>You did not enter the code correctly, write /connect ID.</source>
+        <target state="translated">您没有正确输入密码，请输入 /connect ID。</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+        <source>Manage account</source>
+        <target state="translated">管理账户</target>
       </trans-unit>
     </body>
   </file>

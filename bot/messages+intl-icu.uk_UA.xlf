@@ -14,7 +14,7 @@ Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
 /search - &lt;code&gt;Search for anything&lt;/code&gt;
-/resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
+/info [id or username] - &lt;code&gt;Show info from a username or ID&lt;/code&gt;
 /title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
@@ -45,7 +45,7 @@ For any info or doubts join @tgdbchat</source>
 
 🆓 &lt;b&gt;Безкоштовне управління:&lt;/b&gt;
 /search - &lt;code&gt;Шукайте будь-що&lt;/code&gt;
-/resolve [ID або ім'я] - &lt;code&gt;Розв'язати ім'я користувача або ID&lt;/code&gt;
+/info [ID або ім'я] - &lt;code&gt;Показати інформацію з імені користувача або ідентифікатора&lt;/code&gt;
 /title [ім'я] - &lt;code&gt;Пошук груп та каналів&lt;/code&gt;
 /group [ім'я] - &lt;code&gt;Пошук груп&lt;/code&gt;
 /channel [ім'я] - &lt;code&gt;Пошук каналів&lt;/code&gt;
@@ -190,8 +190,8 @@ other {У вас # кредитів.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-uk:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>Send the username or id of the person you want to search:</source>
-        <target state="translated">Відправте ім'я користувача або ID людини, яку ви хочете знайти:</target>
+        <source>Send the username or id of the person you want to search, or click the button below.</source>
+        <target state="translated">Надішліть ім'я користувача або ідентифікатор людини, яку ви хочете знайти, або натисніть кнопку нижче.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
         <source>You don't have enough credits to search.
@@ -234,24 +234,24 @@ other {У вас недостатньо кредитів для виконанн
 =1 {This search will return you one group where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you # groups where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {Цей пошук поверне вам групу, де знаходиться/знаходився користувач.
 
 Користувач: {user_title} {user_id}
-Вартість пошуку: {price}
+Вартість пошуку: {price} {discount}
 Ваші кредити: {credits}}
 other {Цей пошук поверне вам # груп, де знаходиться/знаходився користувач.
 
 Користувач: {user_title} {user_id}
-Вартість пошуку: {price}
+Вартість пошуку: {price} {discount}
 Ваші кредити: {credits}}
 }</target>
       </trans-unit>
@@ -267,7 +267,7 @@ other {Цей пошук поверне вам # груп, де знаходит
         <source>Find groups in which a user has been</source>
         <target state="translated">Пошук груп користувача</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$20" resname="command-info" datatype="plaintext" xml:space="preserve">
         <source>Get info</source>
         <target state="translated">Отримати інформацію</target>
       </trans-unit>
@@ -527,27 +527,27 @@ More stats: https://www.telegramdb.org/stats</source>
         <source>Please, write me a username or id to get results.</source>
         <target state="translated">Введіть ім'я користувача або ID, щоб отримати результати.</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$74" resname="inline-resolve-no-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve">
         <source>No title</source>
         <target state="translated">Немає імені</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$75" resname="inline-resolve-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve">
         <source>{title}</source>
         <target state="translated">{title}</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$76" resname="inline-resolve-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve">
         <source>{id}</source>
         <target state="translated">{id}</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$77" resname="inline-resolve-error-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve">
         <source>Error</source>
         <target state="translated">Помилка</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$78" resname="inline-resolve-error-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Помилка, недійсне ім'я користувача або ID.</target>
       </trans-unit>
-      <trans-unit id="loco-uk:$79" resname="inline-resolve-error-text" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-uk:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Помилка, недійсне ім'я користувача або ID.</target>
       </trans-unit>
@@ -737,12 +737,12 @@ Please, try again later.</source>
         <source>This search will give you {n_results} results
 
 Query: {query}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Ця дослідження дасть вам {n_results} результатів
 
 Запит: {query}
-Вартість дослідження: {price}
+Вартість дослідження: {price} {discount}
 Ваші кредити: {credits}</target>
       </trans-unit>
       <trans-unit id="loco-uk:$130" resname="search-more-no-credits" datatype="plaintext" xml:space="preserve">
@@ -828,32 +828,32 @@ Referral link: https://t.me/{username}?start={ref}</source>
         <target state="translated">Ви можете відкрити цей файл як текст, електронну таблицю або імпортувати його в Maltego за допомогою Імпорт → Імпорт експортованої таблиці.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$149" resname="send-username-group" datatype="plaintext" xml:space="preserve">
-        <source>Send username or id of group you want to search for:</source>
-        <target state="translated">Відправте ім'я користувача або ID, для якого ви хочете отримати асоціації груп користувачів:</target>
+        <source>Send username or id of group you want to search for, or click the button below.</source>
+        <target state="translated">Надішліть ім'я користувача або ідентифікатор групи, яку ви хочете знайти, або натисніть кнопку нижче.</target>
       </trans-unit>
       <trans-unit id="loco-uk:$150" resname="members-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =1 {This search will return you one group member.
 
 Group: {group_title} {group_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you up to # group members.
 
 Group: {group_title} {group_id}
-Maximum search cost: {price}
+Maximum search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {Цей пошук поверне користувача з групи.
 
 Користувач: {group_title} {group_id}
-Вартість пошуку: {price}
+Вартість пошуку: {price} {discount}
 Ваші кредити: {credits}}
 other {Цей пошук поверне до # учасників групи.
 
 Користувач: {group_title} {group_id}
-Максимальна вартість пошуку: {price}
+Максимальна вартість пошуку: {price} {discount}
 Ваші кредити: {credits}}
 }</target>
       </trans-unit>
@@ -890,13 +890,13 @@ other {Цей пошук поверне до # учасників групи.
 
 User: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Цей пошук знайде користувачів, близьких до користувача.
 
 Користувач: {user_title} {user_id}
 Якість результатів: {quality}
-Вартість пошуку: {price} 
+Вартість пошуку: {price} {discount}
 Ваші кредити: {credits}</target>
       </trans-unit>
       <trans-unit id="loco-uk:$159" resname="near-results-info" datatype="plaintext" xml:space="preserve">
@@ -940,8 +940,8 @@ Your credits: {credits}</source>
         <target state="translated">Які чати поблизу?</target>
       </trans-unit>
       <trans-unit id="loco-uk:$169" resname="btn-search" datatype="plaintext" xml:space="preserve">
-        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits</source>
-        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} результатів - {price} кредитів</target>
+        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits {discount}</source>
+        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} результатів - {price} кредитів {discount}</target>
       </trans-unit>
       <trans-unit id="loco-uk:$170" resname="footer-search-truncated" datatype="plaintext" xml:space="preserve">
         <source>The results have been truncated, to see the full results see the CSV file.</source>
@@ -956,13 +956,13 @@ Your credits: {credits}</source>
 
 Chat: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Цей пошук дозволить знайти чати, найближчі до цього.
 
 Чат: {user_title} {user_id}
 Якість результатів: {quality}
-Вартість пошуку: {price}
+Вартість пошуку: {price} {discount}
 Ваші кредити: {credits}</target>
       </trans-unit>
       <trans-unit id="loco-uk:$173" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
@@ -1144,8 +1144,8 @@ If the error persists for a long time, please contact support with /support.</so
         <target state="translated">Ім'я користувача додано в TelegramDB!</target>
       </trans-unit>
       <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Write me the username you want to add to the TelegramDB.</source>
-        <target state="translated">Напишіть мені ім'я користувача, якого ви хочете додати до TelegramDB.</target>
+        <source>Write me the username you want to add to the TelegramDB, or click the button below.</source>
+        <target state="translated">Напишіть мені ім'я користувача, якого ви хочете додати до TelegramDB, або натисніть кнопку нижче.</target>
       </trans-unit>
       <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to search for</source>
@@ -1188,8 +1188,36 @@ If the error persists for a long time, please contact support with /support.</so
         <target state="translated">Знайти групи, в яких був бот</target>
       </trans-unit>
       <trans-unit id="loco-uk:$230" resname="send-username-text" datatype="plaintext" xml:space="preserve">
+        <source>Write me what you want to search.</source>
+        <target state="translated">Напишіть мені, що ви хочете шукати.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">Напишіть мені, що ви хочете шукати, або натисніть на одну з кнопок нижче.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+        <source>Discount -{value}%</source>
+        <target state="translated">Знижка -{value}%</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+        <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
+        <target state="translated">Виникла помилка при підключенні до tgdb.org. Перевірте свій код. Якщо помилка не зникне, спробуйте пізніше.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+        <source>Successfully connected to tgdb.org!</source>
+        <target state="translated">Успішне підключення до tgdb.org!</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+        <source>You did not enter the code correctly, write /connect ID.</source>
+        <target state="translated">Ви невірно ввели код, тому, будь ласка, напишіть /connect ID.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+        <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
+        <target state="translated">Код неправильного формату. Будь ласка, перевірте, чи правильно ви його ввели.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+        <source>Manage account</source>
+        <target state="translated">Керування обліковим записом</target>
       </trans-unit>
     </body>
   </file>

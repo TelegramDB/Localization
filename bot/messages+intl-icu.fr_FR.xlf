@@ -14,7 +14,7 @@ Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
 /search - &lt;code&gt;Search for anything&lt;/code&gt;
-/resolve [id or username] - &lt;code&gt;Resolve a username or ID&lt;/code&gt;
+/info [id or username] - &lt;code&gt;Show info from a username or ID&lt;/code&gt;
 /title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
 /channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
@@ -45,7 +45,7 @@ Utilisez nos requêtes en ligne pour obtenir des informations sur les utilisateu
 
 🆓 &lt;b&gt;Commandes gratuites:&lt;/b&gt;
 /search - &lt;code&gt;Recherchez n'importe quoi&lt;/code&gt;
-/resolve [id ou username] - &lt;code&gt;Résoudre un nom d'utilisateur ou un identifiant&lt;/code&gt;
+/info [id ou username] - &lt;code&gt;Afficher les informations à partir d'un nom d'utilisateur ou d'un identifiant&lt;/code&gt;
 /title [name] - &lt;code&gt;Recherche de groupes et de chaînes&lt;/code&gt;
 /group [name] - &lt;code&gt;Recherche de groupes&lt;/code&gt;
 /channel [name] - &lt;code&gt;Recherche de chaînes&lt;/code&gt;
@@ -190,8 +190,8 @@ other {Vous avez # de crédits.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-fr:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>Send the username or id of the person you want to search:</source>
-        <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant de la personne que vous souhaitez rechercher :</target>
+        <source>Send the username or id of the person you want to search, or click the button below.</source>
+        <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant de la personne que vous souhaitez rechercher, ou cliquez sur le bouton ci-dessous.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
         <source>You don't have enough credits to search.
@@ -234,24 +234,24 @@ Achetez-les avec /credits}
 =1 {This search will return you one group where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you # groups where the user has been.
 
 User: {user_title} {user_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {Cette recherche vous renverra un groupe où l'utilisateur a été.
 
 Utilisateur : {user_title} {user_id}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}}
 other {Cette recherche vous renverra # groupes où l'utilisateur a été.
 
 Utilisateur : {user_title} {user_id}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}}
 }</target>
       </trans-unit>
@@ -267,7 +267,7 @@ Votre crédits : {credits}}
         <source>Find groups in which a user has been</source>
         <target state="translated">Rechercher les groupes dans lesquels un utilisateur est présent</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$20" resname="command-info" datatype="plaintext" xml:space="preserve">
         <source>Get info</source>
         <target state="translated">Obtenir des informations</target>
       </trans-unit>
@@ -527,27 +527,27 @@ Plus de statistiques : https ://www.telegramdb.org/stats</target>
         <source>Please, write me a username or id to get results.</source>
         <target state="translated">Veuillez m'indiquer un nom d'utilisateur ou un identifiant pour obtenir des résultats.</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$74" resname="inline-resolve-no-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve">
         <source>No title</source>
         <target state="translated">Pas de titre</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$75" resname="inline-resolve-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve">
         <source>{title}</source>
         <target state="translated">{title}</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$76" resname="inline-resolve-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve">
         <source>{id}</source>
         <target state="translated">{id}</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$77" resname="inline-resolve-error-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve">
         <source>Error</source>
         <target state="translated">Erreur</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$78" resname="inline-resolve-error-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide ou n'a pas été trouvé.</target>
       </trans-unit>
-      <trans-unit id="loco-fr:$79" resname="inline-resolve-error-text" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fr:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Erreur, le nom d'utilisateur ou l'identifiant n'est pas valide ou n'a pas été trouvé.</target>
       </trans-unit>
@@ -725,12 +725,12 @@ S'il vous plaît, réessayez plus tard.</target>
         <source>This search will give you {n_results} results
 
 Query: {query}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Cette recherche vous donnera {n_results} results
 
 Query : {query}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$129" resname="search-more-no-credits" datatype="plaintext" xml:space="preserve">
@@ -826,32 +826,32 @@ https://t.me/tgdatabase</target>
         <target state="translated">Vous pouvez ouvrir ce fichier en tant que texte, feuille de calcul ou l'importer dans Maltego avec Import → Importation d'un tableau exporté.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$149" resname="send-username-group" datatype="plaintext" xml:space="preserve">
-        <source>Send username or id of group you want to search for:</source>
-        <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant du groupe que vous souhaitez rechercher :</target>
+        <source>Send username or id of group you want to search for, or click the button below.</source>
+        <target state="translated">Envoyez le nom d'utilisateur ou l'identifiant du groupe que vous souhaitez rechercher, ou cliquez sur le bouton ci-dessous.</target>
       </trans-unit>
       <trans-unit id="loco-fr:$150" resname="members-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =1 {This search will return you one group member.
 
 Group: {group_title} {group_id}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}}
 other {This search will return you up to # group members.
 
 Group: {group_title} {group_id}
-Maximum search cost: {price}
+Maximum search cost: {price} {discount}
 Your credits: {credits}}
 }</source>
         <target state="translated">{count, plural,
 =1 {Cette recherche vous renverra un membre du groupe.
 
 Groupe : {group_title} {group_id}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}}
 other {Cette recherche vous renverra jusqu'à # des membres du groupe.
 
 Groupe : {group_title} {group_id}
-Coût maximum de la recherche : {price}
+Coût maximum de la recherche : {price} {discount}
 Votre crédits : {credits}}
 }</target>
       </trans-unit>
@@ -888,13 +888,13 @@ Votre crédits : {credits}}
 
 User: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Cette recherche permet de trouver des utilisateurs proches de l'utilisateur.
 
 Utilisateur : {user_title} {user_id}
 Qualité des résultats : {quality}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$159" resname="near-results-info" datatype="plaintext" xml:space="preserve">
@@ -946,13 +946,13 @@ Votre crédits : {credits}</target>
 
 Chat: {user_title} {user_id}
 Quality of results: {quality}
-Search cost: {price}
+Search cost: {price} {discount}
 Your credits: {credits}</source>
         <target state="translated">Cette recherche trouvera les chats les plus proches de celui-ci.
 
 Chat : {user_title} {user_id}
 Qualité des résultats : {quality}
-Coût de la recherche : {price}
+Coût de la recherche : {price} {discount}
 Votre crédits : {credits}</target>
       </trans-unit>
       <trans-unit id="loco-fr:$171" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
@@ -984,8 +984,8 @@ Votre crédits : {credits}</target>
         <target state="translated">Excellent</target>
       </trans-unit>
       <trans-unit id="loco-fr:$199" resname="btn-search" datatype="plaintext" xml:space="preserve">
-        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits</source>
-        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} résultats - {price} crédits</target>
+        <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits {discount}</source>
+        <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} résultats - {price} crédits {discount}</target>
       </trans-unit>
       <trans-unit id="loco-en:$99" resname="search-header2-without-about" datatype="plaintext" xml:space="preserve" approved="no">
         <source>{count, plural,
@@ -1144,8 +1144,8 @@ Si l'erreur persiste longtemps, veuillez contacter l'assistance avec /support.</
         <target state="translated">Nom d'utilisateur ajouté sur TelegramDB !</target>
       </trans-unit>
       <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Write me the username you want to add to the TelegramDB.</source>
-        <target state="translated">Écrivez-moi le nom d'utilisateur que vous souhaitez ajouter à TelegramDB.</target>
+        <source>Write me the username you want to add to the TelegramDB, or click the button below.</source>
+        <target state="translated">Ecrivez-moi le nom d'utilisateur que vous voulez ajouter à la TelegramDB, ou cliquez sur le bouton ci-dessous.</target>
       </trans-unit>
       <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to search for</source>
@@ -1190,6 +1190,30 @@ Si l'erreur persiste longtemps, veuillez contacter l'assistance avec /support.</
       <trans-unit id="loco-fr:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve">
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">Écrivez-moi ce que vous voulez rechercher, ou cliquez sur l'un des boutons ci-dessous.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+        <source>Discount -{value}%</source>
+        <target state="translated">Remise -{value}%</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+        <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
+        <target state="translated">Le code n'est pas dans le bon format. Veuillez vérifier que vous l'avez saisi correctement.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+        <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
+        <target state="translated">Une erreur s'est produite lors de la connexion à tgdb.org. Vérifiez votre code. Si l'erreur persiste, veuillez réessayer plus tard.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+        <source>Successfully connected to tgdb.org!</source>
+        <target state="translated">Connexion réussie à tgdb.org !</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+        <source>You did not enter the code correctly, write /connect ID.</source>
+        <target state="translated">Vous n'avez pas saisi le code correctement, veuillez écrire /connect ID.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+        <source>Manage account</source>
+        <target state="translated">Gérer le compte</target>
       </trans-unit>
     </body>
   </file>
