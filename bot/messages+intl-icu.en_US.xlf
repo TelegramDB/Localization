@@ -13,7 +13,7 @@ This bot allows you to find public channels and groups, and see what public chat
 Use our inline queries to get user details from usernames and IDs.
 
 🆓 &lt;b&gt;Free commands:&lt;/b&gt;
-/search - &lt;code&gt;Search for anything&lt;/code&gt;
+/search -&gt;Search for anything&lt;/code&gt;
 /info [id or username] - &lt;code&gt;Show info from a username or ID&lt;/code&gt;
 /title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
 /group [name] - &lt;code&gt;Search for groups&lt;/code&gt;

@@ -1003,187 +1003,187 @@ Your credits: {credits}</source>
         <source>Excellent</source>
         <target state="translated">عالی</target>
       </trans-unit>
-      <trans-unit id="loco-en:$181" resname="btn-send-user" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$181" resname="btn-send-user" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the user to send</source>
         <target state="translated">کاربر مورد نظر را برای ارسال انتخاب کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$182" resname="btn-send-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$182" resname="btn-send-group" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the group to send</source>
         <target state="translated">گروه مورد نظر را برای ارسال انتخاب کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">با عرض پوزش، شما فقط می توانید برای گروه ها جستجو کنید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
         <source>Pay with card via Telegram</source>
         <target state="translated">پرداخت با کارت از طریق تلگرام</target>
       </trans-unit>
-      <trans-unit id="loco-en:$185" resname="btn-back" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$185" resname="btn-back" datatype="plaintext" xml:space="preserve">
         <source>Back</source>
         <target state="translated">برگرد</target>
       </trans-unit>
-      <trans-unit id="loco-en:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
         <source>Pay with Telegram Stars</source>
         <target state="translated">پرداخت با تلگرام استار</target>
       </trans-unit>
-      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
         <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} اعتبار - {price, number} Stars</target>
       </trans-unit>
-      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Payment was successful, {credits} credits were added to you!</source>
         <target state="translated">پرداخت با موفقیت انجام شد، {credits} اعتبار به شما اضافه شد!</target>
       </trans-unit>
-      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay with card</source>
         <target state="translated">با کارت پرداخت کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
         <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} اعتبار - {price, number, :: currency/EUR}</target>
       </trans-unit>
-      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem with the payment.
 Please contact support with /support.</source>
         <target state="translated">مشکلی در پرداخت وجود داشت.
 لطفا با پشتیبانی با /support تماس بگیرید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem with the payment, it will be tried again later.
 If the error persists for a long time, please contact support with /support.</source>
         <target state="translated">مشکلی در پرداخت وجود داشت، بعداً دوباره امتحان می شود.
 اگر خطا برای مدت طولانی ادامه داشت، لطفا با پشتیبانی با /support تماس بگیرید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, the search is too long and cannot be done.</source>
         <target state="translated">با عرض پوزش، جستجو خیلی طولانی است و انجام نمی شود.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay with PayPal</source>
         <target state="translated">با پی پال پرداخت کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay</source>
         <target state="translated">پرداخت</target>
       </trans-unit>
-      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
         <target state="translated">در پرداخت از طریق ارز دیجیتال خطایی وجود داشت، لطفاً با پشتیبانی /support تماس بگیرید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
         <target state="translated">پرداخت ارز دیجیتال در حال پردازش است، ظرف چند دقیقه اعتبار خود را دریافت خواهید کرد.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
         <target state="translated">پرداخت ارز دیجیتال در حال پردازش است، ظرف چند دقیقه اعتبار خود را دریافت خواهید کرد.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
         <target state="translated">در پرداخت از طریق ارز دیجیتال خطایی وجود داشت، لطفاً با پشتیبانی /support تماس بگیرید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem adding credits to you, please contact support with /support.</source>
         <target state="translated">مشکلی در افزودن اعتبار به شما وجود داشت، لطفاً با پشتیبانی با /support تماس بگیرید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
         <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
         <target state="translated">ما منتظر پرداخت ارز دیجیتال شما هستیم، ممکن است چند دقیقه طول بکشد.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
         <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
         <target state="translated">شما فقط بخشی از صورتحساب را به صورت رمزنگاری پرداخت کردید، فقط اعتبارات {credits} به شما اضافه شد.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the channel to send</source>
         <target state="translated">کانال ارسال را انتخاب کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Crypto payments could take several minutes.</source>
         <target state="translated">پرداخت های رمزنگاری ممکن است چند دقیقه طول بکشد.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Old username</source>
         <target state="translated">نام کاربری قدیمی</target>
       </trans-unit>
-      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Verified</source>
         <target state="translated">تایید شده است</target>
       </trans-unit>
-      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Scam</source>
         <target state="translated">کلاهبرداری</target>
       </trans-unit>
-      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Fake</source>
         <target state="translated">جعلی</target>
       </trans-unit>
-      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Premium</source>
         <target state="translated">حق بیمه</target>
       </trans-unit>
-      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Error: Write a username/forward/share a user</source>
         <target state="translated">یک نام کاربری بنویسید / فوروارد / یک کاربر را به اشتراک بگذارید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
         <target state="translated">با موفقیت به پایگاه داده اضافه شد، تا چند دقیقه دیگر در تلگرام دی بی در دسترس خواهد بود</target>
       </trans-unit>
-      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Add a chat to TgDB</source>
         <target state="translated">یک چت به TgDB اضافه کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Update the username on TelegramDB</source>
         <target state="translated">نام کاربری را در تلگرام دی بی به روز کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Username added on TelegramDB!</source>
         <target state="translated">نام کاربری در تلگرام دی بی اضافه شد!</target>
       </trans-unit>
-      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me the username you want to add to the TelegramDB, or click the button below.</source>
         <target state="translated">نام کاربری را که می خواهید به TelegramDB اضافه کنید بنویسید یا روی دکمه زیر کلیک کنید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to search for</source>
         <target state="translated">آنچه را که می خواهید جستجو کنید انتخاب کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to do</source>
         <target state="translated">کاری را که می خواهید انجام دهید انتخاب کنید</target>
       </trans-unit>
-      <trans-unit id="loco-en:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Start searching now!</source>
         <target state="translated">اکنون جستجو را شروع کنید!</target>
       </trans-unit>
-      <trans-unit id="loco-en:$223" resname="command-title" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$223" resname="command-title" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Search by title</source>
         <target state="translated">جستجو بر اساس عنوان</target>
       </trans-unit>
-      <trans-unit id="loco-en:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
         <source>Search by group</source>
         <target state="translated">جستجو بر اساس گروه</target>
       </trans-unit>
-      <trans-unit id="loco-en:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
         <source>Search by channel</source>
         <target state="translated">جستجو بر اساس کانال</target>
       </trans-unit>
-      <trans-unit id="loco-en:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
         <source>Search by bot</source>
         <target state="translated">جستجو با ربات</target>
       </trans-unit>
-      <trans-unit id="loco-en:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
         <source>Search by title</source>
         <target state="translated">جستجو بر اساس عنوان</target>
       </trans-unit>
-      <trans-unit id="loco-en:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
         <source>Search by user</source>
         <target state="translated">جستجو بر اساس کاربر</target>
       </trans-unit>
-      <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-fa:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Find groups in which a bot has been</source>
         <target state="translated">گروه هایی را پیدا کنید که یک ربات در آنها حضور داشته است</target>
       </trans-unit>
@@ -1191,27 +1191,27 @@ If the error persists for a long time, please contact support with /support.</so
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">من شما را دیدم و خواستم جستجو کنم و دوست دارم در مورد تونس و پالائو بیشتر بدانم.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$231" resname="discount" datatype="plaintext" xml:space="preserve">
         <source>Discount -{value}%</source>
         <target state="translated">تخفیف -{value}%</target>
       </trans-unit>
-      <trans-unit id="loco-en:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
         <source>You did not enter the code correctly, write /connect ID.</source>
         <target state="translated">کد را درست وارد نکردید، شناسه /connect را بنویسید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
         <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
         <target state="translated">هنگام اتصال به tgdb.org خطایی روی داد. کد خود را بررسی کنید اگر خطا ادامه داشت، لطفاً بعداً دوباره امتحان کنید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
         <source>Successfully connected to tgdb.org!</source>
         <target state="translated">با موفقیت به tgdb.org متصل شد!</target>
       </trans-unit>
-      <trans-unit id="loco-en:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
         <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
         <target state="translated">فرمت کد درست نیست لطفا بررسی کنید که آن را به درستی وارد کرده اید.</target>
       </trans-unit>
-      <trans-unit id="loco-en:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-fa:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
         <source>Manage account</source>
         <target state="translated">مدیریت حساب</target>
       </trans-unit>

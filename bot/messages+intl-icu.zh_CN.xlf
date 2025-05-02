@@ -819,19 +819,29 @@ Referral link: https://t.me/{username}?start={ref}</source>
         <source>Sorry, but you cannot generate invitation links if you have never made a purchase.</source>
         <target state="translated">抱歉，如果您从未购买过，则无法生成邀请链接。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$147" resname="search-no-free-uses" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$147" resname="temp-not-available" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>This command is not available at the moment.
+
+If you want to be notified when it will be available again, join our channel:
+https://t.me/tgdatabase</source>
+        <target state="translated">该命令目前不可用。
+
+如果您想在再次可用时收到通知，请加入我们的频道：
+https://t.me/tgdatabase</target>
+      </trans-unit>
+      <trans-unit id="loco-zh:$148" resname="search-no-free-uses" datatype="plaintext" xml:space="preserve">
         <source>You have reached the daily search limit. Contact support with /support for more information or try again tomorrow.</source>
         <target state="translated">您已达到每日搜索上限。请使用 /support 联系技术支持以获取更多信息，或明天再试。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$148" resname="csv-caption-info" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$149" resname="csv-caption-info" datatype="plaintext" xml:space="preserve">
         <source>You can open this file as a text, a spreadsheet, or you can import it into Maltego with Import → Import an Exported Table.</source>
         <target state="translated">您可以以文本、电子表格形式打开该文件，或使用导入 → 导入导出的表格将其导入 Maltego。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$149" resname="send-username-group" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$150" resname="send-username-group" datatype="plaintext" xml:space="preserve">
         <source>Send username or id of group you want to search for, or click the button below.</source>
         <target state="translated">发送您要搜索的群组的用户名或 ID，或点击下面的按钮。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$150" resname="members-results" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$151" resname="members-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
 =1 {This search will return you one group member.
 
@@ -857,35 +867,35 @@ other {此搜索将返回最多 # 个群组成员。
 你的积分: {credits}}
 }</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$151" resname="error-members-search-only-public-groups" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$152" resname="error-members-search-only-public-groups" datatype="plaintext" xml:space="preserve">
         <source>You can only search for members of public groups.</source>
         <target state="translated">你只能搜索公开群组的成员。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$152" resname="error-members-search-only-groups" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$153" resname="error-members-search-only-groups" datatype="plaintext" xml:space="preserve">
         <source>You can only search for members of groups.</source>
         <target state="translated">你只能搜索群组的成员。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$153" resname="error-members-no-results" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$154" resname="error-members-no-results" datatype="plaintext" xml:space="preserve">
         <source>Sorry, your search returned no members for this group.</source>
         <target state="translated">对不起，您的搜索没有结果。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$154" resname="floodwait-members" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$155" resname="floodwait-members" datatype="plaintext" xml:space="preserve">
         <source>Sorry, you made too many requests, please try again later.</source>
         <target state="translated">抱歉，您的请求过多，请稍后重试。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$155" resname="btn-members" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$156" resname="btn-members" datatype="plaintext" xml:space="preserve">
         <source>{members} members - {price} credits</source>
         <target state="translated">{members} 个成员 - {price} 积分</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$156" resname="near-no-groups" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$157" resname="near-no-groups" datatype="plaintext" xml:space="preserve">
         <source>There are not enough groups to use this command.</source>
         <target state="translated">没有足够的组来使用此命令。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$157" resname="near-time" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$158" resname="near-time" datatype="plaintext" xml:space="preserve">
         <source>Load time:</source>
         <target state="translated">加载时间：</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$158" resname="near-results" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$159" resname="near-results" datatype="plaintext" xml:space="preserve">
         <source>This search will find users close to the user.
 
 User: {user_title} {user_id}
@@ -899,59 +909,59 @@ Your credits: {credits}</source>
 搜索成本：{price} {discount}
 您的学分： {credits}</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$159" resname="near-results-info" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$160" resname="near-results-info" datatype="plaintext" xml:space="preserve">
         <source>The term near refers to a virtual distance between Telegram communities, and not to the physical distance between users.</source>
         <target state="translated">所谓 "近 "是指 Telegram 社区之间的虚拟距离，而不是用户之间的物理距离。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$160" resname="near-wait" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$161" resname="near-wait" datatype="plaintext" xml:space="preserve">
         <source>Wait for the execution of the command, it may take a few minutes…</source>
         <target state="translated">等待命令执行，可能需要几分钟时间…</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$161" resname="near-not-accurate" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$162" resname="near-not-accurate" datatype="plaintext" xml:space="preserve">
         <source>Few groups were found for this user, may show inaccurate results!</source>
         <target state="translated">为该用户找到的组很少，可能会显示不准确的结果！</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$162" resname="error-near-max-commands" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$163" resname="error-near-max-commands" datatype="plaintext" xml:space="preserve">
         <source>This command is in use by too many users, try again in a few minutes.</source>
         <target state="translated">太多用户正在使用此命令，请几分钟后再试。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$163" resname="error-near-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$164" resname="error-near-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
         <source>This command is limited; wait until it finishes executing the previous one.</source>
         <target state="translated">这条命令是有限制的，请等待它执行完前一条命令。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$164" resname="command-similar" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$165" resname="command-similar" datatype="plaintext" xml:space="preserve">
         <source>Did you want to execute the {command} command?</source>
         <target state="translated">您想执行 {command} 命令吗？</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$165" resname="footer-where" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$166" resname="footer-where" datatype="plaintext" xml:space="preserve">
         <source>What groups is the user a member of?</source>
         <target state="translated">用户是哪些组的成员？</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$166" resname="footer-near" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$167" resname="footer-near" datatype="plaintext" xml:space="preserve">
         <source>Who are the nearby users?</source>
         <target state="translated">附近有哪些用户？</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$167" resname="footer-members" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$168" resname="footer-members" datatype="plaintext" xml:space="preserve">
         <source>Who are the members?</source>
         <target state="translated">成员有哪些？</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$168" resname="footer-network" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$169" resname="footer-network" datatype="plaintext" xml:space="preserve">
         <source>What are the nearby chats?</source>
         <target state="translated">附近的聊天内容是什么？</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$169" resname="btn-search" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$170" resname="btn-search" datatype="plaintext" xml:space="preserve">
         <source>{n_res_type, select, approximate {~{n_res}} other {{n_res}}} results - {price} credits {discount}</source>
         <target state="translated">{n_res_type, select, approximate {~{n_res}} other {{n_res}}} 结果 - {price} 积分 {discount}</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$170" resname="footer-search-truncated" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$171" resname="footer-search-truncated" datatype="plaintext" xml:space="preserve">
         <source>The results have been truncated, to see the full results see the CSV file.</source>
         <target state="translated">结果已被截断，要查看完整结果，请参阅 CSV 文件。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$171" resname="network-no-groups" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$172" resname="network-no-groups" datatype="plaintext" xml:space="preserve">
         <source>There are not enough users to use this command.</source>
         <target state="translated">没有足够的用户来使用此命令。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$172" resname="network-results" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$173" resname="network-results" datatype="plaintext" xml:space="preserve">
         <source>This search will find the chats closest to this one.
 
 Chat: {user_title} {user_id}
@@ -965,257 +975,243 @@ Your credits: {credits}</source>
 搜索费用: {price} {discount}
 您的积分: {credits}</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$173" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$174" resname="network-not-accurate" datatype="plaintext" xml:space="preserve">
         <source>Few members were found for this chat, may show inaccurate results!</source>
         <target state="translated">此聊天中发现的成员很少，可能显示不准确的结果！</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$174" resname="error-network-max-commands" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$175" resname="error-network-max-commands" datatype="plaintext" xml:space="preserve">
         <source>This command is in use by too many users, try again in a few minutes.</source>
         <target state="translated">此命令被太多用户使用，请在几分钟后重试。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$175" resname="error-network-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$176" resname="error-network-max-commands-from-same-user" datatype="plaintext" xml:space="preserve">
         <source>This command is limited; wait until it finishes executing the previous one.</source>
         <target state="translated">该命令是有限的； 等到它执行完前一个。</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$176" resname="quality-low" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$177" resname="quality-low" datatype="plaintext" xml:space="preserve">
         <source>Low</source>
         <target state="translated">低的</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$177" resname="quality-acceptable" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$178" resname="quality-acceptable" datatype="plaintext" xml:space="preserve">
         <source>Acceptable</source>
         <target state="translated">可以接受</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$178" resname="quality-good" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$179" resname="quality-good" datatype="plaintext" xml:space="preserve">
         <source>Good</source>
         <target state="translated">好的</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$179" resname="quality-excellent" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$180" resname="quality-excellent" datatype="plaintext" xml:space="preserve">
         <source>Excellent</source>
         <target state="translated">出色的</target>
       </trans-unit>
-      <trans-unit id="loco-en:$147" resname="temp-not-available" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>This command is not available at the moment.
-
-If you want to be notified when it will be available again, join our channel:
-https://t.me/tgdatabase</source>
-        <target state="translated">该命令目前不可用。
-
-如果您想在再次可用时收到通知，请加入我们的频道：
-https://t.me/tgdatabase</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$181" resname="btn-send-user" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$181" resname="btn-send-user" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the user to send</source>
         <target state="translated">选择要发送的用户</target>
       </trans-unit>
-      <trans-unit id="loco-en:$182" resname="btn-send-group" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$182" resname="btn-send-group" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the group to send</source>
         <target state="translated">选择要发送的组</target>
       </trans-unit>
-      <trans-unit id="loco-en:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$183" resname="error-search-only-groups" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, you can only search for groups.</source>
         <target state="translated">抱歉，您只能搜索群组。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$184" resname="btn-pay-eur" datatype="plaintext" xml:space="preserve">
         <source>Pay with card via Telegram</source>
         <target state="translated">通过 Telegram 用卡付款</target>
       </trans-unit>
-      <trans-unit id="loco-en:$185" resname="btn-back" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$185" resname="btn-back" datatype="plaintext" xml:space="preserve">
         <source>Back</source>
         <target state="translated">回去</target>
       </trans-unit>
-      <trans-unit id="loco-en:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$186" resname="btn-pay-xtr" datatype="plaintext" xml:space="preserve">
         <source>Pay with Telegram Stars</source>
         <target state="translated">使用 Telegram Stars 付款</target>
       </trans-unit>
-      <trans-unit id="loco-en:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$187" resname="btn-credits-xtr" datatype="plaintext" xml:space="preserve" approved="no">
         <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number} Stars</source>
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} 学分 - {price, number} Stars</target>
       </trans-unit>
-      <trans-unit id="loco-en:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$188" resname="pay-stripe-webhook-ok" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Payment was successful, {credits} credits were added to you!</source>
         <target state="translated">付款成功，您已获得 {credits} 积分！</target>
       </trans-unit>
-      <trans-unit id="loco-en:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$190" resname="btn-pay-web" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay with card</source>
         <target state="translated">使用卡付款</target>
       </trans-unit>
-      <trans-unit id="loco-en:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$191" resname="btn-credits-web" datatype="plaintext" xml:space="preserve" approved="no">
         <source>{credits, number}{bonus, plural, =0 {} other { +#}} credits - {price, number, :: currency/EUR}</source>
         <target state="translated">{credits, number}{bonus, plural, =0 {} other { +#}} 积分 - {price, number, :: currency/EUR}</target>
       </trans-unit>
-      <trans-unit id="loco-en:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$192" resname="pay-stripe-webhook-error-unknown-pack" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem with the payment.
 Please contact support with /support.</source>
         <target state="translated">付款有问题。
 请使用 /support 联系技术支持。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$193" resname="error-search-too-long" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Sorry, the search is too long and cannot be done.</source>
         <target state="translated">抱歉，搜索时间太长，无法完成。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$189" resname="pay-stripe-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem with the payment, it will be tried again later.
 If the error persists for a long time, please contact support with /support.</source>
         <target state="translated">付款出现问题，稍后再试。
 如果错误持续很长时间，请使用 /support 联系技术支持。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$194" resname="btn-pay-paypal" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay with PayPal</source>
         <target state="translated">使用 PayPal 付款</target>
       </trans-unit>
-      <trans-unit id="loco-en:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$195" resname="btn-credits-crypto" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Pay</source>
         <target state="translated">薪酬</target>
       </trans-unit>
-      <trans-unit id="loco-en:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$196" resname="error-crypto-api-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
         <target state="translated">通过加密货币支付时出现错误，请使用/support 联系支持人员。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$197" resname="crypto-webhook-confirming" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
         <target state="translated">加密货币支付正在处理中，几分钟内您就会收到积分。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$201" resname="crypto-webhook-fail" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was an error with payment via cryptocurrency, please contact support with /support.</source>
         <target state="translated">通过加密货币支付时出现错误，请使用/support 联系支持人员。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$204" resname="crypto-webhook-waiting" datatype="plaintext" xml:space="preserve" approved="no">
         <source>We are waiting for your cryptocurrency payment, it may take a few minutes.</source>
         <target state="translated">我们正在等待您的加密货币付款，可能需要几分钟时间。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$198" resname="crypto-webhook-confirmed" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
         <target state="translated">加密货币支付正在处理中，几分钟内您就会收到积分。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
         <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
         <target state="translated">你只用加密货币支付了部分账单，只有 {credits} 点数被添加到了你的账户中。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$203" resname="pay-crypto-webhook-error-api-credit-offline" datatype="plaintext" xml:space="preserve" approved="no">
         <source>There was a problem adding credits to you, please contact support with /support.</source>
         <target state="translated">为您添加点数时出现问题，请使用 /support 联系支持人员。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$205" resname="btn-send-channel" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select the channel to send</source>
         <target state="translated">选择要发送的频道</target>
       </trans-unit>
-      <trans-unit id="loco-en:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$206" resname="credits-crypto-warning" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Crypto payments could take several minutes.</source>
         <target state="translated">加密货币支付可能需要几分钟。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$207" resname="old-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Old username</source>
         <target state="translated">旧用户名</target>
       </trans-unit>
-      <trans-unit id="loco-en:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$208" resname="verified" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Verified</source>
         <target state="translated">已验证</target>
       </trans-unit>
-      <trans-unit id="loco-en:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$209" resname="scam" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Scam</source>
         <target state="translated">骗局</target>
       </trans-unit>
-      <trans-unit id="loco-en:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$210" resname="fake" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Fake</source>
         <target state="translated">伪造</target>
       </trans-unit>
-      <trans-unit id="loco-en:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$211" resname="premium" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Premium</source>
         <target state="translated">高级</target>
       </trans-unit>
-      <trans-unit id="loco-en:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$213" resname="add-no-username" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Error: Write a username/forward/share a user</source>
         <target state="translated">编写用户名/转发/共享用户</target>
       </trans-unit>
-      <trans-unit id="loco-en:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$214" resname="add-done" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Successfully added to the database, in a few minutes it will be available on TelegramDB</source>
         <target state="translated">已成功添加到数据库，几分钟后即可在 TelegramDB 上查看</target>
       </trans-unit>
-      <trans-unit id="loco-en:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$216" resname="command-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Add a chat to TgDB</source>
         <target state="translated">添加聊天到 TgDB</target>
       </trans-unit>
-      <trans-unit id="loco-en:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$217" resname="btn-add-force" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Update the username on TelegramDB</source>
         <target state="translated">更新 TelegramDB 上的用户名</target>
       </trans-unit>
-      <trans-unit id="loco-en:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$218" resname="add-header" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Username added on TelegramDB!</source>
         <target state="translated">已在 TelegramDB 上添加用户名！</target>
       </trans-unit>
-      <trans-unit id="loco-en:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$219" resname="send-username-text-add" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me the username you want to add to the TelegramDB, or click the button below.</source>
         <target state="translated">给我写下您想添加到 TelegramDB 的用户名，或点击下面的按钮。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$220" resname="menu-home" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to search for</source>
         <target state="translated">选择要搜索的内容</target>
       </trans-unit>
-      <trans-unit id="loco-en:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$221" resname="menu-search-action" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Select what you want to do</source>
         <target state="translated">选择您要做的事情</target>
       </trans-unit>
-      <trans-unit id="loco-en:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$222" resname="try-search" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Start searching now!</source>
         <target state="translated">现在就开始搜索！</target>
       </trans-unit>
-      <trans-unit id="loco-en:$223" resname="command-title" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$223" resname="command-title" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Search by title</source>
         <target state="translated">按标题搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$224" resname="menu-search-user" datatype="plaintext" xml:space="preserve">
         <source>Search by user</source>
         <target state="translated">按用户搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$225" resname="menu-search-group" datatype="plaintext" xml:space="preserve">
         <source>Search by group</source>
         <target state="translated">按组搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$226" resname="menu-search-channel" datatype="plaintext" xml:space="preserve">
         <source>Search by channel</source>
         <target state="translated">按频道搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$227" resname="menu-search-bot" datatype="plaintext" xml:space="preserve">
         <source>Search by bot</source>
         <target state="translated">按机器人搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$228" resname="menu-search-title" datatype="plaintext" xml:space="preserve">
         <source>Search by title</source>
         <target state="translated">按标题搜索</target>
       </trans-unit>
-      <trans-unit id="loco-en:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$229" resname="command-where-bot" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Find groups in which a bot has been</source>
         <target state="translated">查找机器人所在的组</target>
       </trans-unit>
-      <trans-unit id="loco-zh:$230" resname="send-username-text" datatype="plaintext" xml:space="preserve">
-        <source>Write me what you want to search.</source>
-        <target state="translated">写下您想要搜索的内容。</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-zh:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">请告诉我您想搜索什么，或点击下面的按钮。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$231" resname="discount" datatype="plaintext" xml:space="preserve">
         <source>Discount -{value}%</source>
         <target state="translated">折扣 -{value}%</target>
       </trans-unit>
-      <trans-unit id="loco-en:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
         <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
         <target state="translated">代码格式不正确。请检查输入是否正确。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
         <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
         <target state="translated">连接 tgdb.org 时发生错误。请检查您的代码。如果错误仍然存在，请稍后再试。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
         <source>Successfully connected to tgdb.org!</source>
         <target state="translated">成功连接到 tgdb.org！</target>
       </trans-unit>
-      <trans-unit id="loco-en:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
         <source>You did not enter the code correctly, write /connect ID.</source>
         <target state="translated">您没有正确输入密码，请输入 /connect ID。</target>
       </trans-unit>
-      <trans-unit id="loco-en:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-zh:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
         <source>Manage account</source>
         <target state="translated">管理账户</target>
       </trans-unit>
