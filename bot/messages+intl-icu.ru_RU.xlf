@@ -267,7 +267,7 @@ other {Этот поиск вернет # групп, в которых был �
         <source>Find groups in which a user has been</source>
         <target state="translated">Найти группы, в которых был пользователь</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$20" resname="command-resolve" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$20" resname="command-info" datatype="plaintext" xml:space="preserve">
         <source>Get info</source>
         <target state="translated">Получить информацию</target>
       </trans-unit>
@@ -527,27 +527,27 @@ More stats: https://www.telegramdb.org/stats</source>
         <source>Please, write me a username or id to get results.</source>
         <target state="translated">Пожалуйста, напишите мне имя пользователя или ID, чтобы получить результаты.</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$74" resname="inline-resolve-no-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve">
         <source>No title</source>
         <target state="translated">Нет заголовка</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$75" resname="inline-resolve-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve">
         <source>{title}</source>
         <target state="translated">{title}</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$76" resname="inline-resolve-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve">
         <source>{id}</source>
         <target state="translated">{id}</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$77" resname="inline-resolve-error-title" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve">
         <source>Error</source>
         <target state="translated">Ошибка</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$78" resname="inline-resolve-error-desc" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Ошибка, имя пользователя или ID недействительны/не найдены.</target>
       </trans-unit>
-      <trans-unit id="loco-ru:$79" resname="inline-resolve-error-text" datatype="plaintext" xml:space="preserve">
+      <trans-unit id="loco-ru:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve">
         <source>Error, username or id invalid/not found.</source>
         <target state="translated">Ошибка, имя пользователя или ID недействительны/не найдены.</target>
       </trans-unit>
@@ -1214,34 +1214,6 @@ If the error persists for a long time, please contact support with /support.</so
       <trans-unit id="loco-ru:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
         <source>Manage account</source>
         <target state="translated">Управление аккаунтом</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$20" resname="command-info" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Get info</source>
-        <target state="translated">Получить информацию</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>No title</source>
-        <target state="translated">Без названия</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>{title}</source>
-        <target state="translated">{title}</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>{id}</source>
-        <target state="translated">{id}</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Error</source>
-        <target state="translated">Ошибка</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Error, username or id invalid/not found.</source>
-        <target state="translated">Ошибка, имя пользователя или идентификатор недействительны/не найдены.</target>
-      </trans-unit>
-      <trans-unit id="loco-en:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve" approved="no">
-        <source>Error, username or id invalid/not found.</source>
-        <target state="translated">Ошибка, имя пользователя или идентификатор недействительны/не найдены.</target>
       </trans-unit>
     </body>
   </file>
