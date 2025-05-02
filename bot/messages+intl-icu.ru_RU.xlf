@@ -190,8 +190,8 @@ other {У вас # кредитов.}
 }</target>
       </trans-unit>
       <trans-unit id="loco-ru:$12" resname="send-username-user" datatype="plaintext" xml:space="preserve">
-        <source>Send the username or id of the person you want to search:</source>
-        <target state="translated">Отправьте имя пользователя или ID человека для поиска:</target>
+        <source>Send the username or id of the person you want to search, or click the button below.</source>
+        <target state="translated">Отправьте имя пользователя или ID человека, которого Вы хотите найти, или нажмите кнопку ниже.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$13" resname="0-credits" datatype="plaintext" xml:space="preserve">
         <source>You don't have enough credits to search.
@@ -661,11 +661,11 @@ other {#/{total} результатов}
       </trans-unit>
       <trans-unit id="loco-ru:$114" resname="lang-set" datatype="plaintext" xml:space="preserve">
         <source>Language changed to English.</source>
-        <target state="translated">Язык изменен на русский</target>
+        <target state="translated">Язык изменен на русский.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$116" resname="cancel-empty" datatype="plaintext" xml:space="preserve">
         <source>There is no active command to cancel.</source>
-        <target state="translated">Нет активной команды для отмены</target>
+        <target state="translated">Нет активной команды для отмены.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$117" resname="cancel-type" datatype="plaintext" xml:space="preserve">
         <source>The {type} command has been cancelled.</source>
@@ -838,8 +838,8 @@ https://t.me/tgdatabase</target>
         <target state="translated">Вы можете открыть этот файл как текст, таблицу или импортировать его в Maltego через Import → Import an Exported Table.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$150" resname="send-username-group" datatype="plaintext" xml:space="preserve">
-        <source>Send username or id of group you want to search for:</source>
-        <target state="translated">Отправьте имя пользователя или ID группы, которую вы хотите найти:</target>
+        <source>Send username or id of group you want to search for, or click the button below.</source>
+        <target state="translated">Отправьте имя пользователя или ID группы, которую Вы хотите найти, или нажмите кнопку ниже.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$151" resname="members-results" datatype="plaintext" xml:space="preserve">
         <source>{count, plural,
@@ -1197,19 +1197,19 @@ If the error persists for a long time, please contact support with /support.</so
       </trans-unit>
       <trans-unit id="loco-ru:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
         <source>You did not enter the code correctly, write /connect ID.</source>
-        <target state="translated">Код введён неверно, напишите /connect ID</target>
+        <target state="translated">Код введён неверно, напишите /connect ID.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
         <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
-        <target state="translated">Код в неправильном формате, проверьте правильность ввода</target>
+        <target state="translated">Код в неправильном формате. Проверьте правильность ввода.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
         <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
-        <target state="translated">Ошибка при подключении к tgdb.org, проверьте код, если ошибка повторяется, попробуйте позже</target>
+        <target state="translated">Ошибка при подключении к tgdb.org. Проверьте код, если ошибка повторяется, попробуйте позже.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
         <source>Successfully connected to tgdb.org!</source>
-        <target state="translated">Успешно подключено к tgdb.org</target>
+        <target state="translated">Успешно подключено к tgdb.org!</target>
       </trans-unit>
       <trans-unit id="loco-ru:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
         <source>Manage account</source>
