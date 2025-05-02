@@ -641,7 +641,7 @@ other {# из примерно {total} результатов}
 =1 {# result}
 other {#/{total} results}
 }</source>
-<target state="translated">{count, plural,
+        <target state="translated">{count, plural,
 =0 {Нет результатов.}
 =1 {# результат}
 other {#/{total} результатов}
@@ -1079,7 +1079,7 @@ If the error persists for a long time, please contact support with /support.</so
         <source>Cryptocurrency payment is being processed, within a few minutes you will receive your credits.</source>
         <target state="translated">Платеж в криптовалюте обрабатывается.</target>
       </trans-unit>
-<trans-unit id="loco-ru:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
+      <trans-unit id="loco-ru:$199" resname="crypto-webhook-partially-paid" datatype="plaintext" xml:space="preserve" approved="no">
         <source>You only paid part of the bill in crypto, only {credits} credits were added to you.</source>
         <target state="translated">Вы оплатили только часть счета в криптовалюте, вам добавлено только {credits} кредитов.</target>
       </trans-unit>
@@ -1191,29 +1191,57 @@ If the error persists for a long time, please contact support with /support.</so
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">Напишите мне что вы хотите найти, или нажмите на одну из кнопок ниже.</target>
       </trans-unit>
-<trans-unit id="loco-ru:$231" resname="discount" datatype="plaintext" xml:space="preserve">
-  <source>Discount -{value}%</source>
-  <target state="translated">Скидка -{value}%</target>
-</trans-unit>
-<trans-unit id="loco-ru:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
-  <source>You did not enter the code correctly, write /connect ID.</source>
-  <target state="translated">Код введён неверно, напишите /connect ID</target>
-</trans-unit>
-<trans-unit id="loco-ru:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
-  <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
-  <target state="translated">Код в неправильном формате, проверьте правильность ввода</target>
-</trans-unit>
-<trans-unit id="loco-ru:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
-  <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
-  <target state="translated">Ошибка при подключении к tgdb.org, проверьте код, если ошибка повторяется, попробуйте позже</target>
-</trans-unit>
-<trans-unit id="loco-ru:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
-  <source>Successfully connected to tgdb.org!</source>
-  <target state="translated">Успешно подключено к tgdb.org</target>
-</trans-unit>
-<trans-unit id="loco-ru:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
-  <source>Manage account</source>
-  <target state="translated">Управление аккаунтом</target>
+      <trans-unit id="loco-ru:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+        <source>Discount -{value}%</source>
+        <target state="translated">Скидка -{value}%</target>
+      </trans-unit>
+      <trans-unit id="loco-ru:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+        <source>You did not enter the code correctly, write /connect ID.</source>
+        <target state="translated">Код введён неверно, напишите /connect ID</target>
+      </trans-unit>
+      <trans-unit id="loco-ru:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+        <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
+        <target state="translated">Код в неправильном формате, проверьте правильность ввода</target>
+      </trans-unit>
+      <trans-unit id="loco-ru:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+        <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
+        <target state="translated">Ошибка при подключении к tgdb.org, проверьте код, если ошибка повторяется, попробуйте позже</target>
+      </trans-unit>
+      <trans-unit id="loco-ru:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+        <source>Successfully connected to tgdb.org!</source>
+        <target state="translated">Успешно подключено к tgdb.org</target>
+      </trans-unit>
+      <trans-unit id="loco-ru:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+        <source>Manage account</source>
+        <target state="translated">Управление аккаунтом</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$20" resname="command-info" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Get info</source>
+        <target state="translated">Получить информацию</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$74" resname="inline-info-no-title" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>No title</source>
+        <target state="translated">Без названия</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$75" resname="inline-info-title" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{title}</source>
+        <target state="translated">{title}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$76" resname="inline-info-desc" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>{id}</source>
+        <target state="translated">{id}</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$77" resname="inline-info-error-title" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error</source>
+        <target state="translated">Ошибка</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$78" resname="inline-info-error-desc" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error, username or id invalid/not found.</source>
+        <target state="translated">Ошибка, имя пользователя или идентификатор недействительны/не найдены.</target>
+      </trans-unit>
+      <trans-unit id="loco-en:$79" resname="inline-info-error-text" datatype="plaintext" xml:space="preserve" approved="no">
+        <source>Error, username or id invalid/not found.</source>
+        <target state="translated">Ошибка, имя пользователя или идентификатор недействительны/не найдены.</target>
       </trans-unit>
     </body>
   </file>
