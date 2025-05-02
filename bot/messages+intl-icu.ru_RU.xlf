@@ -6,148 +6,148 @@
     </header>
     <body>
       <trans-unit id="loco-ru:$1" resname="start" datatype="plaintext" xml:space="preserve">
-        <source>👋 <i>Welcome to TelegramDB Search Bot.</i>
+        <source>👋 &lt;i&gt;Welcome to TelegramDB Search Bot.&lt;/i&gt;
 
-This bot allows you to find public channels and groups, and see what public chats a user is in, or has been in, using a constantly updated database <b>with 300+ million chats and 1 billion users!</b>
+This bot allows you to find public channels and groups, and see what public chats a user is in, or has been in, using a constantly updated database &lt;b&gt;with 300+ million chats and 1 billion users!&lt;/b&gt;
 
 Use our inline queries to get user details from usernames and IDs.
 
-🆓 <b>Free commands:</b>
-/search - <code>Search for anything</code>
-/resolve [id or username] - <code>Resolve a username or ID</code>
-/title [name] - <code>Search for groups and channels</code>
-/group [name] - <code>Search for groups</code>
-/channel [name] - <code>Search for channels</code>
-/bot [name] - <code>Search for bots</code>
-/add [username] - <code>Add a user to TelegramDB</code>
+🆓 &lt;b&gt;Free commands:&lt;/b&gt;
+/search - &lt;code&gt;Search for anything&lt;/code&gt;
+/info [id or username] - &lt;code&gt;Show info from a username or ID&lt;/code&gt;
+/title [name] - &lt;code&gt;Search for groups and channels&lt;/code&gt;
+/group [name] - &lt;code&gt;Search for groups&lt;/code&gt;
+/channel [name] - &lt;code&gt;Search for channels&lt;/code&gt;
+/bot [name] - &lt;code&gt;Search for bots&lt;/code&gt;
+/add [username] - &lt;code&gt;Add a user to TelegramDB&lt;/code&gt;
 
-💲 <b>Premium commands:</b>
-/where [id or username] - <code>Find groups in which a user has been</code>
-/members [id or username] - <code>Find members of a group</code>
-/near [id or username] - <code>Find nearest users</code>
-/network [id or username] - <code>Find nearest chats</code>
-/credits - <code>Buy credits</code>
+💲 &lt;b&gt;Premium commands:&lt;/b&gt;
+/where [id or username] - &lt;code&gt;Find groups in which a user has been&lt;/code&gt;
+/members [id or username] - &lt;code&gt;Find members of a group&lt;/code&gt;
+/near [id or username] - &lt;code&gt;Find nearest users&lt;/code&gt;
+/network [id or username] - &lt;code&gt;Find nearest chats&lt;/code&gt;
+/credits - &lt;code&gt;Buy credits&lt;/code&gt;
 
-ℹ <b>Other commands:</b>
-/faq - <code>Frequently Asked Questions</code>
-/language - <code>Choose the language</code>
-/support - <code>Support chat for TgDB</code>
-/stats - <code>Show statistics</code>
-/terms - <code>Terms and conditions</code>
-/cancel - <code>Cancel current operation</code>
+ℹ &lt;b&gt;Other commands:&lt;/b&gt;
+/faq - &lt;code&gt;Frequently Asked Questions&lt;/code&gt;
+/language - &lt;code&gt;Choose the language&lt;/code&gt;
+/support - &lt;code&gt;Support chat for TgDB&lt;/code&gt;
+/stats - &lt;code&gt;Show statistics&lt;/code&gt;
+/terms - &lt;code&gt;Terms and conditions&lt;/code&gt;
+/cancel - &lt;code&gt;Cancel current operation&lt;/code&gt;
 
 For any info or doubts join @tgdbchat</source>
-        <target state="translated">👋 <i>Добро пожаловать в TelegramDB Search Bot.</i>
+        <target state="translated">👋 &lt;i&gt;Добро пожаловать в TelegramDB Search Bot.&lt;/i&gt;
 
-Этот бот позволяет находить публичные каналы и группы, а также видеть, в каких публичных чатах состоит или состоял пользователь, используя постоянно обновляемую базу данных с <b>более чем 300 миллионами чатов и 1 миллиардом пользователей!</b>
+Этот бот позволяет находить публичные каналы и группы, а также видеть, в каких публичных чатах состоит или состоял пользователь, используя постоянно обновляемую базу данных &lt;b&gt;с более чем 300 миллионами чатов и 1 миллиардом пользователей!&lt;/b&gt;
 
 Используйте наши встроенные запросы, чтобы получить информацию о пользователях по их именам или ID.
 
-🆓 <b>Бесплатные команды:</b>
-/search - <code>Поиск чего угодно</code>
-/resolve [id или имя пользователя] - <code>Получить данные по имени пользователя или ID</code>
-/title [название] - <code>Поиск групп и каналов</code>
-/group [название] - <code>Поиск групп</code>
-/channel [название] - <code>Поиск каналов</code>
-/bot [название] - <code>Поиск ботов</code>
-/add [имя пользователя] - <code>Добавить пользователя в TelegramDB</code>
+🆓 &lt;b&gt;Бесплатные команды:&lt;/b&gt;
+/search - &lt;code&gt;Поиск чего угодно&lt;/code&gt;
+/info [id или имя пользователя] - &lt;code&gt;Получить данные по имени пользователя или ID&lt;/code&gt;
+/title [название] - &lt;code&gt;Поиск групп и каналов&lt;/code&gt;
+/group [название] - &lt;code&gt;Поиск групп&lt;/code&gt;
+/channel [название] - &lt;code&gt;Поиск каналов&lt;/code&gt;
+/bot [название] - &lt;code&gt;Поиск ботов&lt;/code&gt;
+/add [имя пользователя] - &lt;code&gt;Добавить пользователя в TelegramDB&lt;/code&gt;
 
-💲 <b>Премиум-команды:</b>
-/where [id или имя пользователя] - <code>Найти группы, в которых был пользователь</code>
-/members [id или имя пользователя] - <code>Найти участников группы</code>
-/near [id или имя пользователя] - <code>Найти ближайших пользователей</code>
-/network [id или имя пользователя] - <code>Найти ближайшие чаты</code>
-/credits - <code>Купить кредиты</code>
+💲 &lt;b&gt;Премиум-команды:&lt;/b&gt;
+/where [id или имя пользователя] - &lt;code&gt;Найти группы, в которых был пользователь&lt;/code&gt;
+/members [id или имя пользователя] - &lt;code&gt;Найти участников группы&lt;/code&gt;
+/near [id или имя пользователя] - &lt;code&gt;Найти ближайших пользователей&lt;/code&gt;
+/network [id или имя пользователя] - &lt;code&gt;Найти ближайшие чаты&lt;/code&gt;
+/credits - &lt;code&gt;Купить кредиты&lt;/code&gt;
 
-ℹ <b>Другие команды:</b>
-/faq - <code>Часто задаваемые вопросы</code>
-/language - <code>Выбрать язык</code>
-/support - <code>Чат поддержки TgDB</code>
-/stats - <code>Показать статистику</code>
-/terms - <code>Условия использования</code>
-/cancel - <code>Отменить текущую операцию</code>
+ℹ &lt;b&gt;Другие команды:&lt;/b&gt;
+/faq - &lt;code&gt;Часто задаваемые вопросы&lt;/code&gt;
+/language - &lt;code&gt;Выбрать язык&lt;/code&gt;
+/support - &lt;code&gt;Чат поддержки TgDB&lt;/code&gt;
+/stats - &lt;code&gt;Показать статистику&lt;/code&gt;
+/terms - &lt;code&gt;Условия использования&lt;/code&gt;
+/cancel - &lt;code&gt;Отменить текущую операцию&lt;/code&gt;
 
 Для любой информации или вопросов присоединяйтесь к @tgdbchat</target>
       </trans-unit>
       <trans-unit id="loco-ru:$2" resname="faq" datatype="plaintext" xml:space="preserve">
-        <source><b>How does it work?</b>
-The bot queries a database containing <u>public</u> groups and users, crawled by TelegramDB.
+        <source>&lt;b&gt;How does it work?&lt;/b&gt;
+The bot queries a database containing &lt;u&gt;public&lt;/u&gt; groups and users, crawled by TelegramDB.
 
-<b>Do you really track all groups?</b>
-No, tracking all groups would be impossible: we have only a part of the <u>public</u> groups on Telegram.
+&lt;b&gt;Do you really track all groups?&lt;/b&gt;
+No, tracking all groups would be impossible: we have only a part of the &lt;u&gt;public&lt;/u&gt; groups on Telegram.
 
-<b>How much data do you have?</b>
+&lt;b&gt;How much data do you have?&lt;/b&gt;
 Check https://telegramdb.org/stats to see the latest data.
 
-<b>What is the near command?</b>
+&lt;b&gt;What is the near command?&lt;/b&gt;
 The term "near" refers to users who have interacted with the searched user or are in common groups, such as friends.
 "Near" is intended as users who have interacted with each other or are part of common groups with the searched user, such as friends.
-<u>It does not find chats that are geographically close.</u>
+&lt;u&gt;It does not find chats that are geographically close.&lt;/u&gt;
 
-<b>What is the network command?</b>
+&lt;b&gt;What is the network command?&lt;/b&gt;
 The network command finds the chats closest to the searched chat.
 It finds chats frequented by approximately the same audience of users, such as groups with the same topic, or being part of a network.
-<u>It does not find chats that are geographically close.</u>
+&lt;u&gt;It does not find chats that are geographically close.&lt;/u&gt;
 
-<b>How much does where cost?</b>
+&lt;b&gt;How much does where cost?&lt;/b&gt;
 Before paying to see the results, the bot will show you how many results are there, and how much does it cost.
 
-The base price for the /where command is <b>3 credits</b>.
+The base price for the /where command is &lt;b&gt;3 credits&lt;/b&gt;.
 In addition, every 40 results the cost increases by 1 credit.
 
 Example:
 100 results cost 5 credits
 3 base price + 2 (100/40 = 2.5)
 
-The price for the /members command is calculated with this formula: <code>3+0.6x^0.8</code>.
+The price for the /members command is calculated with this formula: &lt;code&gt;3+0.6x^0.8&lt;/code&gt;.
 X is the number of results, and is rounded down.
 
 Example:
 100 achievements cost 26 credits
 
-<b>How can I delete a chat from the bot results?</b>
-Send an email to webmaster@telegramdb.org, with "<code>chat deletion request</code>" as the subject, provide the chat id/username, and a short explanation of why the chat must be removed.
+&lt;b&gt;How can I delete a chat from the bot results?&lt;/b&gt;
+Send an email to webmaster@telegramdb.org, with "&lt;code&gt;chat deletion request&lt;/code&gt;" as the subject, provide the chat id/username, and a short explanation of why the chat must be removed.
 
-<b>Please note that</b> the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.</source>
-        <target state="translated"><b>Как это работает?</b>
-Бот запрашивает базу данных, содержащую <u>публичные</u> группы и пользователей, собранные TelegramDB.
+&lt;b&gt;Please note that&lt;/b&gt; the results can also include groups in which the user was present in the past, so it must be noted that a user may have been added to that group by another person without their approval.</source>
+        <target state="translated">&lt;b&gt;Как это работает?&lt;/b&gt;
+Бот запрашивает базу данных, содержащую &lt;u&gt;публичные&lt;/u&gt; группы и пользователей, собранные TelegramDB.
 
-<b>Вы действительно отслеживаете все группы?</b>
-Нет, отслеживать все группы невозможно: у нас есть только часть <u>публичных</u> групп в Telegram.
+&lt;b&gt;Вы действительно отслеживаете все группы?&lt;/b&gt;
+Нет, отслеживать все группы невозможно: у нас есть только часть &lt;u&gt;публичных&lt;/u&gt; групп в Telegram.
 
-<b>Какой объем данных у вас есть?</b>
+&lt;b&gt;Какой объем данных у вас есть?&lt;/b&gt;
 Проверьте https://telegramdb.org/stats, чтобы увидеть последние данные.
 
-<b>Что такое команда near?</b>
+&lt;b&gt;Что такое команда near?&lt;/b&gt;
 Термин «near» относится к пользователям, которые взаимодействовали с искомым пользователем или состоят в общих группах, например, друзья.
 «near» — это пользователи, которые взаимодействовали друг с другом или состоят в общих группах с искомым пользователем, например, друзья.
-<u>Команда не находит чаты, которые находятся географически близко.</u>
+&lt;u&gt;Команда не находит чаты, которые находятся географически близко.&lt;/u&gt;
 
-<b>Что такое команда network?</b>
+&lt;b&gt;Что такое команда network?&lt;/b&gt;
 Команда network находит чаты, наиболее близкие к искомому чату.
 Она находит чаты, которые посещает примерно та же аудитория пользователей, например, группы с одинаковой тематикой или входящие в одну сеть.
-<u>Команда не находит чаты, которые находятся географически близко.</u>
+&lt;u&gt;Команда не находит чаты, которые находятся географически близко.&lt;/u&gt;
 
-<b>Сколько стоит команда where?</b>
+&lt;b&gt;Сколько стоит команда where?&lt;/b&gt;
 Перед оплатой результатов бот покажет, сколько результатов найдено и сколько это стоит.
 
-Базовая стоимость команды /where составляет <b>3 кредита</b>.
+Базовая стоимость команды /where составляет &lt;b&gt;3 кредита&lt;/b&gt;.
 Кроме того, каждые 40 результатов увеличивают стоимость на 1 кредит.
 
 Пример:
 100 результатов стоят 5 кредитов
 3 базовая цена + 2 (100/40 = 2.5)
 
-Стоимость команды /members рассчитывается по формуле: <code>3+0.6x^0.8</code>.
+Стоимость команды /members рассчитывается по формуле: &lt;code&gt;3+0.6x^0.8&lt;/code&gt;.
 X — количество результатов, округленное вниз.
 
 Пример:
 100 результатов стоят 26 кредитов
 
-<b>Как удалить чат из результатов бота?</b>
-Отправьте письмо на webmaster@telegramdb.org с темой "<code>chat deletion request</code>", укажите ID или имя чата и краткое объяснение, почему чат нужно удалить.
+&lt;b&gt;Как удалить чат из результатов бота?&lt;/b&gt;
+Отправьте письмо на webmaster@telegramdb.org с темой "&lt;code&gt;chat deletion request&lt;/code&gt;", укажите ID или имя чата и краткое объяснение, почему чат нужно удалить.
 
-<b>Обратите внимание</b>, что результаты могут включать группы, в которых пользователь состоял в прошлом, поэтому следует учитывать, что пользователь мог быть добавлен в эту группу другим человеком без его согласия.</target>
+&lt;b&gt;Обратите внимание&lt;/b&gt;, что результаты могут включать группы, в которых пользователь состоял в прошлом, поэтому следует учитывать, что пользователь мог быть добавлен в эту группу другим человеком без его согласия.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$4" resname="support" datatype="plaintext" xml:space="preserve">
         <source>We are not Telegram, we can only answer questions related to TelegramDB!
@@ -419,7 +419,7 @@ Remember that you can only search for users.</source>
       </trans-unit>
       <trans-unit id="loco-ru:$56" resname="error-button-user-invalid" datatype="plaintext" xml:space="preserve">
         <source>Error, the button you pressed was not generated by you</source>
-        <target state="translated">Ошибка, кнопка которую вы нажали, не была создана вами</target>
+        <target state="translated">Ошибка, кнопка которую вы нажали не была создана вами</target>
       </trans-unit>
       <trans-unit id="loco-ru:$57" resname="error-transaction-still-in-progress" datatype="plaintext" xml:space="preserve">
         <source>Error, operation still in progress, please wait for it to finish before doing other queries.
@@ -444,7 +444,7 @@ Please, contact support via /support</source>
 Unfortunately, this error has occurred too often and your account has been temporarily suspended.
 To get unblocked, please contact support via /support.</source>
         <target state="translated">Произошла ошибка при отображении результатов, ваши кредиты были возвращены.
-К сожалению, эта ошибка происходила слишком часто, и ваш аккаунт временно заблокирован.
+К сожалению, эта ошибка происходила слишком часто, и ваш аккаунт временно заморожен.
 Для разблокировки свяжитесь с поддержкой через /support.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$61" resname="error-payment-success-no-credits" datatype="plaintext" xml:space="preserve">
@@ -470,14 +470,14 @@ Please, try again later</source>
       <trans-unit id="loco-ru:$64" resname="error-backend-floodwait" datatype="plaintext" xml:space="preserve">
         <source>Error, backend is busy.
 Please, try again later.</source>
-        <target state="translated">Ошибка, сервер занят.
+        <target state="translated">Ошибка, сервер загружен.
 Пожалуйста, попробуйте снова позже.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$65" resname="error-timeout" datatype="plaintext" xml:space="preserve">
         <source>Error, the search took too long, the backend may be offline.
 Please try again later.</source>
         <target state="translated">Ошибка, поиск занял слишком много времени, сервер может быть недоступен.
-Пожалуйста, попробуйте снова позже.</target>
+Пожалуйста, попробуйте позднее.</target>
       </trans-unit>
       <trans-unit id="loco-ru:$66" resname="query-already-done" datatype="plaintext" xml:space="preserve">
         <source><b>You already did the same search a while ago.</b>
@@ -553,7 +553,7 @@ More stats: https://www.telegramdb.org/stats</source>
       </trans-unit>
       <trans-unit id="loco-ru:$80" resname="try-inline" datatype="plaintext" xml:space="preserve">
         <source>Try me inline</source>
-        <target state="translated">Попробуйте меня в inline-режиме</target>
+        <target state="translated">Попробуй в inline-режиме</target>
       </trans-unit>
       <trans-unit id="loco-ru:$81" resname="error-pay-api-offline" datatype="plaintext" xml:space="preserve">
         <source>Error, unable to connect to the credit server, please try again later.</source>
@@ -1190,6 +1190,30 @@ If the error persists for a long time, please contact support with /support.</so
       <trans-unit id="loco-ru:$230" resname="send-username-text-or-button" datatype="plaintext" xml:space="preserve" approved="no">
         <source>Write me what you want to search, or click on one of the buttons below.</source>
         <target state="translated">Напишите мне что вы хотите найти, или нажмите на одну из кнопок ниже.</target>
+      </trans-unit>
+<trans-unit id="loco-ru:$231" resname="discount" datatype="plaintext" xml:space="preserve">
+  <source>Discount -{value}%</source>
+  <target state="translated">Скидка -{value}%</target>
+</trans-unit>
+<trans-unit id="loco-ru:$232" resname="connect-error-command" datatype="plaintext" xml:space="preserve">
+  <source>You did not enter the code correctly, write /connect ID.</source>
+  <target state="translated">Код введён неверно, напишите /connect ID</target>
+</trans-unit>
+<trans-unit id="loco-ru:$233" resname="connect-error-format" datatype="plaintext" xml:space="preserve">
+  <source>The code is not in the correct format. Please check that you have entered it correctly.</source>
+  <target state="translated">Код в неправильном формате, проверьте правильность ввода</target>
+</trans-unit>
+<trans-unit id="loco-ru:$234" resname="connect-error-endpoint" datatype="plaintext" xml:space="preserve">
+  <source>An error occurred while connecting to the tgdb.org. Check your code. If the error persists, please try again later.</source>
+  <target state="translated">Ошибка при подключении к tgdb.org, проверьте код, если ошибка повторяется, попробуйте позже</target>
+</trans-unit>
+<trans-unit id="loco-ru:$235" resname="connect-ok" datatype="plaintext" xml:space="preserve">
+  <source>Successfully connected to tgdb.org!</source>
+  <target state="translated">Успешно подключено к tgdb.org</target>
+</trans-unit>
+<trans-unit id="loco-ru:$236" resname="btn-login-website" datatype="plaintext" xml:space="preserve">
+  <source>Manage account</source>
+  <target state="translated">Управление аккаунтом</target>
       </trans-unit>
     </body>
   </file>
