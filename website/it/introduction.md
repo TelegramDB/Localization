@@ -7,7 +7,7 @@
 [![Utenti](/stats/users.svg?hl=it)](/stats)
 [![Bot](/stats/bots.svg?hl=it)](/stats)
 
-Tramite il nostro [bot](https://t.me/tgdb_bot) su Telegram è possibile cercare, sfruttando il nostro database, tutti i gruppi pubblici in cui è stato un utente.
+Tramite il nostro [bot](https://www.tgdb.org/page/bot) su Telegram è possibile cercare, sfruttando il nostro database, tutti i gruppi pubblici in cui è stato un utente.
 
 Il bot funge anche da **motore di ricerca**, puoi cercare filtrando per gruppi e canali, e ottenere molti più risultati rispetto a una normale ricerca su Telegram.
 
@@ -15,7 +15,7 @@ Il bot funge anche da **motore di ricerca**, puoi cercare filtrando per gruppi e
 Il nostro scopo è rendere più **semplice** e **immediato** l'accesso a tutte le informazioni utili presenti su Telegram.
 
 ## Come usare TelegramDB?
-Tramite [@tgdb_bot](https://t.me/tgdb_bot) puoi utilizzare il nostro servizio.
+Tramite [tgdb_bot](https://www.tgdb.org/page/bot) puoi utilizzare il nostro servizio.
 
 ### 🆓 Funzioni gratuite
 - **/search** permette di usare parole chiave per cercare gruppi e canali.
@@ -67,7 +67,7 @@ Per tenere i dati sempre aggiornati e in costante aumento abbiamo dei crawler di
 ### Apri una discussione
 Se hai qualche domanda o hai da proporci qualche idea su come migliorare il progetto, sentiti libero di aprire una discussione [qui](https://github.com/TelegramDB/TelegramDB/discussions) su GitHub.
 ### Partecipa alla nostra community su telegram
-- Bot: [@tgdb_bot](https://t.me/tgdb_bot)
+- Bot: [tgdb_bot](https://www.tgdb.org/page/bot)
 - Canale News: [@tgdatabase](https://t.me/tgdatabase)
 - Gruppo di supporto/discussione: [@tgdbchat](https://t.me/tgdbchat)
 - Account di supporto: [@tgdb_support](https://t.me/tgdb_support) (se possibile, contattaci sul gruppo)
