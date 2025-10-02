@@ -1,5 +1,5 @@
-# TelegramDB
-**TelegramDB** is a service that allows you to search for channels, groups and their members.
+# TgDB Search Plus (TelegramDB)
+**TgDB Search Plus** is a service that allows you to search for channels, groups and their members.
 
 [![Members](/stats/members.svg?hl=en)](/stats)
 [![Chats](/stats/chats.svg?hl=en)](/stats)
@@ -7,7 +7,7 @@
 [![Users](/stats/users.svg?hl=en)](/stats)
 [![Bots](/stats/bots.svg?hl=en)](/stats)
 
-Through our [bot](https://www.tgdb.org/bot) on Telegram you can search, using our database, for all public groups in which a user has been.
+Through [TgDB Search Plus](https://www.tgdb.org/bot) you can search, using our database, for all public groups in which a user has been.
 
 The bot is also a **search engine**, you can search by filtering by groups and channels, and get many more results than a normal search on Telegram.
 
@@ -15,7 +15,7 @@ The bot is also a **search engine**, you can search by filtering by groups and c
 We aim to make it **easier** and **straightforward** to access all the useful information on Telegram.
 
 ## How to use TelegramDB?
-Through [tgdb_bot](https://www.tgdb.org/bot) you can use our service.
+Through [TgDB Search Plus](https://www.tgdb.org/bot) you can use our service.
 
 ### 🆓 Free features.
 - **/search** allows you to use keywords to search for groups and channels.
@@ -67,13 +67,14 @@ In order to keep the data up-to-date and constantly increasing, we have distruib
 ### Open a discussion.
 If you have any questions or have any ideas on how to improve the project, feel free to open a discussion [here](https://github.com/TelegramDB/TelegramDB/discussions) on GitHub.
 ### Join our community on telegram.
-- Bot: [tgdb_bot](https://www.tgdb.org/bot)
+- Bot: [tgdb.org/bot](https://tgdb.org/bot)
+- Lite Bot on Telegram: [@tgdb_search_bot](https://t.me/tgdb_search_bot)
 - News Channel: [@tgdatabase](https://t.me/tgdatabase)
 - Support/discussion group: [@tgdbchat](https://t.me/tgdbchat)
 - Support account: [@tgdb_support](https://t.me/tgdb_support) (if possible, contact us on the group)
 ### Help us with localization.
 You can help us translate these guidelines, or localize the bot and the site in your language.
-To do so, contact us on Telegram, or open a discussion.
+To do so, contact us on Telegram, or make a pull request here: https://github.com/TelegramDB/Localization.
 ### Report us groups/channels not in the database.
 We will be happy to add public channels and groups to our database, reporting them will help us grow and improve the project.
 
