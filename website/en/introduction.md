@@ -68,7 +68,7 @@ In order to keep the data up-to-date and constantly increasing, we have distruib
 If you have any questions or have any ideas on how to improve the project, feel free to open a discussion [here](https://github.com/TelegramDB/TelegramDB/discussions) on GitHub.
 ### Join our community on telegram.
 - Bot: [tgdb.org/bot](https://tgdb.org/bot)
-- Lite Bot on Telegram: [@tgdb_search_bot](https://t.me/tgdb_search_bot)
+- Lite Bot on Telegram: [@TgDBOrgBot](https://t.me/TgDBOrgBot)
 - News Channel: [@tgdatabase](https://t.me/tgdatabase)
 - Support/discussion group: [@tgdbchat](https://t.me/tgdbchat)
 - Support account: [@tgdb_support](https://t.me/tgdb_support) (if possible, contact us on the group)
